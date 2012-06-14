@@ -24,19 +24,19 @@ namespace PutniNalozi.NET {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class piDB9DS : global::System.Data.DataSet {
         
-        private tbl_dodatni_troskoviDataTable tabletbl_dodatni_troskovi;
+        private dodatni_troskoviDataTable tabledodatni_troskovi;
         
-        private tbl_izvjestajDataTable tabletbl_izvjestaj;
+        private izvjestajDataTable tableizvjestaj;
         
-        private tbl_prijevozni_troskoviDataTable tabletbl_prijevozni_troskovi;
+        private prijevozni_troskoviDataTable tableprijevozni_troskovi;
         
-        private tbl_putni_nalogDataTable tabletbl_putni_nalog;
+        private putni_nalogDataTable tableputni_nalog;
         
-        private tbl_putni_racunDataTable tabletbl_putni_racun;
+        private putni_racunDataTable tableputni_racun;
         
-        private tbl_status_nalogaDataTable tabletbl_status_naloga;
+        private status_nalogaDataTable tablestatus_naloga;
         
-        private tbl_voziloDataTable tabletbl_vozilo;
+        private voziloDataTable tablevozilo;
         
         private global::System.Data.DataRelation relationFK_dodatni_troskovi_pripada_putni_racun;
         
@@ -78,26 +78,26 @@ namespace PutniNalozi.NET {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["tbl_dodatni_troskovi"] != null)) {
-                    base.Tables.Add(new tbl_dodatni_troskoviDataTable(ds.Tables["tbl_dodatni_troskovi"]));
+                if ((ds.Tables["dodatni_troskovi"] != null)) {
+                    base.Tables.Add(new dodatni_troskoviDataTable(ds.Tables["dodatni_troskovi"]));
                 }
-                if ((ds.Tables["tbl_izvjestaj"] != null)) {
-                    base.Tables.Add(new tbl_izvjestajDataTable(ds.Tables["tbl_izvjestaj"]));
+                if ((ds.Tables["izvjestaj"] != null)) {
+                    base.Tables.Add(new izvjestajDataTable(ds.Tables["izvjestaj"]));
                 }
-                if ((ds.Tables["tbl_prijevozni_troskovi"] != null)) {
-                    base.Tables.Add(new tbl_prijevozni_troskoviDataTable(ds.Tables["tbl_prijevozni_troskovi"]));
+                if ((ds.Tables["prijevozni_troskovi"] != null)) {
+                    base.Tables.Add(new prijevozni_troskoviDataTable(ds.Tables["prijevozni_troskovi"]));
                 }
-                if ((ds.Tables["tbl_putni_nalog"] != null)) {
-                    base.Tables.Add(new tbl_putni_nalogDataTable(ds.Tables["tbl_putni_nalog"]));
+                if ((ds.Tables["putni_nalog"] != null)) {
+                    base.Tables.Add(new putni_nalogDataTable(ds.Tables["putni_nalog"]));
                 }
-                if ((ds.Tables["tbl_putni_racun"] != null)) {
-                    base.Tables.Add(new tbl_putni_racunDataTable(ds.Tables["tbl_putni_racun"]));
+                if ((ds.Tables["putni_racun"] != null)) {
+                    base.Tables.Add(new putni_racunDataTable(ds.Tables["putni_racun"]));
                 }
-                if ((ds.Tables["tbl_status_naloga"] != null)) {
-                    base.Tables.Add(new tbl_status_nalogaDataTable(ds.Tables["tbl_status_naloga"]));
+                if ((ds.Tables["status_naloga"] != null)) {
+                    base.Tables.Add(new status_nalogaDataTable(ds.Tables["status_naloga"]));
                 }
-                if ((ds.Tables["tbl_vozilo"] != null)) {
-                    base.Tables.Add(new tbl_voziloDataTable(ds.Tables["tbl_vozilo"]));
+                if ((ds.Tables["vozilo"] != null)) {
+                    base.Tables.Add(new voziloDataTable(ds.Tables["vozilo"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -121,9 +121,9 @@ namespace PutniNalozi.NET {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_dodatni_troskoviDataTable tbl_dodatni_troskovi {
+        public dodatni_troskoviDataTable dodatni_troskovi {
             get {
-                return this.tabletbl_dodatni_troskovi;
+                return this.tabledodatni_troskovi;
             }
         }
         
@@ -131,9 +131,9 @@ namespace PutniNalozi.NET {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_izvjestajDataTable tbl_izvjestaj {
+        public izvjestajDataTable izvjestaj {
             get {
-                return this.tabletbl_izvjestaj;
+                return this.tableizvjestaj;
             }
         }
         
@@ -141,9 +141,9 @@ namespace PutniNalozi.NET {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_prijevozni_troskoviDataTable tbl_prijevozni_troskovi {
+        public prijevozni_troskoviDataTable prijevozni_troskovi {
             get {
-                return this.tabletbl_prijevozni_troskovi;
+                return this.tableprijevozni_troskovi;
             }
         }
         
@@ -151,9 +151,9 @@ namespace PutniNalozi.NET {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_putni_nalogDataTable tbl_putni_nalog {
+        public putni_nalogDataTable putni_nalog {
             get {
-                return this.tabletbl_putni_nalog;
+                return this.tableputni_nalog;
             }
         }
         
@@ -161,9 +161,9 @@ namespace PutniNalozi.NET {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_putni_racunDataTable tbl_putni_racun {
+        public putni_racunDataTable putni_racun {
             get {
-                return this.tabletbl_putni_racun;
+                return this.tableputni_racun;
             }
         }
         
@@ -171,9 +171,9 @@ namespace PutniNalozi.NET {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_status_nalogaDataTable tbl_status_naloga {
+        public status_nalogaDataTable status_naloga {
             get {
-                return this.tabletbl_status_naloga;
+                return this.tablestatus_naloga;
             }
         }
         
@@ -181,9 +181,9 @@ namespace PutniNalozi.NET {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public tbl_voziloDataTable tbl_vozilo {
+        public voziloDataTable vozilo {
             get {
-                return this.tabletbl_vozilo;
+                return this.tablevozilo;
             }
         }
         
@@ -254,26 +254,26 @@ namespace PutniNalozi.NET {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["tbl_dodatni_troskovi"] != null)) {
-                    base.Tables.Add(new tbl_dodatni_troskoviDataTable(ds.Tables["tbl_dodatni_troskovi"]));
+                if ((ds.Tables["dodatni_troskovi"] != null)) {
+                    base.Tables.Add(new dodatni_troskoviDataTable(ds.Tables["dodatni_troskovi"]));
                 }
-                if ((ds.Tables["tbl_izvjestaj"] != null)) {
-                    base.Tables.Add(new tbl_izvjestajDataTable(ds.Tables["tbl_izvjestaj"]));
+                if ((ds.Tables["izvjestaj"] != null)) {
+                    base.Tables.Add(new izvjestajDataTable(ds.Tables["izvjestaj"]));
                 }
-                if ((ds.Tables["tbl_prijevozni_troskovi"] != null)) {
-                    base.Tables.Add(new tbl_prijevozni_troskoviDataTable(ds.Tables["tbl_prijevozni_troskovi"]));
+                if ((ds.Tables["prijevozni_troskovi"] != null)) {
+                    base.Tables.Add(new prijevozni_troskoviDataTable(ds.Tables["prijevozni_troskovi"]));
                 }
-                if ((ds.Tables["tbl_putni_nalog"] != null)) {
-                    base.Tables.Add(new tbl_putni_nalogDataTable(ds.Tables["tbl_putni_nalog"]));
+                if ((ds.Tables["putni_nalog"] != null)) {
+                    base.Tables.Add(new putni_nalogDataTable(ds.Tables["putni_nalog"]));
                 }
-                if ((ds.Tables["tbl_putni_racun"] != null)) {
-                    base.Tables.Add(new tbl_putni_racunDataTable(ds.Tables["tbl_putni_racun"]));
+                if ((ds.Tables["putni_racun"] != null)) {
+                    base.Tables.Add(new putni_racunDataTable(ds.Tables["putni_racun"]));
                 }
-                if ((ds.Tables["tbl_status_naloga"] != null)) {
-                    base.Tables.Add(new tbl_status_nalogaDataTable(ds.Tables["tbl_status_naloga"]));
+                if ((ds.Tables["status_naloga"] != null)) {
+                    base.Tables.Add(new status_nalogaDataTable(ds.Tables["status_naloga"]));
                 }
-                if ((ds.Tables["tbl_vozilo"] != null)) {
-                    base.Tables.Add(new tbl_voziloDataTable(ds.Tables["tbl_vozilo"]));
+                if ((ds.Tables["vozilo"] != null)) {
+                    base.Tables.Add(new voziloDataTable(ds.Tables["vozilo"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -308,46 +308,46 @@ namespace PutniNalozi.NET {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tabletbl_dodatni_troskovi = ((tbl_dodatni_troskoviDataTable)(base.Tables["tbl_dodatni_troskovi"]));
+            this.tabledodatni_troskovi = ((dodatni_troskoviDataTable)(base.Tables["dodatni_troskovi"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_dodatni_troskovi != null)) {
-                    this.tabletbl_dodatni_troskovi.InitVars();
+                if ((this.tabledodatni_troskovi != null)) {
+                    this.tabledodatni_troskovi.InitVars();
                 }
             }
-            this.tabletbl_izvjestaj = ((tbl_izvjestajDataTable)(base.Tables["tbl_izvjestaj"]));
+            this.tableizvjestaj = ((izvjestajDataTable)(base.Tables["izvjestaj"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_izvjestaj != null)) {
-                    this.tabletbl_izvjestaj.InitVars();
+                if ((this.tableizvjestaj != null)) {
+                    this.tableizvjestaj.InitVars();
                 }
             }
-            this.tabletbl_prijevozni_troskovi = ((tbl_prijevozni_troskoviDataTable)(base.Tables["tbl_prijevozni_troskovi"]));
+            this.tableprijevozni_troskovi = ((prijevozni_troskoviDataTable)(base.Tables["prijevozni_troskovi"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_prijevozni_troskovi != null)) {
-                    this.tabletbl_prijevozni_troskovi.InitVars();
+                if ((this.tableprijevozni_troskovi != null)) {
+                    this.tableprijevozni_troskovi.InitVars();
                 }
             }
-            this.tabletbl_putni_nalog = ((tbl_putni_nalogDataTable)(base.Tables["tbl_putni_nalog"]));
+            this.tableputni_nalog = ((putni_nalogDataTable)(base.Tables["putni_nalog"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_putni_nalog != null)) {
-                    this.tabletbl_putni_nalog.InitVars();
+                if ((this.tableputni_nalog != null)) {
+                    this.tableputni_nalog.InitVars();
                 }
             }
-            this.tabletbl_putni_racun = ((tbl_putni_racunDataTable)(base.Tables["tbl_putni_racun"]));
+            this.tableputni_racun = ((putni_racunDataTable)(base.Tables["putni_racun"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_putni_racun != null)) {
-                    this.tabletbl_putni_racun.InitVars();
+                if ((this.tableputni_racun != null)) {
+                    this.tableputni_racun.InitVars();
                 }
             }
-            this.tabletbl_status_naloga = ((tbl_status_nalogaDataTable)(base.Tables["tbl_status_naloga"]));
+            this.tablestatus_naloga = ((status_nalogaDataTable)(base.Tables["status_naloga"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_status_naloga != null)) {
-                    this.tabletbl_status_naloga.InitVars();
+                if ((this.tablestatus_naloga != null)) {
+                    this.tablestatus_naloga.InitVars();
                 }
             }
-            this.tabletbl_vozilo = ((tbl_voziloDataTable)(base.Tables["tbl_vozilo"]));
+            this.tablevozilo = ((voziloDataTable)(base.Tables["vozilo"]));
             if ((initTable == true)) {
-                if ((this.tabletbl_vozilo != null)) {
-                    this.tabletbl_vozilo.InitVars();
+                if ((this.tablevozilo != null)) {
+                    this.tablevozilo.InitVars();
                 }
             }
             this.relationFK_dodatni_troskovi_pripada_putni_racun = this.Relations["FK_dodatni_troskovi_pripada_putni_racun"];
@@ -366,85 +366,85 @@ namespace PutniNalozi.NET {
             this.Namespace = "http://tempuri.org/piDB9DS.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tabletbl_dodatni_troskovi = new tbl_dodatni_troskoviDataTable();
-            base.Tables.Add(this.tabletbl_dodatni_troskovi);
-            this.tabletbl_izvjestaj = new tbl_izvjestajDataTable();
-            base.Tables.Add(this.tabletbl_izvjestaj);
-            this.tabletbl_prijevozni_troskovi = new tbl_prijevozni_troskoviDataTable();
-            base.Tables.Add(this.tabletbl_prijevozni_troskovi);
-            this.tabletbl_putni_nalog = new tbl_putni_nalogDataTable();
-            base.Tables.Add(this.tabletbl_putni_nalog);
-            this.tabletbl_putni_racun = new tbl_putni_racunDataTable();
-            base.Tables.Add(this.tabletbl_putni_racun);
-            this.tabletbl_status_naloga = new tbl_status_nalogaDataTable();
-            base.Tables.Add(this.tabletbl_status_naloga);
-            this.tabletbl_vozilo = new tbl_voziloDataTable();
-            base.Tables.Add(this.tabletbl_vozilo);
+            this.tabledodatni_troskovi = new dodatni_troskoviDataTable();
+            base.Tables.Add(this.tabledodatni_troskovi);
+            this.tableizvjestaj = new izvjestajDataTable();
+            base.Tables.Add(this.tableizvjestaj);
+            this.tableprijevozni_troskovi = new prijevozni_troskoviDataTable();
+            base.Tables.Add(this.tableprijevozni_troskovi);
+            this.tableputni_nalog = new putni_nalogDataTable();
+            base.Tables.Add(this.tableputni_nalog);
+            this.tableputni_racun = new putni_racunDataTable();
+            base.Tables.Add(this.tableputni_racun);
+            this.tablestatus_naloga = new status_nalogaDataTable();
+            base.Tables.Add(this.tablestatus_naloga);
+            this.tablevozilo = new voziloDataTable();
+            base.Tables.Add(this.tablevozilo);
             this.relationFK_dodatni_troskovi_pripada_putni_racun = new global::System.Data.DataRelation("FK_dodatni_troskovi_pripada_putni_racun", new global::System.Data.DataColumn[] {
-                        this.tabletbl_putni_racun.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tabletbl_dodatni_troskovi.putni_racun_idColumn}, false);
+                        this.tableputni_racun.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tabledodatni_troskovi.putni_racun_idColumn}, false);
             this.Relations.Add(this.relationFK_dodatni_troskovi_pripada_putni_racun);
             this.relationFK_izvjestaj_pripada_putni_nalog = new global::System.Data.DataRelation("FK_izvjestaj_pripada_putni_nalog", new global::System.Data.DataColumn[] {
-                        this.tabletbl_putni_nalog.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tabletbl_izvjestaj.putni_nalog_idColumn}, false);
+                        this.tableputni_nalog.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableizvjestaj.putni_nalog_idColumn}, false);
             this.Relations.Add(this.relationFK_izvjestaj_pripada_putni_nalog);
             this.relationFK_prijevozni_troskovi_za_putni_racun = new global::System.Data.DataRelation("FK_prijevozni_troskovi_za_putni_racun", new global::System.Data.DataColumn[] {
-                        this.tabletbl_putni_racun.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tabletbl_prijevozni_troskovi.putni_racun_idColumn}, false);
+                        this.tableputni_racun.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableprijevozni_troskovi.putni_racun_idColumn}, false);
             this.Relations.Add(this.relationFK_prijevozni_troskovi_za_putni_racun);
             this.relationFK_putni_nalog_ima_status = new global::System.Data.DataRelation("FK_putni_nalog_ima_status", new global::System.Data.DataColumn[] {
-                        this.tabletbl_status_naloga.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tabletbl_putni_nalog.status_idColumn}, false);
+                        this.tablestatus_naloga.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableputni_nalog.status_idColumn}, false);
             this.Relations.Add(this.relationFK_putni_nalog_ima_status);
             this.relationFK_putni_nalog_koristi_vozilo = new global::System.Data.DataRelation("FK_putni_nalog_koristi_vozilo", new global::System.Data.DataColumn[] {
-                        this.tabletbl_vozilo.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tabletbl_putni_nalog.vozilo_idColumn}, false);
+                        this.tablevozilo.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableputni_nalog.vozilo_idColumn}, false);
             this.Relations.Add(this.relationFK_putni_nalog_koristi_vozilo);
             this.relationFK_putni_racun_pripada_putni_nalog = new global::System.Data.DataRelation("FK_putni_racun_pripada_putni_nalog", new global::System.Data.DataColumn[] {
-                        this.tabletbl_putni_nalog.idColumn}, new global::System.Data.DataColumn[] {
-                        this.tabletbl_putni_racun.putni_nalog_idColumn}, false);
+                        this.tableputni_nalog.idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableputni_racun.putni_nalog_idColumn}, false);
             this.Relations.Add(this.relationFK_putni_racun_pripada_putni_nalog);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_dodatni_troskovi() {
+        private bool ShouldSerializedodatni_troskovi() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_izvjestaj() {
+        private bool ShouldSerializeizvjestaj() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_prijevozni_troskovi() {
+        private bool ShouldSerializeprijevozni_troskovi() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_putni_nalog() {
+        private bool ShouldSerializeputni_nalog() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_putni_racun() {
+        private bool ShouldSerializeputni_racun() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_status_naloga() {
+        private bool ShouldSerializestatus_naloga() {
             return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private bool ShouldSerializetbl_vozilo() {
+        private bool ShouldSerializevozilo() {
             return false;
         }
         
@@ -504,32 +504,32 @@ namespace PutniNalozi.NET {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_dodatni_troskoviRowChangeEventHandler(object sender, tbl_dodatni_troskoviRowChangeEvent e);
+        public delegate void dodatni_troskoviRowChangeEventHandler(object sender, dodatni_troskoviRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_izvjestajRowChangeEventHandler(object sender, tbl_izvjestajRowChangeEvent e);
+        public delegate void izvjestajRowChangeEventHandler(object sender, izvjestajRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_prijevozni_troskoviRowChangeEventHandler(object sender, tbl_prijevozni_troskoviRowChangeEvent e);
+        public delegate void prijevozni_troskoviRowChangeEventHandler(object sender, prijevozni_troskoviRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_putni_nalogRowChangeEventHandler(object sender, tbl_putni_nalogRowChangeEvent e);
+        public delegate void putni_nalogRowChangeEventHandler(object sender, putni_nalogRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_putni_racunRowChangeEventHandler(object sender, tbl_putni_racunRowChangeEvent e);
+        public delegate void putni_racunRowChangeEventHandler(object sender, putni_racunRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_status_nalogaRowChangeEventHandler(object sender, tbl_status_nalogaRowChangeEvent e);
+        public delegate void status_nalogaRowChangeEventHandler(object sender, status_nalogaRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public delegate void tbl_voziloRowChangeEventHandler(object sender, tbl_voziloRowChangeEvent e);
+        public delegate void voziloRowChangeEventHandler(object sender, voziloRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_dodatni_troskoviDataTable : global::System.Data.TypedTableBase<tbl_dodatni_troskoviRow> {
+        public partial class dodatni_troskoviDataTable : global::System.Data.TypedTableBase<dodatni_troskoviRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -541,8 +541,8 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_dodatni_troskoviDataTable() {
-                this.TableName = "tbl_dodatni_troskovi";
+            public dodatni_troskoviDataTable() {
+                this.TableName = "dodatni_troskovi";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -550,7 +550,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_dodatni_troskoviDataTable(global::System.Data.DataTable table) {
+            internal dodatni_troskoviDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -567,7 +567,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_dodatni_troskoviDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected dodatni_troskoviDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -615,58 +615,58 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_dodatni_troskoviRow this[int index] {
+            public dodatni_troskoviRow this[int index] {
                 get {
-                    return ((tbl_dodatni_troskoviRow)(this.Rows[index]));
+                    return ((dodatni_troskoviRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_dodatni_troskoviRowChangeEventHandler tbl_dodatni_troskoviRowChanging;
+            public event dodatni_troskoviRowChangeEventHandler dodatni_troskoviRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_dodatni_troskoviRowChangeEventHandler tbl_dodatni_troskoviRowChanged;
+            public event dodatni_troskoviRowChangeEventHandler dodatni_troskoviRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_dodatni_troskoviRowChangeEventHandler tbl_dodatni_troskoviRowDeleting;
+            public event dodatni_troskoviRowChangeEventHandler dodatni_troskoviRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_dodatni_troskoviRowChangeEventHandler tbl_dodatni_troskoviRowDeleted;
+            public event dodatni_troskoviRowChangeEventHandler dodatni_troskoviRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_dodatni_troskoviRow(tbl_dodatni_troskoviRow row) {
+            public void Adddodatni_troskoviRow(dodatni_troskoviRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_dodatni_troskoviRow Addtbl_dodatni_troskoviRow(tbl_putni_racunRow parenttbl_putni_racunRowByFK_dodatni_troskovi_pripada_putni_racun, string opis, double iznos) {
-                tbl_dodatni_troskoviRow rowtbl_dodatni_troskoviRow = ((tbl_dodatni_troskoviRow)(this.NewRow()));
+            public dodatni_troskoviRow Adddodatni_troskoviRow(putni_racunRow parentputni_racunRowByFK_dodatni_troskovi_pripada_putni_racun, string opis, double iznos) {
+                dodatni_troskoviRow rowdodatni_troskoviRow = ((dodatni_troskoviRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         opis,
                         iznos};
-                if ((parenttbl_putni_racunRowByFK_dodatni_troskovi_pripada_putni_racun != null)) {
-                    columnValuesArray[1] = parenttbl_putni_racunRowByFK_dodatni_troskovi_pripada_putni_racun[0];
+                if ((parentputni_racunRowByFK_dodatni_troskovi_pripada_putni_racun != null)) {
+                    columnValuesArray[1] = parentputni_racunRowByFK_dodatni_troskovi_pripada_putni_racun[0];
                 }
-                rowtbl_dodatni_troskoviRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_dodatni_troskoviRow);
-                return rowtbl_dodatni_troskoviRow;
+                rowdodatni_troskoviRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowdodatni_troskoviRow);
+                return rowdodatni_troskoviRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_dodatni_troskoviRow FindByid(int id) {
-                return ((tbl_dodatni_troskoviRow)(this.Rows.Find(new object[] {
+            public dodatni_troskoviRow FindByid(int id) {
+                return ((dodatni_troskoviRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_dodatni_troskoviDataTable cln = ((tbl_dodatni_troskoviDataTable)(base.Clone()));
+                dodatni_troskoviDataTable cln = ((dodatni_troskoviDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -674,7 +674,7 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_dodatni_troskoviDataTable();
+                return new dodatni_troskoviDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -711,28 +711,28 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_dodatni_troskoviRow Newtbl_dodatni_troskoviRow() {
-                return ((tbl_dodatni_troskoviRow)(this.NewRow()));
+            public dodatni_troskoviRow Newdodatni_troskoviRow() {
+                return ((dodatni_troskoviRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_dodatni_troskoviRow(builder);
+                return new dodatni_troskoviRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_dodatni_troskoviRow);
+                return typeof(dodatni_troskoviRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_dodatni_troskoviRowChanged != null)) {
-                    this.tbl_dodatni_troskoviRowChanged(this, new tbl_dodatni_troskoviRowChangeEvent(((tbl_dodatni_troskoviRow)(e.Row)), e.Action));
+                if ((this.dodatni_troskoviRowChanged != null)) {
+                    this.dodatni_troskoviRowChanged(this, new dodatni_troskoviRowChangeEvent(((dodatni_troskoviRow)(e.Row)), e.Action));
                 }
             }
             
@@ -740,8 +740,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_dodatni_troskoviRowChanging != null)) {
-                    this.tbl_dodatni_troskoviRowChanging(this, new tbl_dodatni_troskoviRowChangeEvent(((tbl_dodatni_troskoviRow)(e.Row)), e.Action));
+                if ((this.dodatni_troskoviRowChanging != null)) {
+                    this.dodatni_troskoviRowChanging(this, new dodatni_troskoviRowChangeEvent(((dodatni_troskoviRow)(e.Row)), e.Action));
                 }
             }
             
@@ -749,8 +749,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_dodatni_troskoviRowDeleted != null)) {
-                    this.tbl_dodatni_troskoviRowDeleted(this, new tbl_dodatni_troskoviRowChangeEvent(((tbl_dodatni_troskoviRow)(e.Row)), e.Action));
+                if ((this.dodatni_troskoviRowDeleted != null)) {
+                    this.dodatni_troskoviRowDeleted(this, new dodatni_troskoviRowChangeEvent(((dodatni_troskoviRow)(e.Row)), e.Action));
                 }
             }
             
@@ -758,14 +758,14 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_dodatni_troskoviRowDeleting != null)) {
-                    this.tbl_dodatni_troskoviRowDeleting(this, new tbl_dodatni_troskoviRowChangeEvent(((tbl_dodatni_troskoviRow)(e.Row)), e.Action));
+                if ((this.dodatni_troskoviRowDeleting != null)) {
+                    this.dodatni_troskoviRowDeleting(this, new dodatni_troskoviRowChangeEvent(((dodatni_troskoviRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_dodatni_troskoviRow(tbl_dodatni_troskoviRow row) {
+            public void Removedodatni_troskoviRow(dodatni_troskoviRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -792,7 +792,7 @@ namespace PutniNalozi.NET {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_dodatni_troskoviDataTable";
+                attribute2.FixedValue = "dodatni_troskoviDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -838,7 +838,7 @@ namespace PutniNalozi.NET {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_izvjestajDataTable : global::System.Data.TypedTableBase<tbl_izvjestajRow> {
+        public partial class izvjestajDataTable : global::System.Data.TypedTableBase<izvjestajRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -850,8 +850,8 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_izvjestajDataTable() {
-                this.TableName = "tbl_izvjestaj";
+            public izvjestajDataTable() {
+                this.TableName = "izvjestaj";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -859,7 +859,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_izvjestajDataTable(global::System.Data.DataTable table) {
+            internal izvjestajDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -876,7 +876,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_izvjestajDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected izvjestajDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -924,58 +924,58 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_izvjestajRow this[int index] {
+            public izvjestajRow this[int index] {
                 get {
-                    return ((tbl_izvjestajRow)(this.Rows[index]));
+                    return ((izvjestajRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_izvjestajRowChangeEventHandler tbl_izvjestajRowChanging;
+            public event izvjestajRowChangeEventHandler izvjestajRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_izvjestajRowChangeEventHandler tbl_izvjestajRowChanged;
+            public event izvjestajRowChangeEventHandler izvjestajRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_izvjestajRowChangeEventHandler tbl_izvjestajRowDeleting;
+            public event izvjestajRowChangeEventHandler izvjestajRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_izvjestajRowChangeEventHandler tbl_izvjestajRowDeleted;
+            public event izvjestajRowChangeEventHandler izvjestajRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_izvjestajRow(tbl_izvjestajRow row) {
+            public void AddizvjestajRow(izvjestajRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_izvjestajRow Addtbl_izvjestajRow(tbl_putni_nalogRow parenttbl_putni_nalogRowByFK_izvjestaj_pripada_putni_nalog, string opis, System.DateTime datum_kreiranja) {
-                tbl_izvjestajRow rowtbl_izvjestajRow = ((tbl_izvjestajRow)(this.NewRow()));
+            public izvjestajRow AddizvjestajRow(putni_nalogRow parentputni_nalogRowByFK_izvjestaj_pripada_putni_nalog, string opis, System.DateTime datum_kreiranja) {
+                izvjestajRow rowizvjestajRow = ((izvjestajRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         opis,
                         datum_kreiranja};
-                if ((parenttbl_putni_nalogRowByFK_izvjestaj_pripada_putni_nalog != null)) {
-                    columnValuesArray[1] = parenttbl_putni_nalogRowByFK_izvjestaj_pripada_putni_nalog[0];
+                if ((parentputni_nalogRowByFK_izvjestaj_pripada_putni_nalog != null)) {
+                    columnValuesArray[1] = parentputni_nalogRowByFK_izvjestaj_pripada_putni_nalog[0];
                 }
-                rowtbl_izvjestajRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_izvjestajRow);
-                return rowtbl_izvjestajRow;
+                rowizvjestajRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowizvjestajRow);
+                return rowizvjestajRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_izvjestajRow FindByid(int id) {
-                return ((tbl_izvjestajRow)(this.Rows.Find(new object[] {
+            public izvjestajRow FindByid(int id) {
+                return ((izvjestajRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_izvjestajDataTable cln = ((tbl_izvjestajDataTable)(base.Clone()));
+                izvjestajDataTable cln = ((izvjestajDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -983,7 +983,7 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_izvjestajDataTable();
+                return new izvjestajDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1020,28 +1020,28 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_izvjestajRow Newtbl_izvjestajRow() {
-                return ((tbl_izvjestajRow)(this.NewRow()));
+            public izvjestajRow NewizvjestajRow() {
+                return ((izvjestajRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_izvjestajRow(builder);
+                return new izvjestajRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_izvjestajRow);
+                return typeof(izvjestajRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_izvjestajRowChanged != null)) {
-                    this.tbl_izvjestajRowChanged(this, new tbl_izvjestajRowChangeEvent(((tbl_izvjestajRow)(e.Row)), e.Action));
+                if ((this.izvjestajRowChanged != null)) {
+                    this.izvjestajRowChanged(this, new izvjestajRowChangeEvent(((izvjestajRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1049,8 +1049,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_izvjestajRowChanging != null)) {
-                    this.tbl_izvjestajRowChanging(this, new tbl_izvjestajRowChangeEvent(((tbl_izvjestajRow)(e.Row)), e.Action));
+                if ((this.izvjestajRowChanging != null)) {
+                    this.izvjestajRowChanging(this, new izvjestajRowChangeEvent(((izvjestajRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1058,8 +1058,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_izvjestajRowDeleted != null)) {
-                    this.tbl_izvjestajRowDeleted(this, new tbl_izvjestajRowChangeEvent(((tbl_izvjestajRow)(e.Row)), e.Action));
+                if ((this.izvjestajRowDeleted != null)) {
+                    this.izvjestajRowDeleted(this, new izvjestajRowChangeEvent(((izvjestajRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1067,14 +1067,14 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_izvjestajRowDeleting != null)) {
-                    this.tbl_izvjestajRowDeleting(this, new tbl_izvjestajRowChangeEvent(((tbl_izvjestajRow)(e.Row)), e.Action));
+                if ((this.izvjestajRowDeleting != null)) {
+                    this.izvjestajRowDeleting(this, new izvjestajRowChangeEvent(((izvjestajRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_izvjestajRow(tbl_izvjestajRow row) {
+            public void RemoveizvjestajRow(izvjestajRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1101,7 +1101,7 @@ namespace PutniNalozi.NET {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_izvjestajDataTable";
+                attribute2.FixedValue = "izvjestajDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1147,7 +1147,7 @@ namespace PutniNalozi.NET {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_prijevozni_troskoviDataTable : global::System.Data.TypedTableBase<tbl_prijevozni_troskoviRow> {
+        public partial class prijevozni_troskoviDataTable : global::System.Data.TypedTableBase<prijevozni_troskoviRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -1163,8 +1163,8 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_prijevozni_troskoviDataTable() {
-                this.TableName = "tbl_prijevozni_troskovi";
+            public prijevozni_troskoviDataTable() {
+                this.TableName = "prijevozni_troskovi";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1172,7 +1172,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_prijevozni_troskoviDataTable(global::System.Data.DataTable table) {
+            internal prijevozni_troskoviDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1189,7 +1189,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_prijevozni_troskoviDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected prijevozni_troskoviDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1253,34 +1253,34 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_prijevozni_troskoviRow this[int index] {
+            public prijevozni_troskoviRow this[int index] {
                 get {
-                    return ((tbl_prijevozni_troskoviRow)(this.Rows[index]));
+                    return ((prijevozni_troskoviRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_prijevozni_troskoviRowChangeEventHandler tbl_prijevozni_troskoviRowChanging;
+            public event prijevozni_troskoviRowChangeEventHandler prijevozni_troskoviRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_prijevozni_troskoviRowChangeEventHandler tbl_prijevozni_troskoviRowChanged;
+            public event prijevozni_troskoviRowChangeEventHandler prijevozni_troskoviRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_prijevozni_troskoviRowChangeEventHandler tbl_prijevozni_troskoviRowDeleting;
+            public event prijevozni_troskoviRowChangeEventHandler prijevozni_troskoviRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_prijevozni_troskoviRowChangeEventHandler tbl_prijevozni_troskoviRowDeleted;
+            public event prijevozni_troskoviRowChangeEventHandler prijevozni_troskoviRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_prijevozni_troskoviRow(tbl_prijevozni_troskoviRow row) {
+            public void Addprijevozni_troskoviRow(prijevozni_troskoviRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_prijevozni_troskoviRow Addtbl_prijevozni_troskoviRow(tbl_putni_racunRow parenttbl_putni_racunRowByFK_prijevozni_troskovi_za_putni_racun, string relacija_od, string relacija_do, double iznos, string prijevozno_sredstvo) {
-                tbl_prijevozni_troskoviRow rowtbl_prijevozni_troskoviRow = ((tbl_prijevozni_troskoviRow)(this.NewRow()));
+            public prijevozni_troskoviRow Addprijevozni_troskoviRow(putni_racunRow parentputni_racunRowByFK_prijevozni_troskovi_za_putni_racun, string relacija_od, string relacija_do, double iznos, string prijevozno_sredstvo) {
+                prijevozni_troskoviRow rowprijevozni_troskoviRow = ((prijevozni_troskoviRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
@@ -1288,25 +1288,25 @@ namespace PutniNalozi.NET {
                         relacija_do,
                         iznos,
                         prijevozno_sredstvo};
-                if ((parenttbl_putni_racunRowByFK_prijevozni_troskovi_za_putni_racun != null)) {
-                    columnValuesArray[1] = parenttbl_putni_racunRowByFK_prijevozni_troskovi_za_putni_racun[0];
+                if ((parentputni_racunRowByFK_prijevozni_troskovi_za_putni_racun != null)) {
+                    columnValuesArray[1] = parentputni_racunRowByFK_prijevozni_troskovi_za_putni_racun[0];
                 }
-                rowtbl_prijevozni_troskoviRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_prijevozni_troskoviRow);
-                return rowtbl_prijevozni_troskoviRow;
+                rowprijevozni_troskoviRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowprijevozni_troskoviRow);
+                return rowprijevozni_troskoviRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_prijevozni_troskoviRow FindByid(int id) {
-                return ((tbl_prijevozni_troskoviRow)(this.Rows.Find(new object[] {
+            public prijevozni_troskoviRow FindByid(int id) {
+                return ((prijevozni_troskoviRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_prijevozni_troskoviDataTable cln = ((tbl_prijevozni_troskoviDataTable)(base.Clone()));
+                prijevozni_troskoviDataTable cln = ((prijevozni_troskoviDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1314,7 +1314,7 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_prijevozni_troskoviDataTable();
+                return new prijevozni_troskoviDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1361,28 +1361,28 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_prijevozni_troskoviRow Newtbl_prijevozni_troskoviRow() {
-                return ((tbl_prijevozni_troskoviRow)(this.NewRow()));
+            public prijevozni_troskoviRow Newprijevozni_troskoviRow() {
+                return ((prijevozni_troskoviRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_prijevozni_troskoviRow(builder);
+                return new prijevozni_troskoviRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_prijevozni_troskoviRow);
+                return typeof(prijevozni_troskoviRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_prijevozni_troskoviRowChanged != null)) {
-                    this.tbl_prijevozni_troskoviRowChanged(this, new tbl_prijevozni_troskoviRowChangeEvent(((tbl_prijevozni_troskoviRow)(e.Row)), e.Action));
+                if ((this.prijevozni_troskoviRowChanged != null)) {
+                    this.prijevozni_troskoviRowChanged(this, new prijevozni_troskoviRowChangeEvent(((prijevozni_troskoviRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1390,8 +1390,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_prijevozni_troskoviRowChanging != null)) {
-                    this.tbl_prijevozni_troskoviRowChanging(this, new tbl_prijevozni_troskoviRowChangeEvent(((tbl_prijevozni_troskoviRow)(e.Row)), e.Action));
+                if ((this.prijevozni_troskoviRowChanging != null)) {
+                    this.prijevozni_troskoviRowChanging(this, new prijevozni_troskoviRowChangeEvent(((prijevozni_troskoviRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1399,8 +1399,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_prijevozni_troskoviRowDeleted != null)) {
-                    this.tbl_prijevozni_troskoviRowDeleted(this, new tbl_prijevozni_troskoviRowChangeEvent(((tbl_prijevozni_troskoviRow)(e.Row)), e.Action));
+                if ((this.prijevozni_troskoviRowDeleted != null)) {
+                    this.prijevozni_troskoviRowDeleted(this, new prijevozni_troskoviRowChangeEvent(((prijevozni_troskoviRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1408,14 +1408,14 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_prijevozni_troskoviRowDeleting != null)) {
-                    this.tbl_prijevozni_troskoviRowDeleting(this, new tbl_prijevozni_troskoviRowChangeEvent(((tbl_prijevozni_troskoviRow)(e.Row)), e.Action));
+                if ((this.prijevozni_troskoviRowDeleting != null)) {
+                    this.prijevozni_troskoviRowDeleting(this, new prijevozni_troskoviRowChangeEvent(((prijevozni_troskoviRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_prijevozni_troskoviRow(tbl_prijevozni_troskoviRow row) {
+            public void Removeprijevozni_troskoviRow(prijevozni_troskoviRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1442,7 +1442,7 @@ namespace PutniNalozi.NET {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_prijevozni_troskoviDataTable";
+                attribute2.FixedValue = "prijevozni_troskoviDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1488,7 +1488,7 @@ namespace PutniNalozi.NET {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_putni_nalogDataTable : global::System.Data.TypedTableBase<tbl_putni_nalogRow> {
+        public partial class putni_nalogDataTable : global::System.Data.TypedTableBase<putni_nalogRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -1516,8 +1516,8 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogDataTable() {
-                this.TableName = "tbl_putni_nalog";
+            public putni_nalogDataTable() {
+                this.TableName = "putni_nalog";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1525,7 +1525,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_putni_nalogDataTable(global::System.Data.DataTable table) {
+            internal putni_nalogDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1542,7 +1542,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_putni_nalogDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected putni_nalogDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1654,34 +1654,34 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow this[int index] {
+            public putni_nalogRow this[int index] {
                 get {
-                    return ((tbl_putni_nalogRow)(this.Rows[index]));
+                    return ((putni_nalogRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_putni_nalogRowChangeEventHandler tbl_putni_nalogRowChanging;
+            public event putni_nalogRowChangeEventHandler putni_nalogRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_putni_nalogRowChangeEventHandler tbl_putni_nalogRowChanged;
+            public event putni_nalogRowChangeEventHandler putni_nalogRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_putni_nalogRowChangeEventHandler tbl_putni_nalogRowDeleting;
+            public event putni_nalogRowChangeEventHandler putni_nalogRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_putni_nalogRowChangeEventHandler tbl_putni_nalogRowDeleted;
+            public event putni_nalogRowChangeEventHandler putni_nalogRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_putni_nalogRow(tbl_putni_nalogRow row) {
+            public void Addputni_nalogRow(putni_nalogRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow Addtbl_putni_nalogRow(System.DateTime datum_kreiranja, tbl_status_nalogaRow parenttbl_status_nalogaRowByFK_putni_nalog_ima_status, string odrediste, string svrha, System.DateTime datum_polaska, System.DateTime trajanje, string zahtjevatelj, string odobravatelj, string katedra, string ustanova, tbl_voziloRow parenttbl_voziloRowByFK_putni_nalog_koristi_vozilo) {
-                tbl_putni_nalogRow rowtbl_putni_nalogRow = ((tbl_putni_nalogRow)(this.NewRow()));
+            public putni_nalogRow Addputni_nalogRow(System.DateTime datum_kreiranja, status_nalogaRow parentstatus_nalogaRowByFK_putni_nalog_ima_status, string odrediste, string svrha, System.DateTime datum_polaska, System.DateTime trajanje, string zahtjevatelj, string odobravatelj, string katedra, string ustanova, voziloRow parentvoziloRowByFK_putni_nalog_koristi_vozilo) {
+                putni_nalogRow rowputni_nalogRow = ((putni_nalogRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         datum_kreiranja,
@@ -1695,28 +1695,28 @@ namespace PutniNalozi.NET {
                         katedra,
                         ustanova,
                         null};
-                if ((parenttbl_status_nalogaRowByFK_putni_nalog_ima_status != null)) {
-                    columnValuesArray[2] = parenttbl_status_nalogaRowByFK_putni_nalog_ima_status[0];
+                if ((parentstatus_nalogaRowByFK_putni_nalog_ima_status != null)) {
+                    columnValuesArray[2] = parentstatus_nalogaRowByFK_putni_nalog_ima_status[0];
                 }
-                if ((parenttbl_voziloRowByFK_putni_nalog_koristi_vozilo != null)) {
-                    columnValuesArray[11] = parenttbl_voziloRowByFK_putni_nalog_koristi_vozilo[0];
+                if ((parentvoziloRowByFK_putni_nalog_koristi_vozilo != null)) {
+                    columnValuesArray[11] = parentvoziloRowByFK_putni_nalog_koristi_vozilo[0];
                 }
-                rowtbl_putni_nalogRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_putni_nalogRow);
-                return rowtbl_putni_nalogRow;
+                rowputni_nalogRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowputni_nalogRow);
+                return rowputni_nalogRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow FindByid(int id) {
-                return ((tbl_putni_nalogRow)(this.Rows.Find(new object[] {
+            public putni_nalogRow FindByid(int id) {
+                return ((putni_nalogRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_putni_nalogDataTable cln = ((tbl_putni_nalogDataTable)(base.Clone()));
+                putni_nalogDataTable cln = ((putni_nalogDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -1724,7 +1724,7 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_putni_nalogDataTable();
+                return new putni_nalogDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1792,28 +1792,28 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow Newtbl_putni_nalogRow() {
-                return ((tbl_putni_nalogRow)(this.NewRow()));
+            public putni_nalogRow Newputni_nalogRow() {
+                return ((putni_nalogRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_putni_nalogRow(builder);
+                return new putni_nalogRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_putni_nalogRow);
+                return typeof(putni_nalogRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_putni_nalogRowChanged != null)) {
-                    this.tbl_putni_nalogRowChanged(this, new tbl_putni_nalogRowChangeEvent(((tbl_putni_nalogRow)(e.Row)), e.Action));
+                if ((this.putni_nalogRowChanged != null)) {
+                    this.putni_nalogRowChanged(this, new putni_nalogRowChangeEvent(((putni_nalogRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1821,8 +1821,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_putni_nalogRowChanging != null)) {
-                    this.tbl_putni_nalogRowChanging(this, new tbl_putni_nalogRowChangeEvent(((tbl_putni_nalogRow)(e.Row)), e.Action));
+                if ((this.putni_nalogRowChanging != null)) {
+                    this.putni_nalogRowChanging(this, new putni_nalogRowChangeEvent(((putni_nalogRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1830,8 +1830,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_putni_nalogRowDeleted != null)) {
-                    this.tbl_putni_nalogRowDeleted(this, new tbl_putni_nalogRowChangeEvent(((tbl_putni_nalogRow)(e.Row)), e.Action));
+                if ((this.putni_nalogRowDeleted != null)) {
+                    this.putni_nalogRowDeleted(this, new putni_nalogRowChangeEvent(((putni_nalogRow)(e.Row)), e.Action));
                 }
             }
             
@@ -1839,14 +1839,14 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_putni_nalogRowDeleting != null)) {
-                    this.tbl_putni_nalogRowDeleting(this, new tbl_putni_nalogRowChangeEvent(((tbl_putni_nalogRow)(e.Row)), e.Action));
+                if ((this.putni_nalogRowDeleting != null)) {
+                    this.putni_nalogRowDeleting(this, new putni_nalogRowChangeEvent(((putni_nalogRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_putni_nalogRow(tbl_putni_nalogRow row) {
+            public void Removeputni_nalogRow(putni_nalogRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -1873,7 +1873,7 @@ namespace PutniNalozi.NET {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_putni_nalogDataTable";
+                attribute2.FixedValue = "putni_nalogDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -1919,7 +1919,7 @@ namespace PutniNalozi.NET {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_putni_racunDataTable : global::System.Data.TypedTableBase<tbl_putni_racunRow> {
+        public partial class putni_racunDataTable : global::System.Data.TypedTableBase<putni_racunRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -1929,8 +1929,8 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunDataTable() {
-                this.TableName = "tbl_putni_racun";
+            public putni_racunDataTable() {
+                this.TableName = "putni_racun";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -1938,7 +1938,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_putni_racunDataTable(global::System.Data.DataTable table) {
+            internal putni_racunDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -1955,7 +1955,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_putni_racunDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected putni_racunDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -1995,57 +1995,57 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRow this[int index] {
+            public putni_racunRow this[int index] {
                 get {
-                    return ((tbl_putni_racunRow)(this.Rows[index]));
+                    return ((putni_racunRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_putni_racunRowChangeEventHandler tbl_putni_racunRowChanging;
+            public event putni_racunRowChangeEventHandler putni_racunRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_putni_racunRowChangeEventHandler tbl_putni_racunRowChanged;
+            public event putni_racunRowChangeEventHandler putni_racunRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_putni_racunRowChangeEventHandler tbl_putni_racunRowDeleting;
+            public event putni_racunRowChangeEventHandler putni_racunRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_putni_racunRowChangeEventHandler tbl_putni_racunRowDeleted;
+            public event putni_racunRowChangeEventHandler putni_racunRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_putni_racunRow(tbl_putni_racunRow row) {
+            public void Addputni_racunRow(putni_racunRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRow Addtbl_putni_racunRow(tbl_putni_nalogRow parenttbl_putni_nalogRowByFK_putni_racun_pripada_putni_nalog, System.DateTime datum_kreiranja) {
-                tbl_putni_racunRow rowtbl_putni_racunRow = ((tbl_putni_racunRow)(this.NewRow()));
+            public putni_racunRow Addputni_racunRow(putni_nalogRow parentputni_nalogRowByFK_putni_racun_pripada_putni_nalog, System.DateTime datum_kreiranja) {
+                putni_racunRow rowputni_racunRow = ((putni_racunRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         null,
                         datum_kreiranja};
-                if ((parenttbl_putni_nalogRowByFK_putni_racun_pripada_putni_nalog != null)) {
-                    columnValuesArray[1] = parenttbl_putni_nalogRowByFK_putni_racun_pripada_putni_nalog[0];
+                if ((parentputni_nalogRowByFK_putni_racun_pripada_putni_nalog != null)) {
+                    columnValuesArray[1] = parentputni_nalogRowByFK_putni_racun_pripada_putni_nalog[0];
                 }
-                rowtbl_putni_racunRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_putni_racunRow);
-                return rowtbl_putni_racunRow;
+                rowputni_racunRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowputni_racunRow);
+                return rowputni_racunRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRow FindByid(int id) {
-                return ((tbl_putni_racunRow)(this.Rows.Find(new object[] {
+            public putni_racunRow FindByid(int id) {
+                return ((putni_racunRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_putni_racunDataTable cln = ((tbl_putni_racunDataTable)(base.Clone()));
+                putni_racunDataTable cln = ((putni_racunDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -2053,7 +2053,7 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_putni_racunDataTable();
+                return new putni_racunDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2086,28 +2086,28 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRow Newtbl_putni_racunRow() {
-                return ((tbl_putni_racunRow)(this.NewRow()));
+            public putni_racunRow Newputni_racunRow() {
+                return ((putni_racunRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_putni_racunRow(builder);
+                return new putni_racunRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_putni_racunRow);
+                return typeof(putni_racunRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_putni_racunRowChanged != null)) {
-                    this.tbl_putni_racunRowChanged(this, new tbl_putni_racunRowChangeEvent(((tbl_putni_racunRow)(e.Row)), e.Action));
+                if ((this.putni_racunRowChanged != null)) {
+                    this.putni_racunRowChanged(this, new putni_racunRowChangeEvent(((putni_racunRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2115,8 +2115,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_putni_racunRowChanging != null)) {
-                    this.tbl_putni_racunRowChanging(this, new tbl_putni_racunRowChangeEvent(((tbl_putni_racunRow)(e.Row)), e.Action));
+                if ((this.putni_racunRowChanging != null)) {
+                    this.putni_racunRowChanging(this, new putni_racunRowChangeEvent(((putni_racunRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2124,8 +2124,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_putni_racunRowDeleted != null)) {
-                    this.tbl_putni_racunRowDeleted(this, new tbl_putni_racunRowChangeEvent(((tbl_putni_racunRow)(e.Row)), e.Action));
+                if ((this.putni_racunRowDeleted != null)) {
+                    this.putni_racunRowDeleted(this, new putni_racunRowChangeEvent(((putni_racunRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2133,14 +2133,14 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_putni_racunRowDeleting != null)) {
-                    this.tbl_putni_racunRowDeleting(this, new tbl_putni_racunRowChangeEvent(((tbl_putni_racunRow)(e.Row)), e.Action));
+                if ((this.putni_racunRowDeleting != null)) {
+                    this.putni_racunRowDeleting(this, new putni_racunRowChangeEvent(((putni_racunRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_putni_racunRow(tbl_putni_racunRow row) {
+            public void Removeputni_racunRow(putni_racunRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -2167,7 +2167,7 @@ namespace PutniNalozi.NET {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_putni_racunDataTable";
+                attribute2.FixedValue = "putni_racunDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2213,7 +2213,7 @@ namespace PutniNalozi.NET {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_status_nalogaDataTable : global::System.Data.TypedTableBase<tbl_status_nalogaRow> {
+        public partial class status_nalogaDataTable : global::System.Data.TypedTableBase<status_nalogaRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -2221,8 +2221,8 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_status_nalogaDataTable() {
-                this.TableName = "tbl_status_naloga";
+            public status_nalogaDataTable() {
+                this.TableName = "status_naloga";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2230,7 +2230,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_status_nalogaDataTable(global::System.Data.DataTable table) {
+            internal status_nalogaDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2247,7 +2247,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_status_nalogaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected status_nalogaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -2279,53 +2279,53 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_status_nalogaRow this[int index] {
+            public status_nalogaRow this[int index] {
                 get {
-                    return ((tbl_status_nalogaRow)(this.Rows[index]));
+                    return ((status_nalogaRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_status_nalogaRowChangeEventHandler tbl_status_nalogaRowChanging;
+            public event status_nalogaRowChangeEventHandler status_nalogaRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_status_nalogaRowChangeEventHandler tbl_status_nalogaRowChanged;
+            public event status_nalogaRowChangeEventHandler status_nalogaRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_status_nalogaRowChangeEventHandler tbl_status_nalogaRowDeleting;
+            public event status_nalogaRowChangeEventHandler status_nalogaRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_status_nalogaRowChangeEventHandler tbl_status_nalogaRowDeleted;
+            public event status_nalogaRowChangeEventHandler status_nalogaRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_status_nalogaRow(tbl_status_nalogaRow row) {
+            public void Addstatus_nalogaRow(status_nalogaRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_status_nalogaRow Addtbl_status_nalogaRow(string naziv) {
-                tbl_status_nalogaRow rowtbl_status_nalogaRow = ((tbl_status_nalogaRow)(this.NewRow()));
+            public status_nalogaRow Addstatus_nalogaRow(string naziv) {
+                status_nalogaRow rowstatus_nalogaRow = ((status_nalogaRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         naziv};
-                rowtbl_status_nalogaRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_status_nalogaRow);
-                return rowtbl_status_nalogaRow;
+                rowstatus_nalogaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowstatus_nalogaRow);
+                return rowstatus_nalogaRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_status_nalogaRow FindByid(int id) {
-                return ((tbl_status_nalogaRow)(this.Rows.Find(new object[] {
+            public status_nalogaRow FindByid(int id) {
+                return ((status_nalogaRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_status_nalogaDataTable cln = ((tbl_status_nalogaDataTable)(base.Clone()));
+                status_nalogaDataTable cln = ((status_nalogaDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -2333,7 +2333,7 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_status_nalogaDataTable();
+                return new status_nalogaDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2364,28 +2364,28 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_status_nalogaRow Newtbl_status_nalogaRow() {
-                return ((tbl_status_nalogaRow)(this.NewRow()));
+            public status_nalogaRow Newstatus_nalogaRow() {
+                return ((status_nalogaRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_status_nalogaRow(builder);
+                return new status_nalogaRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_status_nalogaRow);
+                return typeof(status_nalogaRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_status_nalogaRowChanged != null)) {
-                    this.tbl_status_nalogaRowChanged(this, new tbl_status_nalogaRowChangeEvent(((tbl_status_nalogaRow)(e.Row)), e.Action));
+                if ((this.status_nalogaRowChanged != null)) {
+                    this.status_nalogaRowChanged(this, new status_nalogaRowChangeEvent(((status_nalogaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2393,8 +2393,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_status_nalogaRowChanging != null)) {
-                    this.tbl_status_nalogaRowChanging(this, new tbl_status_nalogaRowChangeEvent(((tbl_status_nalogaRow)(e.Row)), e.Action));
+                if ((this.status_nalogaRowChanging != null)) {
+                    this.status_nalogaRowChanging(this, new status_nalogaRowChangeEvent(((status_nalogaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2402,8 +2402,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_status_nalogaRowDeleted != null)) {
-                    this.tbl_status_nalogaRowDeleted(this, new tbl_status_nalogaRowChangeEvent(((tbl_status_nalogaRow)(e.Row)), e.Action));
+                if ((this.status_nalogaRowDeleted != null)) {
+                    this.status_nalogaRowDeleted(this, new status_nalogaRowChangeEvent(((status_nalogaRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2411,14 +2411,14 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_status_nalogaRowDeleting != null)) {
-                    this.tbl_status_nalogaRowDeleting(this, new tbl_status_nalogaRowChangeEvent(((tbl_status_nalogaRow)(e.Row)), e.Action));
+                if ((this.status_nalogaRowDeleting != null)) {
+                    this.status_nalogaRowDeleting(this, new status_nalogaRowChangeEvent(((status_nalogaRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_status_nalogaRow(tbl_status_nalogaRow row) {
+            public void Removestatus_nalogaRow(status_nalogaRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -2445,7 +2445,7 @@ namespace PutniNalozi.NET {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_status_nalogaDataTable";
+                attribute2.FixedValue = "status_nalogaDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2491,7 +2491,7 @@ namespace PutniNalozi.NET {
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class tbl_voziloDataTable : global::System.Data.TypedTableBase<tbl_voziloRow> {
+        public partial class voziloDataTable : global::System.Data.TypedTableBase<voziloRow> {
             
             private global::System.Data.DataColumn columnid;
             
@@ -2503,8 +2503,8 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_voziloDataTable() {
-                this.TableName = "tbl_vozilo";
+            public voziloDataTable() {
+                this.TableName = "vozilo";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -2512,7 +2512,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_voziloDataTable(global::System.Data.DataTable table) {
+            internal voziloDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -2529,7 +2529,7 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            protected tbl_voziloDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected voziloDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -2577,55 +2577,55 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_voziloRow this[int index] {
+            public voziloRow this[int index] {
                 get {
-                    return ((tbl_voziloRow)(this.Rows[index]));
+                    return ((voziloRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_voziloRowChangeEventHandler tbl_voziloRowChanging;
+            public event voziloRowChangeEventHandler voziloRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_voziloRowChangeEventHandler tbl_voziloRowChanged;
+            public event voziloRowChangeEventHandler voziloRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_voziloRowChangeEventHandler tbl_voziloRowDeleting;
+            public event voziloRowChangeEventHandler voziloRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public event tbl_voziloRowChangeEventHandler tbl_voziloRowDeleted;
+            public event voziloRowChangeEventHandler voziloRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Addtbl_voziloRow(tbl_voziloRow row) {
+            public void AddvoziloRow(voziloRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_voziloRow Addtbl_voziloRow(string tip, string marka, string registracija) {
-                tbl_voziloRow rowtbl_voziloRow = ((tbl_voziloRow)(this.NewRow()));
+            public voziloRow AddvoziloRow(string tip, string marka, string registracija) {
+                voziloRow rowvoziloRow = ((voziloRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         tip,
                         marka,
                         registracija};
-                rowtbl_voziloRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowtbl_voziloRow);
-                return rowtbl_voziloRow;
+                rowvoziloRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowvoziloRow);
+                return rowvoziloRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_voziloRow FindByid(int id) {
-                return ((tbl_voziloRow)(this.Rows.Find(new object[] {
+            public voziloRow FindByid(int id) {
+                return ((voziloRow)(this.Rows.Find(new object[] {
                             id})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                tbl_voziloDataTable cln = ((tbl_voziloDataTable)(base.Clone()));
+                voziloDataTable cln = ((voziloDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -2633,7 +2633,7 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new tbl_voziloDataTable();
+                return new voziloDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2674,28 +2674,28 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_voziloRow Newtbl_voziloRow() {
-                return ((tbl_voziloRow)(this.NewRow()));
+            public voziloRow NewvoziloRow() {
+                return ((voziloRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new tbl_voziloRow(builder);
+                return new voziloRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(tbl_voziloRow);
+                return typeof(voziloRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.tbl_voziloRowChanged != null)) {
-                    this.tbl_voziloRowChanged(this, new tbl_voziloRowChangeEvent(((tbl_voziloRow)(e.Row)), e.Action));
+                if ((this.voziloRowChanged != null)) {
+                    this.voziloRowChanged(this, new voziloRowChangeEvent(((voziloRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2703,8 +2703,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.tbl_voziloRowChanging != null)) {
-                    this.tbl_voziloRowChanging(this, new tbl_voziloRowChangeEvent(((tbl_voziloRow)(e.Row)), e.Action));
+                if ((this.voziloRowChanging != null)) {
+                    this.voziloRowChanging(this, new voziloRowChangeEvent(((voziloRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2712,8 +2712,8 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.tbl_voziloRowDeleted != null)) {
-                    this.tbl_voziloRowDeleted(this, new tbl_voziloRowChangeEvent(((tbl_voziloRow)(e.Row)), e.Action));
+                if ((this.voziloRowDeleted != null)) {
+                    this.voziloRowDeleted(this, new voziloRowChangeEvent(((voziloRow)(e.Row)), e.Action));
                 }
             }
             
@@ -2721,14 +2721,14 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.tbl_voziloRowDeleting != null)) {
-                    this.tbl_voziloRowDeleting(this, new tbl_voziloRowChangeEvent(((tbl_voziloRow)(e.Row)), e.Action));
+                if ((this.voziloRowDeleting != null)) {
+                    this.voziloRowDeleting(this, new voziloRowChangeEvent(((voziloRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Removetbl_voziloRow(tbl_voziloRow row) {
+            public void RemovevoziloRow(voziloRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -2755,7 +2755,7 @@ namespace PutniNalozi.NET {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "tbl_voziloDataTable";
+                attribute2.FixedValue = "voziloDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -2799,25 +2799,25 @@ namespace PutniNalozi.NET {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_dodatni_troskoviRow : global::System.Data.DataRow {
+        public partial class dodatni_troskoviRow : global::System.Data.DataRow {
             
-            private tbl_dodatni_troskoviDataTable tabletbl_dodatni_troskovi;
+            private dodatni_troskoviDataTable tabledodatni_troskovi;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_dodatni_troskoviRow(global::System.Data.DataRowBuilder rb) : 
+            internal dodatni_troskoviRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_dodatni_troskovi = ((tbl_dodatni_troskoviDataTable)(this.Table));
+                this.tabledodatni_troskovi = ((dodatni_troskoviDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tabletbl_dodatni_troskovi.idColumn]));
+                    return ((int)(this[this.tabledodatni_troskovi.idColumn]));
                 }
                 set {
-                    this[this.tabletbl_dodatni_troskovi.idColumn] = value;
+                    this[this.tabledodatni_troskovi.idColumn] = value;
                 }
             }
             
@@ -2825,10 +2825,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int putni_racun_id {
                 get {
-                    return ((int)(this[this.tabletbl_dodatni_troskovi.putni_racun_idColumn]));
+                    return ((int)(this[this.tabledodatni_troskovi.putni_racun_idColumn]));
                 }
                 set {
-                    this[this.tabletbl_dodatni_troskovi.putni_racun_idColumn] = value;
+                    this[this.tabledodatni_troskovi.putni_racun_idColumn] = value;
                 }
             }
             
@@ -2837,14 +2837,14 @@ namespace PutniNalozi.NET {
             public string opis {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_dodatni_troskovi.opisColumn]));
+                        return ((string)(this[this.tabledodatni_troskovi.opisColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'opis\' in table \'tbl_dodatni_troskovi\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'opis\' in table \'dodatni_troskovi\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_dodatni_troskovi.opisColumn] = value;
+                    this[this.tabledodatni_troskovi.opisColumn] = value;
                 }
             }
             
@@ -2853,22 +2853,22 @@ namespace PutniNalozi.NET {
             public double iznos {
                 get {
                     try {
-                        return ((double)(this[this.tabletbl_dodatni_troskovi.iznosColumn]));
+                        return ((double)(this[this.tabledodatni_troskovi.iznosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'iznos\' in table \'tbl_dodatni_troskovi\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'iznos\' in table \'dodatni_troskovi\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_dodatni_troskovi.iznosColumn] = value;
+                    this[this.tabledodatni_troskovi.iznosColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRow tbl_putni_racunRow {
+            public putni_racunRow putni_racunRow {
                 get {
-                    return ((tbl_putni_racunRow)(this.GetParentRow(this.Table.ParentRelations["FK_dodatni_troskovi_pripada_putni_racun"])));
+                    return ((putni_racunRow)(this.GetParentRow(this.Table.ParentRelations["FK_dodatni_troskovi_pripada_putni_racun"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_dodatni_troskovi_pripada_putni_racun"]);
@@ -2878,50 +2878,50 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsopisNull() {
-                return this.IsNull(this.tabletbl_dodatni_troskovi.opisColumn);
+                return this.IsNull(this.tabledodatni_troskovi.opisColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetopisNull() {
-                this[this.tabletbl_dodatni_troskovi.opisColumn] = global::System.Convert.DBNull;
+                this[this.tabledodatni_troskovi.opisColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsiznosNull() {
-                return this.IsNull(this.tabletbl_dodatni_troskovi.iznosColumn);
+                return this.IsNull(this.tabledodatni_troskovi.iznosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetiznosNull() {
-                this[this.tabletbl_dodatni_troskovi.iznosColumn] = global::System.Convert.DBNull;
+                this[this.tabledodatni_troskovi.iznosColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_izvjestajRow : global::System.Data.DataRow {
+        public partial class izvjestajRow : global::System.Data.DataRow {
             
-            private tbl_izvjestajDataTable tabletbl_izvjestaj;
+            private izvjestajDataTable tableizvjestaj;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_izvjestajRow(global::System.Data.DataRowBuilder rb) : 
+            internal izvjestajRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_izvjestaj = ((tbl_izvjestajDataTable)(this.Table));
+                this.tableizvjestaj = ((izvjestajDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tabletbl_izvjestaj.idColumn]));
+                    return ((int)(this[this.tableizvjestaj.idColumn]));
                 }
                 set {
-                    this[this.tabletbl_izvjestaj.idColumn] = value;
+                    this[this.tableizvjestaj.idColumn] = value;
                 }
             }
             
@@ -2929,10 +2929,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int putni_nalog_id {
                 get {
-                    return ((int)(this[this.tabletbl_izvjestaj.putni_nalog_idColumn]));
+                    return ((int)(this[this.tableizvjestaj.putni_nalog_idColumn]));
                 }
                 set {
-                    this[this.tabletbl_izvjestaj.putni_nalog_idColumn] = value;
+                    this[this.tableizvjestaj.putni_nalog_idColumn] = value;
                 }
             }
             
@@ -2941,14 +2941,14 @@ namespace PutniNalozi.NET {
             public string opis {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_izvjestaj.opisColumn]));
+                        return ((string)(this[this.tableizvjestaj.opisColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'opis\' in table \'tbl_izvjestaj\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'opis\' in table \'izvjestaj\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_izvjestaj.opisColumn] = value;
+                    this[this.tableizvjestaj.opisColumn] = value;
                 }
             }
             
@@ -2957,22 +2957,22 @@ namespace PutniNalozi.NET {
             public System.DateTime datum_kreiranja {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tabletbl_izvjestaj.datum_kreiranjaColumn]));
+                        return ((global::System.DateTime)(this[this.tableizvjestaj.datum_kreiranjaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'datum_kreiranja\' in table \'tbl_izvjestaj\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'datum_kreiranja\' in table \'izvjestaj\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_izvjestaj.datum_kreiranjaColumn] = value;
+                    this[this.tableizvjestaj.datum_kreiranjaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow tbl_putni_nalogRow {
+            public putni_nalogRow putni_nalogRow {
                 get {
-                    return ((tbl_putni_nalogRow)(this.GetParentRow(this.Table.ParentRelations["FK_izvjestaj_pripada_putni_nalog"])));
+                    return ((putni_nalogRow)(this.GetParentRow(this.Table.ParentRelations["FK_izvjestaj_pripada_putni_nalog"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_izvjestaj_pripada_putni_nalog"]);
@@ -2982,50 +2982,50 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsopisNull() {
-                return this.IsNull(this.tabletbl_izvjestaj.opisColumn);
+                return this.IsNull(this.tableizvjestaj.opisColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetopisNull() {
-                this[this.tabletbl_izvjestaj.opisColumn] = global::System.Convert.DBNull;
+                this[this.tableizvjestaj.opisColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isdatum_kreiranjaNull() {
-                return this.IsNull(this.tabletbl_izvjestaj.datum_kreiranjaColumn);
+                return this.IsNull(this.tableizvjestaj.datum_kreiranjaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setdatum_kreiranjaNull() {
-                this[this.tabletbl_izvjestaj.datum_kreiranjaColumn] = global::System.Convert.DBNull;
+                this[this.tableizvjestaj.datum_kreiranjaColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_prijevozni_troskoviRow : global::System.Data.DataRow {
+        public partial class prijevozni_troskoviRow : global::System.Data.DataRow {
             
-            private tbl_prijevozni_troskoviDataTable tabletbl_prijevozni_troskovi;
+            private prijevozni_troskoviDataTable tableprijevozni_troskovi;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_prijevozni_troskoviRow(global::System.Data.DataRowBuilder rb) : 
+            internal prijevozni_troskoviRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_prijevozni_troskovi = ((tbl_prijevozni_troskoviDataTable)(this.Table));
+                this.tableprijevozni_troskovi = ((prijevozni_troskoviDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tabletbl_prijevozni_troskovi.idColumn]));
+                    return ((int)(this[this.tableprijevozni_troskovi.idColumn]));
                 }
                 set {
-                    this[this.tabletbl_prijevozni_troskovi.idColumn] = value;
+                    this[this.tableprijevozni_troskovi.idColumn] = value;
                 }
             }
             
@@ -3033,10 +3033,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int putni_racun_id {
                 get {
-                    return ((int)(this[this.tabletbl_prijevozni_troskovi.putni_racun_idColumn]));
+                    return ((int)(this[this.tableprijevozni_troskovi.putni_racun_idColumn]));
                 }
                 set {
-                    this[this.tabletbl_prijevozni_troskovi.putni_racun_idColumn] = value;
+                    this[this.tableprijevozni_troskovi.putni_racun_idColumn] = value;
                 }
             }
             
@@ -3044,10 +3044,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string relacija_od {
                 get {
-                    return ((string)(this[this.tabletbl_prijevozni_troskovi.relacija_odColumn]));
+                    return ((string)(this[this.tableprijevozni_troskovi.relacija_odColumn]));
                 }
                 set {
-                    this[this.tabletbl_prijevozni_troskovi.relacija_odColumn] = value;
+                    this[this.tableprijevozni_troskovi.relacija_odColumn] = value;
                 }
             }
             
@@ -3055,10 +3055,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string relacija_do {
                 get {
-                    return ((string)(this[this.tabletbl_prijevozni_troskovi.relacija_doColumn]));
+                    return ((string)(this[this.tableprijevozni_troskovi.relacija_doColumn]));
                 }
                 set {
-                    this[this.tabletbl_prijevozni_troskovi.relacija_doColumn] = value;
+                    this[this.tableprijevozni_troskovi.relacija_doColumn] = value;
                 }
             }
             
@@ -3067,14 +3067,14 @@ namespace PutniNalozi.NET {
             public double iznos {
                 get {
                     try {
-                        return ((double)(this[this.tabletbl_prijevozni_troskovi.iznosColumn]));
+                        return ((double)(this[this.tableprijevozni_troskovi.iznosColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'iznos\' in table \'tbl_prijevozni_troskovi\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'iznos\' in table \'prijevozni_troskovi\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_prijevozni_troskovi.iznosColumn] = value;
+                    this[this.tableprijevozni_troskovi.iznosColumn] = value;
                 }
             }
             
@@ -3083,23 +3083,23 @@ namespace PutniNalozi.NET {
             public string prijevozno_sredstvo {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_prijevozni_troskovi.prijevozno_sredstvoColumn]));
+                        return ((string)(this[this.tableprijevozni_troskovi.prijevozno_sredstvoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'prijevozno_sredstvo\' in table \'tbl_prijevozni_troskovi\' is " +
-                                "DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'prijevozno_sredstvo\' in table \'prijevozni_troskovi\' is DBNu" +
+                                "ll.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_prijevozni_troskovi.prijevozno_sredstvoColumn] = value;
+                    this[this.tableprijevozni_troskovi.prijevozno_sredstvoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRow tbl_putni_racunRow {
+            public putni_racunRow putni_racunRow {
                 get {
-                    return ((tbl_putni_racunRow)(this.GetParentRow(this.Table.ParentRelations["FK_prijevozni_troskovi_za_putni_racun"])));
+                    return ((putni_racunRow)(this.GetParentRow(this.Table.ParentRelations["FK_prijevozni_troskovi_za_putni_racun"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_prijevozni_troskovi_za_putni_racun"]);
@@ -3109,50 +3109,50 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsiznosNull() {
-                return this.IsNull(this.tabletbl_prijevozni_troskovi.iznosColumn);
+                return this.IsNull(this.tableprijevozni_troskovi.iznosColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetiznosNull() {
-                this[this.tabletbl_prijevozni_troskovi.iznosColumn] = global::System.Convert.DBNull;
+                this[this.tableprijevozni_troskovi.iznosColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isprijevozno_sredstvoNull() {
-                return this.IsNull(this.tabletbl_prijevozni_troskovi.prijevozno_sredstvoColumn);
+                return this.IsNull(this.tableprijevozni_troskovi.prijevozno_sredstvoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setprijevozno_sredstvoNull() {
-                this[this.tabletbl_prijevozni_troskovi.prijevozno_sredstvoColumn] = global::System.Convert.DBNull;
+                this[this.tableprijevozni_troskovi.prijevozno_sredstvoColumn] = global::System.Convert.DBNull;
             }
         }
         
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_putni_nalogRow : global::System.Data.DataRow {
+        public partial class putni_nalogRow : global::System.Data.DataRow {
             
-            private tbl_putni_nalogDataTable tabletbl_putni_nalog;
+            private putni_nalogDataTable tableputni_nalog;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_putni_nalogRow(global::System.Data.DataRowBuilder rb) : 
+            internal putni_nalogRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_putni_nalog = ((tbl_putni_nalogDataTable)(this.Table));
+                this.tableputni_nalog = ((putni_nalogDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tabletbl_putni_nalog.idColumn]));
+                    return ((int)(this[this.tableputni_nalog.idColumn]));
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.idColumn] = value;
+                    this[this.tableputni_nalog.idColumn] = value;
                 }
             }
             
@@ -3160,10 +3160,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public System.DateTime datum_kreiranja {
                 get {
-                    return ((global::System.DateTime)(this[this.tabletbl_putni_nalog.datum_kreiranjaColumn]));
+                    return ((global::System.DateTime)(this[this.tableputni_nalog.datum_kreiranjaColumn]));
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.datum_kreiranjaColumn] = value;
+                    this[this.tableputni_nalog.datum_kreiranjaColumn] = value;
                 }
             }
             
@@ -3171,10 +3171,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int status_id {
                 get {
-                    return ((int)(this[this.tabletbl_putni_nalog.status_idColumn]));
+                    return ((int)(this[this.tableputni_nalog.status_idColumn]));
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.status_idColumn] = value;
+                    this[this.tableputni_nalog.status_idColumn] = value;
                 }
             }
             
@@ -3183,14 +3183,14 @@ namespace PutniNalozi.NET {
             public string odrediste {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_putni_nalog.odredisteColumn]));
+                        return ((string)(this[this.tableputni_nalog.odredisteColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'odrediste\' in table \'tbl_putni_nalog\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'odrediste\' in table \'putni_nalog\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.odredisteColumn] = value;
+                    this[this.tableputni_nalog.odredisteColumn] = value;
                 }
             }
             
@@ -3199,14 +3199,14 @@ namespace PutniNalozi.NET {
             public string svrha {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_putni_nalog.svrhaColumn]));
+                        return ((string)(this[this.tableputni_nalog.svrhaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'svrha\' in table \'tbl_putni_nalog\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'svrha\' in table \'putni_nalog\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.svrhaColumn] = value;
+                    this[this.tableputni_nalog.svrhaColumn] = value;
                 }
             }
             
@@ -3215,14 +3215,14 @@ namespace PutniNalozi.NET {
             public System.DateTime datum_polaska {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tabletbl_putni_nalog.datum_polaskaColumn]));
+                        return ((global::System.DateTime)(this[this.tableputni_nalog.datum_polaskaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'datum_polaska\' in table \'tbl_putni_nalog\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'datum_polaska\' in table \'putni_nalog\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.datum_polaskaColumn] = value;
+                    this[this.tableputni_nalog.datum_polaskaColumn] = value;
                 }
             }
             
@@ -3231,14 +3231,14 @@ namespace PutniNalozi.NET {
             public System.DateTime trajanje {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tabletbl_putni_nalog.trajanjeColumn]));
+                        return ((global::System.DateTime)(this[this.tableputni_nalog.trajanjeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'trajanje\' in table \'tbl_putni_nalog\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'trajanje\' in table \'putni_nalog\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.trajanjeColumn] = value;
+                    this[this.tableputni_nalog.trajanjeColumn] = value;
                 }
             }
             
@@ -3247,14 +3247,14 @@ namespace PutniNalozi.NET {
             public string zahtjevatelj {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_putni_nalog.zahtjevateljColumn]));
+                        return ((string)(this[this.tableputni_nalog.zahtjevateljColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'zahtjevatelj\' in table \'tbl_putni_nalog\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'zahtjevatelj\' in table \'putni_nalog\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.zahtjevateljColumn] = value;
+                    this[this.tableputni_nalog.zahtjevateljColumn] = value;
                 }
             }
             
@@ -3263,14 +3263,14 @@ namespace PutniNalozi.NET {
             public string odobravatelj {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_putni_nalog.odobravateljColumn]));
+                        return ((string)(this[this.tableputni_nalog.odobravateljColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'odobravatelj\' in table \'tbl_putni_nalog\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'odobravatelj\' in table \'putni_nalog\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.odobravateljColumn] = value;
+                    this[this.tableputni_nalog.odobravateljColumn] = value;
                 }
             }
             
@@ -3279,14 +3279,14 @@ namespace PutniNalozi.NET {
             public string katedra {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_putni_nalog.katedraColumn]));
+                        return ((string)(this[this.tableputni_nalog.katedraColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'katedra\' in table \'tbl_putni_nalog\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'katedra\' in table \'putni_nalog\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.katedraColumn] = value;
+                    this[this.tableputni_nalog.katedraColumn] = value;
                 }
             }
             
@@ -3295,14 +3295,14 @@ namespace PutniNalozi.NET {
             public string ustanova {
                 get {
                     try {
-                        return ((string)(this[this.tabletbl_putni_nalog.ustanovaColumn]));
+                        return ((string)(this[this.tableputni_nalog.ustanovaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ustanova\' in table \'tbl_putni_nalog\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ustanova\' in table \'putni_nalog\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.ustanovaColumn] = value;
+                    this[this.tableputni_nalog.ustanovaColumn] = value;
                 }
             }
             
@@ -3310,18 +3310,18 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int vozilo_id {
                 get {
-                    return ((int)(this[this.tabletbl_putni_nalog.vozilo_idColumn]));
+                    return ((int)(this[this.tableputni_nalog.vozilo_idColumn]));
                 }
                 set {
-                    this[this.tabletbl_putni_nalog.vozilo_idColumn] = value;
+                    this[this.tableputni_nalog.vozilo_idColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_status_nalogaRow tbl_status_nalogaRow {
+            public status_nalogaRow status_nalogaRow {
                 get {
-                    return ((tbl_status_nalogaRow)(this.GetParentRow(this.Table.ParentRelations["FK_putni_nalog_ima_status"])));
+                    return ((status_nalogaRow)(this.GetParentRow(this.Table.ParentRelations["FK_putni_nalog_ima_status"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_putni_nalog_ima_status"]);
@@ -3330,9 +3330,9 @@ namespace PutniNalozi.NET {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_voziloRow tbl_voziloRow {
+            public voziloRow voziloRow {
                 get {
-                    return ((tbl_voziloRow)(this.GetParentRow(this.Table.ParentRelations["FK_putni_nalog_koristi_vozilo"])));
+                    return ((voziloRow)(this.GetParentRow(this.Table.ParentRelations["FK_putni_nalog_koristi_vozilo"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_putni_nalog_koristi_vozilo"]);
@@ -3342,118 +3342,118 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsodredisteNull() {
-                return this.IsNull(this.tabletbl_putni_nalog.odredisteColumn);
+                return this.IsNull(this.tableputni_nalog.odredisteColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetodredisteNull() {
-                this[this.tabletbl_putni_nalog.odredisteColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_nalog.odredisteColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IssvrhaNull() {
-                return this.IsNull(this.tabletbl_putni_nalog.svrhaColumn);
+                return this.IsNull(this.tableputni_nalog.svrhaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetsvrhaNull() {
-                this[this.tabletbl_putni_nalog.svrhaColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_nalog.svrhaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isdatum_polaskaNull() {
-                return this.IsNull(this.tabletbl_putni_nalog.datum_polaskaColumn);
+                return this.IsNull(this.tableputni_nalog.datum_polaskaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setdatum_polaskaNull() {
-                this[this.tabletbl_putni_nalog.datum_polaskaColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_nalog.datum_polaskaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IstrajanjeNull() {
-                return this.IsNull(this.tabletbl_putni_nalog.trajanjeColumn);
+                return this.IsNull(this.tableputni_nalog.trajanjeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SettrajanjeNull() {
-                this[this.tabletbl_putni_nalog.trajanjeColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_nalog.trajanjeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IszahtjevateljNull() {
-                return this.IsNull(this.tabletbl_putni_nalog.zahtjevateljColumn);
+                return this.IsNull(this.tableputni_nalog.zahtjevateljColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetzahtjevateljNull() {
-                this[this.tabletbl_putni_nalog.zahtjevateljColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_nalog.zahtjevateljColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsodobravateljNull() {
-                return this.IsNull(this.tabletbl_putni_nalog.odobravateljColumn);
+                return this.IsNull(this.tableputni_nalog.odobravateljColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetodobravateljNull() {
-                this[this.tabletbl_putni_nalog.odobravateljColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_nalog.odobravateljColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IskatedraNull() {
-                return this.IsNull(this.tabletbl_putni_nalog.katedraColumn);
+                return this.IsNull(this.tableputni_nalog.katedraColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetkatedraNull() {
-                this[this.tabletbl_putni_nalog.katedraColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_nalog.katedraColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsustanovaNull() {
-                return this.IsNull(this.tabletbl_putni_nalog.ustanovaColumn);
+                return this.IsNull(this.tableputni_nalog.ustanovaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetustanovaNull() {
-                this[this.tabletbl_putni_nalog.ustanovaColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_nalog.ustanovaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_izvjestajRow[] Gettbl_izvjestajRows() {
+            public izvjestajRow[] Gettbl_izvjestajRows() {
                 if ((this.Table.ChildRelations["FK_izvjestaj_pripada_putni_nalog"] == null)) {
-                    return new tbl_izvjestajRow[0];
+                    return new izvjestajRow[0];
                 }
                 else {
-                    return ((tbl_izvjestajRow[])(base.GetChildRows(this.Table.ChildRelations["FK_izvjestaj_pripada_putni_nalog"])));
+                    return ((izvjestajRow[])(base.GetChildRows(this.Table.ChildRelations["FK_izvjestaj_pripada_putni_nalog"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRow[] Gettbl_putni_racunRows() {
+            public putni_racunRow[] Getputni_racunRows() {
                 if ((this.Table.ChildRelations["FK_putni_racun_pripada_putni_nalog"] == null)) {
-                    return new tbl_putni_racunRow[0];
+                    return new putni_racunRow[0];
                 }
                 else {
-                    return ((tbl_putni_racunRow[])(base.GetChildRows(this.Table.ChildRelations["FK_putni_racun_pripada_putni_nalog"])));
+                    return ((putni_racunRow[])(base.GetChildRows(this.Table.ChildRelations["FK_putni_racun_pripada_putni_nalog"])));
                 }
             }
         }
@@ -3461,25 +3461,25 @@ namespace PutniNalozi.NET {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_putni_racunRow : global::System.Data.DataRow {
+        public partial class putni_racunRow : global::System.Data.DataRow {
             
-            private tbl_putni_racunDataTable tabletbl_putni_racun;
+            private putni_racunDataTable tableputni_racun;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_putni_racunRow(global::System.Data.DataRowBuilder rb) : 
+            internal putni_racunRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_putni_racun = ((tbl_putni_racunDataTable)(this.Table));
+                this.tableputni_racun = ((putni_racunDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tabletbl_putni_racun.idColumn]));
+                    return ((int)(this[this.tableputni_racun.idColumn]));
                 }
                 set {
-                    this[this.tabletbl_putni_racun.idColumn] = value;
+                    this[this.tableputni_racun.idColumn] = value;
                 }
             }
             
@@ -3487,10 +3487,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int putni_nalog_id {
                 get {
-                    return ((int)(this[this.tabletbl_putni_racun.putni_nalog_idColumn]));
+                    return ((int)(this[this.tableputni_racun.putni_nalog_idColumn]));
                 }
                 set {
-                    this[this.tabletbl_putni_racun.putni_nalog_idColumn] = value;
+                    this[this.tableputni_racun.putni_nalog_idColumn] = value;
                 }
             }
             
@@ -3499,22 +3499,22 @@ namespace PutniNalozi.NET {
             public System.DateTime datum_kreiranja {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tabletbl_putni_racun.datum_kreiranjaColumn]));
+                        return ((global::System.DateTime)(this[this.tableputni_racun.datum_kreiranjaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'datum_kreiranja\' in table \'tbl_putni_racun\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'datum_kreiranja\' in table \'putni_racun\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_putni_racun.datum_kreiranjaColumn] = value;
+                    this[this.tableputni_racun.datum_kreiranjaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow tbl_putni_nalogRow {
+            public putni_nalogRow tbl_putni_nalogRow {
                 get {
-                    return ((tbl_putni_nalogRow)(this.GetParentRow(this.Table.ParentRelations["FK_putni_racun_pripada_putni_nalog"])));
+                    return ((putni_nalogRow)(this.GetParentRow(this.Table.ParentRelations["FK_putni_racun_pripada_putni_nalog"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_putni_racun_pripada_putni_nalog"]);
@@ -3524,34 +3524,34 @@ namespace PutniNalozi.NET {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isdatum_kreiranjaNull() {
-                return this.IsNull(this.tabletbl_putni_racun.datum_kreiranjaColumn);
+                return this.IsNull(this.tableputni_racun.datum_kreiranjaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setdatum_kreiranjaNull() {
-                this[this.tabletbl_putni_racun.datum_kreiranjaColumn] = global::System.Convert.DBNull;
+                this[this.tableputni_racun.datum_kreiranjaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_dodatni_troskoviRow[] Gettbl_dodatni_troskoviRows() {
+            public dodatni_troskoviRow[] Gettbl_dodatni_troskoviRows() {
                 if ((this.Table.ChildRelations["FK_dodatni_troskovi_pripada_putni_racun"] == null)) {
-                    return new tbl_dodatni_troskoviRow[0];
+                    return new dodatni_troskoviRow[0];
                 }
                 else {
-                    return ((tbl_dodatni_troskoviRow[])(base.GetChildRows(this.Table.ChildRelations["FK_dodatni_troskovi_pripada_putni_racun"])));
+                    return ((dodatni_troskoviRow[])(base.GetChildRows(this.Table.ChildRelations["FK_dodatni_troskovi_pripada_putni_racun"])));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_prijevozni_troskoviRow[] Gettbl_prijevozni_troskoviRows() {
+            public prijevozni_troskoviRow[] Gettbl_prijevozni_troskoviRows() {
                 if ((this.Table.ChildRelations["FK_prijevozni_troskovi_za_putni_racun"] == null)) {
-                    return new tbl_prijevozni_troskoviRow[0];
+                    return new prijevozni_troskoviRow[0];
                 }
                 else {
-                    return ((tbl_prijevozni_troskoviRow[])(base.GetChildRows(this.Table.ChildRelations["FK_prijevozni_troskovi_za_putni_racun"])));
+                    return ((prijevozni_troskoviRow[])(base.GetChildRows(this.Table.ChildRelations["FK_prijevozni_troskovi_za_putni_racun"])));
                 }
             }
         }
@@ -3559,25 +3559,25 @@ namespace PutniNalozi.NET {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_status_nalogaRow : global::System.Data.DataRow {
+        public partial class status_nalogaRow : global::System.Data.DataRow {
             
-            private tbl_status_nalogaDataTable tabletbl_status_naloga;
+            private status_nalogaDataTable tablestatus_naloga;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_status_nalogaRow(global::System.Data.DataRowBuilder rb) : 
+            internal status_nalogaRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_status_naloga = ((tbl_status_nalogaDataTable)(this.Table));
+                this.tablestatus_naloga = ((status_nalogaDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tabletbl_status_naloga.idColumn]));
+                    return ((int)(this[this.tablestatus_naloga.idColumn]));
                 }
                 set {
-                    this[this.tabletbl_status_naloga.idColumn] = value;
+                    this[this.tablestatus_naloga.idColumn] = value;
                 }
             }
             
@@ -3585,21 +3585,21 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string naziv {
                 get {
-                    return ((string)(this[this.tabletbl_status_naloga.nazivColumn]));
+                    return ((string)(this[this.tablestatus_naloga.nazivColumn]));
                 }
                 set {
-                    this[this.tabletbl_status_naloga.nazivColumn] = value;
+                    this[this.tablestatus_naloga.nazivColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow[] Gettbl_putni_nalogRows() {
+            public putni_nalogRow[] Gettbl_putni_nalogRows() {
                 if ((this.Table.ChildRelations["FK_putni_nalog_ima_status"] == null)) {
-                    return new tbl_putni_nalogRow[0];
+                    return new putni_nalogRow[0];
                 }
                 else {
-                    return ((tbl_putni_nalogRow[])(base.GetChildRows(this.Table.ChildRelations["FK_putni_nalog_ima_status"])));
+                    return ((putni_nalogRow[])(base.GetChildRows(this.Table.ChildRelations["FK_putni_nalog_ima_status"])));
                 }
             }
         }
@@ -3607,25 +3607,25 @@ namespace PutniNalozi.NET {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class tbl_voziloRow : global::System.Data.DataRow {
+        public partial class voziloRow : global::System.Data.DataRow {
             
-            private tbl_voziloDataTable tabletbl_vozilo;
+            private voziloDataTable tablevozilo;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            internal tbl_voziloRow(global::System.Data.DataRowBuilder rb) : 
+            internal voziloRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tabletbl_vozilo = ((tbl_voziloDataTable)(this.Table));
+                this.tablevozilo = ((voziloDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int id {
                 get {
-                    return ((int)(this[this.tabletbl_vozilo.idColumn]));
+                    return ((int)(this[this.tablevozilo.idColumn]));
                 }
                 set {
-                    this[this.tabletbl_vozilo.idColumn] = value;
+                    this[this.tablevozilo.idColumn] = value;
                 }
             }
             
@@ -3633,10 +3633,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string tip {
                 get {
-                    return ((string)(this[this.tabletbl_vozilo.tipColumn]));
+                    return ((string)(this[this.tablevozilo.tipColumn]));
                 }
                 set {
-                    this[this.tabletbl_vozilo.tipColumn] = value;
+                    this[this.tablevozilo.tipColumn] = value;
                 }
             }
             
@@ -3644,10 +3644,10 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string marka {
                 get {
-                    return ((string)(this[this.tabletbl_vozilo.markaColumn]));
+                    return ((string)(this[this.tablevozilo.markaColumn]));
                 }
                 set {
-                    this[this.tabletbl_vozilo.markaColumn] = value;
+                    this[this.tablevozilo.markaColumn] = value;
                 }
             }
             
@@ -3655,21 +3655,21 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string registracija {
                 get {
-                    return ((string)(this[this.tabletbl_vozilo.registracijaColumn]));
+                    return ((string)(this[this.tablevozilo.registracijaColumn]));
                 }
                 set {
-                    this[this.tabletbl_vozilo.registracijaColumn] = value;
+                    this[this.tablevozilo.registracijaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow[] Gettbl_putni_nalogRows() {
+            public putni_nalogRow[] Gettbl_putni_nalogRows() {
                 if ((this.Table.ChildRelations["FK_putni_nalog_koristi_vozilo"] == null)) {
-                    return new tbl_putni_nalogRow[0];
+                    return new putni_nalogRow[0];
                 }
                 else {
-                    return ((tbl_putni_nalogRow[])(base.GetChildRows(this.Table.ChildRelations["FK_putni_nalog_koristi_vozilo"])));
+                    return ((putni_nalogRow[])(base.GetChildRows(this.Table.ChildRelations["FK_putni_nalog_koristi_vozilo"])));
                 }
             }
         }
@@ -3678,22 +3678,22 @@ namespace PutniNalozi.NET {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_dodatni_troskoviRowChangeEvent : global::System.EventArgs {
+        public class dodatni_troskoviRowChangeEvent : global::System.EventArgs {
             
-            private tbl_dodatni_troskoviRow eventRow;
+            private dodatni_troskoviRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_dodatni_troskoviRowChangeEvent(tbl_dodatni_troskoviRow row, global::System.Data.DataRowAction action) {
+            public dodatni_troskoviRowChangeEvent(dodatni_troskoviRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_dodatni_troskoviRow Row {
+            public dodatni_troskoviRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3712,22 +3712,22 @@ namespace PutniNalozi.NET {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_izvjestajRowChangeEvent : global::System.EventArgs {
+        public class izvjestajRowChangeEvent : global::System.EventArgs {
             
-            private tbl_izvjestajRow eventRow;
+            private izvjestajRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_izvjestajRowChangeEvent(tbl_izvjestajRow row, global::System.Data.DataRowAction action) {
+            public izvjestajRowChangeEvent(izvjestajRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_izvjestajRow Row {
+            public izvjestajRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3746,22 +3746,22 @@ namespace PutniNalozi.NET {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_prijevozni_troskoviRowChangeEvent : global::System.EventArgs {
+        public class prijevozni_troskoviRowChangeEvent : global::System.EventArgs {
             
-            private tbl_prijevozni_troskoviRow eventRow;
+            private prijevozni_troskoviRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_prijevozni_troskoviRowChangeEvent(tbl_prijevozni_troskoviRow row, global::System.Data.DataRowAction action) {
+            public prijevozni_troskoviRowChangeEvent(prijevozni_troskoviRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_prijevozni_troskoviRow Row {
+            public prijevozni_troskoviRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3780,22 +3780,22 @@ namespace PutniNalozi.NET {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_putni_nalogRowChangeEvent : global::System.EventArgs {
+        public class putni_nalogRowChangeEvent : global::System.EventArgs {
             
-            private tbl_putni_nalogRow eventRow;
+            private putni_nalogRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRowChangeEvent(tbl_putni_nalogRow row, global::System.Data.DataRowAction action) {
+            public putni_nalogRowChangeEvent(putni_nalogRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_nalogRow Row {
+            public putni_nalogRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3814,22 +3814,22 @@ namespace PutniNalozi.NET {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_putni_racunRowChangeEvent : global::System.EventArgs {
+        public class putni_racunRowChangeEvent : global::System.EventArgs {
             
-            private tbl_putni_racunRow eventRow;
+            private putni_racunRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRowChangeEvent(tbl_putni_racunRow row, global::System.Data.DataRowAction action) {
+            public putni_racunRowChangeEvent(putni_racunRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_putni_racunRow Row {
+            public putni_racunRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3848,22 +3848,22 @@ namespace PutniNalozi.NET {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_status_nalogaRowChangeEvent : global::System.EventArgs {
+        public class status_nalogaRowChangeEvent : global::System.EventArgs {
             
-            private tbl_status_nalogaRow eventRow;
+            private status_nalogaRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_status_nalogaRowChangeEvent(tbl_status_nalogaRow row, global::System.Data.DataRowAction action) {
+            public status_nalogaRowChangeEvent(status_nalogaRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_status_nalogaRow Row {
+            public status_nalogaRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -3882,22 +3882,22 @@ namespace PutniNalozi.NET {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public class tbl_voziloRowChangeEvent : global::System.EventArgs {
+        public class voziloRowChangeEvent : global::System.EventArgs {
             
-            private tbl_voziloRow eventRow;
+            private voziloRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_voziloRowChangeEvent(tbl_voziloRow row, global::System.Data.DataRowAction action) {
+            public voziloRowChangeEvent(voziloRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbl_voziloRow Row {
+            public voziloRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -4036,7 +4036,7 @@ namespace PutniNalozi.NET.piDB9DSTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_dodatni_troskovi";
+            tableMapping.DataSetTable = "dodatni_troskovi";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("putni_racun_id", "putni_racun_id");
             tableMapping.ColumnMappings.Add("opis", "opis");
@@ -4099,7 +4099,7 @@ SELECT id, putni_racun_id, opis, iznos FROM tbl_dodatni_troskovi WHERE (id = @id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(piDB9DS.tbl_dodatni_troskoviDataTable dataTable) {
+        public virtual int Fill(piDB9DS.dodatni_troskoviDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4112,9 +4112,9 @@ SELECT id, putni_racun_id, opis, iznos FROM tbl_dodatni_troskovi WHERE (id = @id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual piDB9DS.tbl_dodatni_troskoviDataTable GetData() {
+        public virtual piDB9DS.dodatni_troskoviDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            piDB9DS.tbl_dodatni_troskoviDataTable dataTable = new piDB9DS.tbl_dodatni_troskoviDataTable();
+            piDB9DS.dodatni_troskoviDataTable dataTable = new piDB9DS.dodatni_troskoviDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4122,7 +4122,7 @@ SELECT id, putni_racun_id, opis, iznos FROM tbl_dodatni_troskovi WHERE (id = @id
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(piDB9DS.tbl_dodatni_troskoviDataTable dataTable) {
+        public virtual int Update(piDB9DS.dodatni_troskoviDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -4130,7 +4130,7 @@ SELECT id, putni_racun_id, opis, iznos FROM tbl_dodatni_troskovi WHERE (id = @id
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(piDB9DS dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_dodatni_troskovi");
+            return this.Adapter.Update(dataSet, "dodatni_troskovi");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4403,7 +4403,7 @@ SELECT id, putni_racun_id, opis, iznos FROM tbl_dodatni_troskovi WHERE (id = @id
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_izvjestaj";
+            tableMapping.DataSetTable = "izvjestaj";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("putni_nalog_id", "putni_nalog_id");
             tableMapping.ColumnMappings.Add("opis", "opis");
@@ -4466,7 +4466,7 @@ SELECT id, putni_nalog_id, opis, datum_kreiranja FROM tbl_izvjestaj WHERE (id = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(piDB9DS.tbl_izvjestajDataTable dataTable) {
+        public virtual int Fill(piDB9DS.izvjestajDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4479,9 +4479,9 @@ SELECT id, putni_nalog_id, opis, datum_kreiranja FROM tbl_izvjestaj WHERE (id = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual piDB9DS.tbl_izvjestajDataTable GetData() {
+        public virtual piDB9DS.izvjestajDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            piDB9DS.tbl_izvjestajDataTable dataTable = new piDB9DS.tbl_izvjestajDataTable();
+            piDB9DS.izvjestajDataTable dataTable = new piDB9DS.izvjestajDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4489,7 +4489,7 @@ SELECT id, putni_nalog_id, opis, datum_kreiranja FROM tbl_izvjestaj WHERE (id = 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(piDB9DS.tbl_izvjestajDataTable dataTable) {
+        public virtual int Update(piDB9DS.izvjestajDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -4497,7 +4497,7 @@ SELECT id, putni_nalog_id, opis, datum_kreiranja FROM tbl_izvjestaj WHERE (id = 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(piDB9DS dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_izvjestaj");
+            return this.Adapter.Update(dataSet, "izvjestaj");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4770,7 +4770,7 @@ SELECT id, putni_nalog_id, opis, datum_kreiranja FROM tbl_izvjestaj WHERE (id = 
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_prijevozni_troskovi";
+            tableMapping.DataSetTable = "prijevozni_troskovi";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("putni_racun_id", "putni_racun_id");
             tableMapping.ColumnMappings.Add("relacija_od", "relacija_od");
@@ -4843,7 +4843,7 @@ SELECT id, putni_racun_id, relacija_od, relacija_do, iznos, prijevozno_sredstvo 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(piDB9DS.tbl_prijevozni_troskoviDataTable dataTable) {
+        public virtual int Fill(piDB9DS.prijevozni_troskoviDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -4856,9 +4856,9 @@ SELECT id, putni_racun_id, relacija_od, relacija_do, iznos, prijevozno_sredstvo 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual piDB9DS.tbl_prijevozni_troskoviDataTable GetData() {
+        public virtual piDB9DS.prijevozni_troskoviDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            piDB9DS.tbl_prijevozni_troskoviDataTable dataTable = new piDB9DS.tbl_prijevozni_troskoviDataTable();
+            piDB9DS.prijevozni_troskoviDataTable dataTable = new piDB9DS.prijevozni_troskoviDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -4866,7 +4866,7 @@ SELECT id, putni_racun_id, relacija_od, relacija_do, iznos, prijevozno_sredstvo 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(piDB9DS.tbl_prijevozni_troskoviDataTable dataTable) {
+        public virtual int Update(piDB9DS.prijevozni_troskoviDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -4874,7 +4874,7 @@ SELECT id, putni_racun_id, relacija_od, relacija_do, iznos, prijevozno_sredstvo 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(piDB9DS dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_prijevozni_troskovi");
+            return this.Adapter.Update(dataSet, "prijevozni_troskovi");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5195,7 +5195,7 @@ SELECT id, putni_racun_id, relacija_od, relacija_do, iznos, prijevozno_sredstvo 
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_putni_nalog";
+            tableMapping.DataSetTable = "putni_nalog";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("datum_kreiranja", "datum_kreiranja");
             tableMapping.ColumnMappings.Add("status_id", "status_id");
@@ -5311,7 +5311,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(piDB9DS.tbl_putni_nalogDataTable dataTable) {
+        public virtual int Fill(piDB9DS.putni_nalogDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5324,9 +5324,9 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual piDB9DS.tbl_putni_nalogDataTable GetData() {
+        public virtual piDB9DS.putni_nalogDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            piDB9DS.tbl_putni_nalogDataTable dataTable = new piDB9DS.tbl_putni_nalogDataTable();
+            piDB9DS.putni_nalogDataTable dataTable = new piDB9DS.putni_nalogDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5334,7 +5334,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(piDB9DS.tbl_putni_nalogDataTable dataTable) {
+        public virtual int Update(piDB9DS.putni_nalogDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -5342,7 +5342,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(piDB9DS dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_putni_nalog");
+            return this.Adapter.Update(dataSet, "putni_nalog");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5838,7 +5838,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_putni_racun";
+            tableMapping.DataSetTable = "putni_racun";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("putni_nalog_id", "putni_nalog_id");
             tableMapping.ColumnMappings.Add("datum_kreiranja", "datum_kreiranja");
@@ -5896,7 +5896,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(piDB9DS.tbl_putni_racunDataTable dataTable) {
+        public virtual int Fill(piDB9DS.putni_racunDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -5909,9 +5909,9 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual piDB9DS.tbl_putni_racunDataTable GetData() {
+        public virtual piDB9DS.putni_racunDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            piDB9DS.tbl_putni_racunDataTable dataTable = new piDB9DS.tbl_putni_racunDataTable();
+            piDB9DS.putni_racunDataTable dataTable = new piDB9DS.putni_racunDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -5919,7 +5919,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(piDB9DS.tbl_putni_racunDataTable dataTable) {
+        public virtual int Update(piDB9DS.putni_racunDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -5927,7 +5927,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(piDB9DS dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_putni_racun");
+            return this.Adapter.Update(dataSet, "putni_racun");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6172,7 +6172,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_status_naloga";
+            tableMapping.DataSetTable = "status_naloga";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("naziv", "naziv");
             this._adapter.TableMappings.Add(tableMapping);
@@ -6222,7 +6222,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(piDB9DS.tbl_status_nalogaDataTable dataTable) {
+        public virtual int Fill(piDB9DS.status_nalogaDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6235,9 +6235,9 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual piDB9DS.tbl_status_nalogaDataTable GetData() {
+        public virtual piDB9DS.status_nalogaDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            piDB9DS.tbl_status_nalogaDataTable dataTable = new piDB9DS.tbl_status_nalogaDataTable();
+            piDB9DS.status_nalogaDataTable dataTable = new piDB9DS.status_nalogaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6245,7 +6245,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(piDB9DS.tbl_status_nalogaDataTable dataTable) {
+        public virtual int Update(piDB9DS.status_nalogaDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -6253,7 +6253,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(piDB9DS dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_status_naloga");
+            return this.Adapter.Update(dataSet, "status_naloga");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6490,7 +6490,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "tbl_vozilo";
+            tableMapping.DataSetTable = "vozilo";
             tableMapping.ColumnMappings.Add("id", "id");
             tableMapping.ColumnMappings.Add("tip", "tip");
             tableMapping.ColumnMappings.Add("marka", "marka");
@@ -6551,7 +6551,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(piDB9DS.tbl_voziloDataTable dataTable) {
+        public virtual int Fill(piDB9DS.voziloDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -6564,9 +6564,9 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual piDB9DS.tbl_voziloDataTable GetData() {
+        public virtual piDB9DS.voziloDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            piDB9DS.tbl_voziloDataTable dataTable = new piDB9DS.tbl_voziloDataTable();
+            piDB9DS.voziloDataTable dataTable = new piDB9DS.voziloDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -6574,7 +6574,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(piDB9DS.tbl_voziloDataTable dataTable) {
+        public virtual int Update(piDB9DS.voziloDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -6582,7 +6582,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(piDB9DS dataSet) {
-            return this.Adapter.Update(dataSet, "tbl_vozilo");
+            return this.Adapter.Update(dataSet, "vozilo");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6979,7 +6979,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         private int UpdateUpdatedRows(piDB9DS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._status_nalogaTA != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_status_naloga.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet.status_naloga.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -6988,7 +6988,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._voziloTA != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_vozilo.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet.vozilo.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -6997,7 +6997,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._putni_nalogTA != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_putni_nalog.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet.putni_nalog.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -7006,7 +7006,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._izvjestajTA != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_izvjestaj.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet.izvjestaj.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -7015,7 +7015,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._dodatni_troskoviTA != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet.dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -7024,7 +7024,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._prijevozni_troskoviTA != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet.prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -7033,7 +7033,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._putni_racunTA != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.tbl_putni_racun.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet.putni_racun.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -7052,7 +7052,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         private int UpdateInsertedRows(piDB9DS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._status_nalogaTA != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_status_naloga.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet.status_naloga.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._status_nalogaTA.Update(addedRows));
@@ -7060,7 +7060,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._voziloTA != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_vozilo.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet.vozilo.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._voziloTA.Update(addedRows));
@@ -7068,7 +7068,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._putni_nalogTA != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_putni_nalog.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet.putni_nalog.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._putni_nalogTA.Update(addedRows));
@@ -7076,7 +7076,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._izvjestajTA != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_izvjestaj.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet.izvjestaj.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._izvjestajTA.Update(addedRows));
@@ -7084,7 +7084,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._dodatni_troskoviTA != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet.dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._dodatni_troskoviTA.Update(addedRows));
@@ -7092,7 +7092,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._prijevozni_troskoviTA != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet.prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._prijevozni_troskoviTA.Update(addedRows));
@@ -7100,7 +7100,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._putni_racunTA != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.tbl_putni_racun.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet.putni_racun.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._putni_racunTA.Update(addedRows));
@@ -7118,7 +7118,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         private int UpdateDeletedRows(piDB9DS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._putni_racunTA != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_putni_racun.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet.putni_racun.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._putni_racunTA.Update(deletedRows));
@@ -7126,7 +7126,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._prijevozni_troskoviTA != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet.prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._prijevozni_troskoviTA.Update(deletedRows));
@@ -7134,7 +7134,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._dodatni_troskoviTA != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet.dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._dodatni_troskoviTA.Update(deletedRows));
@@ -7142,7 +7142,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._izvjestajTA != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_izvjestaj.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet.izvjestaj.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._izvjestajTA.Update(deletedRows));
@@ -7150,7 +7150,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._putni_nalogTA != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_putni_nalog.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet.putni_nalog.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._putni_nalogTA.Update(deletedRows));
@@ -7158,7 +7158,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._voziloTA != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_vozilo.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet.vozilo.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._voziloTA.Update(deletedRows));
@@ -7166,7 +7166,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 }
             }
             if ((this._status_nalogaTA != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.tbl_status_naloga.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet.status_naloga.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._status_nalogaTA.Update(deletedRows));

@@ -7,7 +7,7 @@
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="piDB9CS" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="piDB9CS (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PutniNalozi.NET.Properties.Settings.GlobalReference.Default.piDB9CS" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dodatni_troskoviTA" GeneratorDataComponentClassName="dodatni_troskoviTA" Name="tbl_dodatni_troskovi" UserDataComponentName="dodatni_troskoviTA">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="dodatni_troskoviTA" GeneratorDataComponentClassName="dodatni_troskoviTA" Name="dodatni_troskovi" UserDataComponentName="dodatni_troskoviTA">
             <MainSource>
               <DbSource ConnectionRef="piDB9CS (Settings)" DbObjectName="piDB9.dbo.tbl_dodatni_troskovi" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -68,7 +68,7 @@ SELECT id, putni_racun_id, opis, iznos FROM tbl_dodatni_troskovi WHERE (id = @id
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="izvjestajTA" GeneratorDataComponentClassName="izvjestajTA" Name="tbl_izvjestaj" UserDataComponentName="izvjestajTA">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="izvjestajTA" GeneratorDataComponentClassName="izvjestajTA" Name="izvjestaj" UserDataComponentName="izvjestajTA">
             <MainSource>
               <DbSource ConnectionRef="piDB9CS (Settings)" DbObjectName="piDB9.dbo.tbl_izvjestaj" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -129,7 +129,7 @@ SELECT id, putni_nalog_id, opis, datum_kreiranja FROM tbl_izvjestaj WHERE (id = 
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prijevozni_troskoviTA" GeneratorDataComponentClassName="prijevozni_troskoviTA" Name="tbl_prijevozni_troskovi" UserDataComponentName="prijevozni_troskoviTA">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="prijevozni_troskoviTA" GeneratorDataComponentClassName="prijevozni_troskoviTA" Name="prijevozni_troskovi" UserDataComponentName="prijevozni_troskoviTA">
             <MainSource>
               <DbSource ConnectionRef="piDB9CS (Settings)" DbObjectName="piDB9.dbo.tbl_prijevozni_troskovi" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -200,7 +200,7 @@ SELECT id, putni_racun_id, relacija_od, relacija_do, iznos, prijevozno_sredstvo 
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="putni_nalogTA" GeneratorDataComponentClassName="putni_nalogTA" Name="tbl_putni_nalog" UserDataComponentName="putni_nalogTA">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="putni_nalogTA" GeneratorDataComponentClassName="putni_nalogTA" Name="putni_nalog" UserDataComponentName="putni_nalogTA">
             <MainSource>
               <DbSource ConnectionRef="piDB9CS (Settings)" DbObjectName="piDB9.dbo.tbl_putni_nalog" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -313,7 +313,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="putni_racunTA" GeneratorDataComponentClassName="putni_racunTA" Name="tbl_putni_racun" UserDataComponentName="putni_racunTA">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="putni_racunTA" GeneratorDataComponentClassName="putni_racunTA" Name="putni_racun" UserDataComponentName="putni_racunTA">
             <MainSource>
               <DbSource ConnectionRef="piDB9CS (Settings)" DbObjectName="piDB9.dbo.tbl_putni_racun" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -367,7 +367,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="status_nalogaTA" GeneratorDataComponentClassName="status_nalogaTA" Name="tbl_status_naloga" UserDataComponentName="status_nalogaTA">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="status_nalogaTA" GeneratorDataComponentClassName="status_nalogaTA" Name="status_naloga" UserDataComponentName="status_nalogaTA">
             <MainSource>
               <DbSource ConnectionRef="piDB9CS (Settings)" DbObjectName="piDB9.dbo.tbl_status_naloga" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -414,7 +414,7 @@ SELECT id, naziv FROM tbl_status_naloga WHERE (id = @id)</CommandText>
             </Mappings>
             <Sources />
           </TableAdapter>
-          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="voziloTA" GeneratorDataComponentClassName="voziloTA" Name="tbl_vozilo" UserDataComponentName="voziloTA">
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="voziloTA" GeneratorDataComponentClassName="voziloTA" Name="vozilo" UserDataComponentName="voziloTA">
             <MainSource>
               <DbSource ConnectionRef="piDB9CS (Settings)" DbObjectName="piDB9.dbo.tbl_vozilo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
@@ -479,7 +479,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)</CommandTex
   <xs:element name="piDB9DS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="piDB9DS" msprop:Generator_UserDSName="piDB9DS">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="tbl_dodatni_troskovi" msprop:Generator_TableClassName="tbl_dodatni_troskoviDataTable" msprop:Generator_TableVarName="tabletbl_dodatni_troskovi" msprop:Generator_TablePropName="tbl_dodatni_troskovi" msprop:Generator_RowDeletingName="tbl_dodatni_troskoviRowDeleting" msprop:Generator_UserTableName="tbl_dodatni_troskovi" msprop:Generator_RowChangingName="tbl_dodatni_troskoviRowChanging" msprop:Generator_RowEvHandlerName="tbl_dodatni_troskoviRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_dodatni_troskoviRowDeleted" msprop:Generator_RowEvArgName="tbl_dodatni_troskoviRowChangeEvent" msprop:Generator_RowChangedName="tbl_dodatni_troskoviRowChanged" msprop:Generator_RowClassName="tbl_dodatni_troskoviRow">
+        <xs:element name="dodatni_troskovi" msprop:Generator_TableClassName="dodatni_troskoviDataTable" msprop:Generator_TableVarName="tabledodatni_troskovi" msprop:Generator_TablePropName="dodatni_troskovi" msprop:Generator_RowDeletingName="dodatni_troskoviRowDeleting" msprop:Generator_UserTableName="dodatni_troskovi" msprop:Generator_RowChangingName="dodatni_troskoviRowChanging" msprop:Generator_RowEvHandlerName="dodatni_troskoviRowChangeEventHandler" msprop:Generator_RowDeletedName="dodatni_troskoviRowDeleted" msprop:Generator_RowEvArgName="dodatni_troskoviRowChangeEvent" msprop:Generator_RowChangedName="dodatni_troskoviRowChanged" msprop:Generator_RowClassName="dodatni_troskoviRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -495,7 +495,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)</CommandTex
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_izvjestaj" msprop:Generator_TableClassName="tbl_izvjestajDataTable" msprop:Generator_TableVarName="tabletbl_izvjestaj" msprop:Generator_TablePropName="tbl_izvjestaj" msprop:Generator_RowDeletingName="tbl_izvjestajRowDeleting" msprop:Generator_UserTableName="tbl_izvjestaj" msprop:Generator_RowChangingName="tbl_izvjestajRowChanging" msprop:Generator_RowEvHandlerName="tbl_izvjestajRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_izvjestajRowDeleted" msprop:Generator_RowEvArgName="tbl_izvjestajRowChangeEvent" msprop:Generator_RowChangedName="tbl_izvjestajRowChanged" msprop:Generator_RowClassName="tbl_izvjestajRow">
+        <xs:element name="izvjestaj" msprop:Generator_TableClassName="izvjestajDataTable" msprop:Generator_TableVarName="tableizvjestaj" msprop:Generator_TablePropName="izvjestaj" msprop:Generator_RowDeletingName="izvjestajRowDeleting" msprop:Generator_UserTableName="izvjestaj" msprop:Generator_RowChangingName="izvjestajRowChanging" msprop:Generator_RowEvHandlerName="izvjestajRowChangeEventHandler" msprop:Generator_RowDeletedName="izvjestajRowDeleted" msprop:Generator_RowEvArgName="izvjestajRowChangeEvent" msprop:Generator_RowChangedName="izvjestajRowChanged" msprop:Generator_RowClassName="izvjestajRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -511,7 +511,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)</CommandTex
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_prijevozni_troskovi" msprop:Generator_TableClassName="tbl_prijevozni_troskoviDataTable" msprop:Generator_TableVarName="tabletbl_prijevozni_troskovi" msprop:Generator_TablePropName="tbl_prijevozni_troskovi" msprop:Generator_RowDeletingName="tbl_prijevozni_troskoviRowDeleting" msprop:Generator_UserTableName="tbl_prijevozni_troskovi" msprop:Generator_RowChangingName="tbl_prijevozni_troskoviRowChanging" msprop:Generator_RowEvHandlerName="tbl_prijevozni_troskoviRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_prijevozni_troskoviRowDeleted" msprop:Generator_RowEvArgName="tbl_prijevozni_troskoviRowChangeEvent" msprop:Generator_RowChangedName="tbl_prijevozni_troskoviRowChanged" msprop:Generator_RowClassName="tbl_prijevozni_troskoviRow">
+        <xs:element name="prijevozni_troskovi" msprop:Generator_TableClassName="prijevozni_troskoviDataTable" msprop:Generator_TableVarName="tableprijevozni_troskovi" msprop:Generator_TablePropName="prijevozni_troskovi" msprop:Generator_RowDeletingName="prijevozni_troskoviRowDeleting" msprop:Generator_UserTableName="prijevozni_troskovi" msprop:Generator_RowChangingName="prijevozni_troskoviRowChanging" msprop:Generator_RowEvHandlerName="prijevozni_troskoviRowChangeEventHandler" msprop:Generator_RowDeletedName="prijevozni_troskoviRowDeleted" msprop:Generator_RowEvArgName="prijevozni_troskoviRowChangeEvent" msprop:Generator_RowChangedName="prijevozni_troskoviRowChanged" msprop:Generator_RowClassName="prijevozni_troskoviRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -541,7 +541,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)</CommandTex
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_putni_nalog" msprop:Generator_TableClassName="tbl_putni_nalogDataTable" msprop:Generator_TableVarName="tabletbl_putni_nalog" msprop:Generator_TablePropName="tbl_putni_nalog" msprop:Generator_RowDeletingName="tbl_putni_nalogRowDeleting" msprop:Generator_UserTableName="tbl_putni_nalog" msprop:Generator_RowChangingName="tbl_putni_nalogRowChanging" msprop:Generator_RowEvHandlerName="tbl_putni_nalogRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_putni_nalogRowDeleted" msprop:Generator_RowEvArgName="tbl_putni_nalogRowChangeEvent" msprop:Generator_RowChangedName="tbl_putni_nalogRowChanged" msprop:Generator_RowClassName="tbl_putni_nalogRow">
+        <xs:element name="putni_nalog" msprop:Generator_TableClassName="putni_nalogDataTable" msprop:Generator_TableVarName="tableputni_nalog" msprop:Generator_TablePropName="putni_nalog" msprop:Generator_RowDeletingName="putni_nalogRowDeleting" msprop:Generator_UserTableName="putni_nalog" msprop:Generator_RowChangingName="putni_nalogRowChanging" msprop:Generator_RowEvHandlerName="putni_nalogRowChangeEventHandler" msprop:Generator_RowDeletedName="putni_nalogRowDeleted" msprop:Generator_RowEvArgName="putni_nalogRowChangeEvent" msprop:Generator_RowChangedName="putni_nalogRowChanged" msprop:Generator_RowClassName="putni_nalogRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -595,7 +595,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)</CommandTex
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_putni_racun" msprop:Generator_TableClassName="tbl_putni_racunDataTable" msprop:Generator_TableVarName="tabletbl_putni_racun" msprop:Generator_TablePropName="tbl_putni_racun" msprop:Generator_RowDeletingName="tbl_putni_racunRowDeleting" msprop:Generator_UserTableName="tbl_putni_racun" msprop:Generator_RowChangingName="tbl_putni_racunRowChanging" msprop:Generator_RowEvHandlerName="tbl_putni_racunRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_putni_racunRowDeleted" msprop:Generator_RowEvArgName="tbl_putni_racunRowChangeEvent" msprop:Generator_RowChangedName="tbl_putni_racunRowChanged" msprop:Generator_RowClassName="tbl_putni_racunRow">
+        <xs:element name="putni_racun" msprop:Generator_TableClassName="putni_racunDataTable" msprop:Generator_TableVarName="tableputni_racun" msprop:Generator_TablePropName="putni_racun" msprop:Generator_RowDeletingName="putni_racunRowDeleting" msprop:Generator_UserTableName="putni_racun" msprop:Generator_RowChangingName="putni_racunRowChanging" msprop:Generator_RowEvHandlerName="putni_racunRowChangeEventHandler" msprop:Generator_RowDeletedName="putni_racunRowDeleted" msprop:Generator_RowEvArgName="putni_racunRowChangeEvent" msprop:Generator_RowChangedName="putni_racunRowChanged" msprop:Generator_RowClassName="putni_racunRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -604,7 +604,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)</CommandTex
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_status_naloga" msprop:Generator_TableClassName="tbl_status_nalogaDataTable" msprop:Generator_TableVarName="tabletbl_status_naloga" msprop:Generator_TablePropName="tbl_status_naloga" msprop:Generator_RowDeletingName="tbl_status_nalogaRowDeleting" msprop:Generator_UserTableName="tbl_status_naloga" msprop:Generator_RowChangingName="tbl_status_nalogaRowChanging" msprop:Generator_RowEvHandlerName="tbl_status_nalogaRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_status_nalogaRowDeleted" msprop:Generator_RowEvArgName="tbl_status_nalogaRowChangeEvent" msprop:Generator_RowChangedName="tbl_status_nalogaRowChanged" msprop:Generator_RowClassName="tbl_status_nalogaRow">
+        <xs:element name="status_naloga" msprop:Generator_TableClassName="status_nalogaDataTable" msprop:Generator_TableVarName="tablestatus_naloga" msprop:Generator_TablePropName="status_naloga" msprop:Generator_RowDeletingName="status_nalogaRowDeleting" msprop:Generator_UserTableName="status_naloga" msprop:Generator_RowChangingName="status_nalogaRowChanging" msprop:Generator_RowEvHandlerName="status_nalogaRowChangeEventHandler" msprop:Generator_RowDeletedName="status_nalogaRowDeleted" msprop:Generator_RowEvArgName="status_nalogaRowChangeEvent" msprop:Generator_RowChangedName="status_nalogaRowChanged" msprop:Generator_RowClassName="status_nalogaRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -618,7 +618,7 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)</CommandTex
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="tbl_vozilo" msprop:Generator_TableClassName="tbl_voziloDataTable" msprop:Generator_TableVarName="tabletbl_vozilo" msprop:Generator_TablePropName="tbl_vozilo" msprop:Generator_RowDeletingName="tbl_voziloRowDeleting" msprop:Generator_UserTableName="tbl_vozilo" msprop:Generator_RowChangingName="tbl_voziloRowChanging" msprop:Generator_RowEvHandlerName="tbl_voziloRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_voziloRowDeleted" msprop:Generator_RowEvArgName="tbl_voziloRowChangeEvent" msprop:Generator_RowChangedName="tbl_voziloRowChanged" msprop:Generator_RowClassName="tbl_voziloRow">
+        <xs:element name="vozilo" msprop:Generator_TableClassName="voziloDataTable" msprop:Generator_TableVarName="tablevozilo" msprop:Generator_TablePropName="vozilo" msprop:Generator_RowDeletingName="voziloRowDeleting" msprop:Generator_UserTableName="vozilo" msprop:Generator_RowChangingName="voziloRowChanging" msprop:Generator_RowEvHandlerName="voziloRowChangeEventHandler" msprop:Generator_RowDeletedName="voziloRowDeleted" msprop:Generator_RowEvArgName="voziloRowChangeEvent" msprop:Generator_RowChangedName="voziloRowChanged" msprop:Generator_RowClassName="voziloRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -649,42 +649,42 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)</CommandTex
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:tbl_dodatni_troskovi" />
+      <xs:selector xpath=".//mstns:dodatni_troskovi" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:unique name="tbl_izvjestaj_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:tbl_izvjestaj" />
+    <xs:unique name="izvjestaj_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:izvjestaj" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:unique name="tbl_prijevozni_troskovi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:tbl_prijevozni_troskovi" />
+    <xs:unique name="prijevozni_troskovi_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:prijevozni_troskovi" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:unique name="tbl_putni_nalog_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:tbl_putni_nalog" />
+    <xs:unique name="putni_nalog_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:putni_nalog" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:unique name="tbl_putni_racun_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:tbl_putni_racun" />
+    <xs:unique name="putni_racun_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:putni_racun" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:unique name="tbl_status_naloga_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:tbl_status_naloga" />
+    <xs:unique name="status_naloga_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:status_naloga" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
-    <xs:unique name="tbl_vozilo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
-      <xs:selector xpath=".//mstns:tbl_vozilo" />
+    <xs:unique name="vozilo_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vozilo" />
       <xs:field xpath="mstns:id" />
     </xs:unique>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="FK_dodatni_troskovi_pripada_putni_racun" msdata:parent="tbl_putni_racun" msdata:child="tbl_dodatni_troskovi" msdata:parentkey="id" msdata:childkey="putni_racun_id" msprop:Generator_UserChildTable="tbl_dodatni_troskovi" msprop:Generator_ChildPropName="Gettbl_dodatni_troskoviRows" msprop:Generator_UserParentTable="tbl_putni_racun" msprop:Generator_UserRelationName="FK_dodatni_troskovi_pripada_putni_racun" msprop:Generator_RelationVarName="relationFK_dodatni_troskovi_pripada_putni_racun" msprop:Generator_ParentPropName="tbl_putni_racunRow" />
-      <msdata:Relationship name="FK_izvjestaj_pripada_putni_nalog" msdata:parent="tbl_putni_nalog" msdata:child="tbl_izvjestaj" msdata:parentkey="id" msdata:childkey="putni_nalog_id" msprop:Generator_UserChildTable="tbl_izvjestaj" msprop:Generator_ChildPropName="Gettbl_izvjestajRows" msprop:Generator_UserParentTable="tbl_putni_nalog" msprop:Generator_UserRelationName="FK_izvjestaj_pripada_putni_nalog" msprop:Generator_RelationVarName="relationFK_izvjestaj_pripada_putni_nalog" msprop:Generator_ParentPropName="tbl_putni_nalogRow" />
-      <msdata:Relationship name="FK_prijevozni_troskovi_za_putni_racun" msdata:parent="tbl_putni_racun" msdata:child="tbl_prijevozni_troskovi" msdata:parentkey="id" msdata:childkey="putni_racun_id" msprop:Generator_UserChildTable="tbl_prijevozni_troskovi" msprop:Generator_ChildPropName="Gettbl_prijevozni_troskoviRows" msprop:Generator_UserParentTable="tbl_putni_racun" msprop:Generator_UserRelationName="FK_prijevozni_troskovi_za_putni_racun" msprop:Generator_RelationVarName="relationFK_prijevozni_troskovi_za_putni_racun" msprop:Generator_ParentPropName="tbl_putni_racunRow" />
-      <msdata:Relationship name="FK_putni_nalog_ima_status" msdata:parent="tbl_status_naloga" msdata:child="tbl_putni_nalog" msdata:parentkey="id" msdata:childkey="status_id" msprop:Generator_UserChildTable="tbl_putni_nalog" msprop:Generator_ChildPropName="Gettbl_putni_nalogRows" msprop:Generator_UserParentTable="tbl_status_naloga" msprop:Generator_UserRelationName="FK_putni_nalog_ima_status" msprop:Generator_RelationVarName="relationFK_putni_nalog_ima_status" msprop:Generator_ParentPropName="tbl_status_nalogaRow" />
-      <msdata:Relationship name="FK_putni_nalog_koristi_vozilo" msdata:parent="tbl_vozilo" msdata:child="tbl_putni_nalog" msdata:parentkey="id" msdata:childkey="vozilo_id" msprop:Generator_UserChildTable="tbl_putni_nalog" msprop:Generator_ChildPropName="Gettbl_putni_nalogRows" msprop:Generator_UserParentTable="tbl_vozilo" msprop:Generator_UserRelationName="FK_putni_nalog_koristi_vozilo" msprop:Generator_RelationVarName="relationFK_putni_nalog_koristi_vozilo" msprop:Generator_ParentPropName="tbl_voziloRow" />
-      <msdata:Relationship name="FK_putni_racun_pripada_putni_nalog" msdata:parent="tbl_putni_nalog" msdata:child="tbl_putni_racun" msdata:parentkey="id" msdata:childkey="putni_nalog_id" msprop:Generator_UserChildTable="tbl_putni_racun" msprop:Generator_ChildPropName="Gettbl_putni_racunRows" msprop:Generator_UserParentTable="tbl_putni_nalog" msprop:Generator_UserRelationName="FK_putni_racun_pripada_putni_nalog" msprop:Generator_RelationVarName="relationFK_putni_racun_pripada_putni_nalog" msprop:Generator_ParentPropName="tbl_putni_nalogRow" />
+      <msdata:Relationship name="FK_dodatni_troskovi_pripada_putni_racun" msdata:parent="putni_racun" msdata:child="dodatni_troskovi" msdata:parentkey="id" msdata:childkey="putni_racun_id" msprop:Generator_UserChildTable="dodatni_troskovi" msprop:Generator_ChildPropName="Gettbl_dodatni_troskoviRows" msprop:Generator_UserParentTable="putni_racun" msprop:Generator_UserRelationName="FK_dodatni_troskovi_pripada_putni_racun" msprop:Generator_RelationVarName="relationFK_dodatni_troskovi_pripada_putni_racun" msprop:Generator_ParentPropName="putni_racunRow" />
+      <msdata:Relationship name="FK_izvjestaj_pripada_putni_nalog" msdata:parent="putni_nalog" msdata:child="izvjestaj" msdata:parentkey="id" msdata:childkey="putni_nalog_id" msprop:Generator_UserChildTable="izvjestaj" msprop:Generator_ChildPropName="Gettbl_izvjestajRows" msprop:Generator_UserParentTable="putni_nalog" msprop:Generator_UserRelationName="FK_izvjestaj_pripada_putni_nalog" msprop:Generator_RelationVarName="relationFK_izvjestaj_pripada_putni_nalog" msprop:Generator_ParentPropName="putni_nalogRow" />
+      <msdata:Relationship name="FK_prijevozni_troskovi_za_putni_racun" msdata:parent="putni_racun" msdata:child="prijevozni_troskovi" msdata:parentkey="id" msdata:childkey="putni_racun_id" msprop:Generator_UserChildTable="prijevozni_troskovi" msprop:Generator_ChildPropName="Gettbl_prijevozni_troskoviRows" msprop:Generator_UserParentTable="putni_racun" msprop:Generator_UserRelationName="FK_prijevozni_troskovi_za_putni_racun" msprop:Generator_RelationVarName="relationFK_prijevozni_troskovi_za_putni_racun" msprop:Generator_ParentPropName="putni_racunRow" />
+      <msdata:Relationship name="FK_putni_nalog_ima_status" msdata:parent="status_naloga" msdata:child="putni_nalog" msdata:parentkey="id" msdata:childkey="status_id" msprop:Generator_UserChildTable="putni_nalog" msprop:Generator_ChildPropName="Gettbl_putni_nalogRows" msprop:Generator_UserParentTable="status_naloga" msprop:Generator_UserRelationName="FK_putni_nalog_ima_status" msprop:Generator_RelationVarName="relationFK_putni_nalog_ima_status" msprop:Generator_ParentPropName="status_nalogaRow" />
+      <msdata:Relationship name="FK_putni_nalog_koristi_vozilo" msdata:parent="vozilo" msdata:child="putni_nalog" msdata:parentkey="id" msdata:childkey="vozilo_id" msprop:Generator_UserChildTable="putni_nalog" msprop:Generator_ChildPropName="Gettbl_putni_nalogRows" msprop:Generator_UserParentTable="vozilo" msprop:Generator_UserRelationName="FK_putni_nalog_koristi_vozilo" msprop:Generator_RelationVarName="relationFK_putni_nalog_koristi_vozilo" msprop:Generator_ParentPropName="voziloRow" />
+      <msdata:Relationship name="FK_putni_racun_pripada_putni_nalog" msdata:parent="putni_nalog" msdata:child="putni_racun" msdata:parentkey="id" msdata:childkey="putni_nalog_id" msprop:Generator_UserChildTable="putni_racun" msprop:Generator_ChildPropName="Getputni_racunRows" msprop:Generator_UserParentTable="putni_nalog" msprop:Generator_UserRelationName="FK_putni_racun_pripada_putni_nalog" msprop:Generator_RelationVarName="relationFK_putni_racun_pripada_putni_nalog" msprop:Generator_ParentPropName="tbl_putni_nalogRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

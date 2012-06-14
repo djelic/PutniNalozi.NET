@@ -62,6 +62,11 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="piDB9DS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>piDB9DS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
@@ -82,6 +87,17 @@
     <None Include="app.config" />
     <None Include="lib\piDB3.db3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="piDB9DS.xsc">
+      <DependentUpon>piDB9DS.xsd</DependentUpon>
+    </None>
+    <None Include="piDB9DS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>piDB9DS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="piDB9DS.xss">
+      <DependentUpon>piDB9DS.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
