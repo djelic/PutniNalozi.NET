@@ -62,6 +62,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPutniNalozi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPutniNalozi.Designer.cs">
+      <DependentUpon>frmPutniNalozi.cs</DependentUpon>
+    </Compile>
     <Compile Include="piDB9DS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,6 +80,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPutniNalozi.resx">
+      <DependentUpon>frmPutniNalozi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

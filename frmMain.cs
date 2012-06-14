@@ -25,6 +25,8 @@ namespace PutniNalozi.NET
          */
         private void openLogin()
         {
+            // ODKOMENTIRAJ ZA LOGIN
+            /**
             frmLogin FrmLogin = new frmLogin();
             // set this window as parent to frmLogin
             FrmLogin.MdiParent = this;
@@ -34,6 +36,12 @@ namespace PutniNalozi.NET
             frmMain.WriteToStatus("Please login to proceed");
             // finally, show login window
             FrmLogin.Show();
+             **/
+
+            frmPutniNalozi FrmPutniNalozi = new frmPutniNalozi();
+            FrmPutniNalozi.MdiParent = this;
+            FrmPutniNalozi.StartPosition = FormStartPosition.CenterParent;
+            FrmPutniNalozi.Show();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
