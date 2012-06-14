@@ -3925,7 +3925,7 @@ namespace PutniNalozi.NET.piDB9DSTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class dodatni_troskoviTA : global::System.ComponentModel.Component {
+    public partial class dodatniTroskoviTA : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -3939,7 +3939,7 @@ namespace PutniNalozi.NET.piDB9DSTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public dodatni_troskoviTA() {
+        public dodatniTroskoviTA() {
             this.ClearBeforeFill = true;
         }
         
@@ -4659,7 +4659,7 @@ SELECT id, putni_nalog_id, opis, datum_kreiranja FROM tbl_izvjestaj WHERE (id = 
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class prijevozni_troskoviTA : global::System.ComponentModel.Component {
+    public partial class prijevozniTroskoviTA : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -4673,7 +4673,7 @@ SELECT id, putni_nalog_id, opis, datum_kreiranja FROM tbl_izvjestaj WHERE (id = 
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public prijevozni_troskoviTA() {
+        public prijevozniTroskoviTA() {
             this.ClearBeforeFill = true;
         }
         
@@ -5084,7 +5084,7 @@ SELECT id, putni_racun_id, relacija_od, relacija_do, iznos, prijevozno_sredstvo 
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class putni_nalogTA : global::System.ComponentModel.Component {
+    public partial class putniNalogTA : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -5098,7 +5098,7 @@ SELECT id, putni_racun_id, relacija_od, relacija_do, iznos, prijevozno_sredstvo 
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public putni_nalogTA() {
+        public putniNalogTA() {
             this.ClearBeforeFill = true;
         }
         
@@ -5727,7 +5727,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class putni_racunTA : global::System.ComponentModel.Component {
+    public partial class putniRacunTA : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -5741,7 +5741,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public putni_racunTA() {
+        public putniRacunTA() {
             this.ClearBeforeFill = true;
         }
         
@@ -6061,7 +6061,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class status_nalogaTA : global::System.ComponentModel.Component {
+    public partial class statusNalogaTA : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -6075,7 +6075,7 @@ SELECT id, putni_nalog_id, datum_kreiranja FROM tbl_putni_racun WHERE (id = @id)
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public status_nalogaTA() {
+        public statusNalogaTA() {
             this.ClearBeforeFill = true;
         }
         
@@ -6759,17 +6759,17 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         
         private UpdateOrderOption _updateOrder;
         
-        private dodatni_troskoviTA _dodatni_troskoviTA;
+        private dodatniTroskoviTA _dodatniTroskoviTA;
         
         private izvjestajTA _izvjestajTA;
         
-        private prijevozni_troskoviTA _prijevozni_troskoviTA;
+        private prijevozniTroskoviTA _prijevozniTroskoviTA;
         
-        private putni_nalogTA _putni_nalogTA;
+        private putniNalogTA _putniNalogTA;
         
-        private putni_racunTA _putni_racunTA;
+        private putniRacunTA _putniRacunTA;
         
-        private status_nalogaTA _status_nalogaTA;
+        private statusNalogaTA _statusNalogaTA;
         
         private voziloTA _voziloTA;
         
@@ -6793,12 +6793,12 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public dodatni_troskoviTA dodatni_troskoviTA {
+        public dodatniTroskoviTA dodatniTroskoviTA {
             get {
-                return this._dodatni_troskoviTA;
+                return this._dodatniTroskoviTA;
             }
             set {
-                this._dodatni_troskoviTA = value;
+                this._dodatniTroskoviTA = value;
             }
         }
         
@@ -6821,12 +6821,12 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public prijevozni_troskoviTA prijevozni_troskoviTA {
+        public prijevozniTroskoviTA prijevozniTroskoviTA {
             get {
-                return this._prijevozni_troskoviTA;
+                return this._prijevozniTroskoviTA;
             }
             set {
-                this._prijevozni_troskoviTA = value;
+                this._prijevozniTroskoviTA = value;
             }
         }
         
@@ -6835,12 +6835,12 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public putni_nalogTA putni_nalogTA {
+        public putniNalogTA putniNalogTA {
             get {
-                return this._putni_nalogTA;
+                return this._putniNalogTA;
             }
             set {
-                this._putni_nalogTA = value;
+                this._putniNalogTA = value;
             }
         }
         
@@ -6849,12 +6849,12 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public putni_racunTA putni_racunTA {
+        public putniRacunTA putniRacunTA {
             get {
-                return this._putni_racunTA;
+                return this._putniRacunTA;
             }
             set {
-                this._putni_racunTA = value;
+                this._putniRacunTA = value;
             }
         }
         
@@ -6863,12 +6863,12 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public status_nalogaTA status_nalogaTA {
+        public statusNalogaTA statusNalogaTA {
             get {
-                return this._status_nalogaTA;
+                return this._statusNalogaTA;
             }
             set {
-                this._status_nalogaTA = value;
+                this._statusNalogaTA = value;
             }
         }
         
@@ -6905,29 +6905,29 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 if ((this._connection != null)) {
                     return this._connection;
                 }
-                if (((this._dodatni_troskoviTA != null) 
-                            && (this._dodatni_troskoviTA.Connection != null))) {
-                    return this._dodatni_troskoviTA.Connection;
+                if (((this._dodatniTroskoviTA != null) 
+                            && (this._dodatniTroskoviTA.Connection != null))) {
+                    return this._dodatniTroskoviTA.Connection;
                 }
                 if (((this._izvjestajTA != null) 
                             && (this._izvjestajTA.Connection != null))) {
                     return this._izvjestajTA.Connection;
                 }
-                if (((this._prijevozni_troskoviTA != null) 
-                            && (this._prijevozni_troskoviTA.Connection != null))) {
-                    return this._prijevozni_troskoviTA.Connection;
+                if (((this._prijevozniTroskoviTA != null) 
+                            && (this._prijevozniTroskoviTA.Connection != null))) {
+                    return this._prijevozniTroskoviTA.Connection;
                 }
-                if (((this._putni_nalogTA != null) 
-                            && (this._putni_nalogTA.Connection != null))) {
-                    return this._putni_nalogTA.Connection;
+                if (((this._putniNalogTA != null) 
+                            && (this._putniNalogTA.Connection != null))) {
+                    return this._putniNalogTA.Connection;
                 }
-                if (((this._putni_racunTA != null) 
-                            && (this._putni_racunTA.Connection != null))) {
-                    return this._putni_racunTA.Connection;
+                if (((this._putniRacunTA != null) 
+                            && (this._putniRacunTA.Connection != null))) {
+                    return this._putniRacunTA.Connection;
                 }
-                if (((this._status_nalogaTA != null) 
-                            && (this._status_nalogaTA.Connection != null))) {
-                    return this._status_nalogaTA.Connection;
+                if (((this._statusNalogaTA != null) 
+                            && (this._statusNalogaTA.Connection != null))) {
+                    return this._statusNalogaTA.Connection;
                 }
                 if (((this._voziloTA != null) 
                             && (this._voziloTA.Connection != null))) {
@@ -6946,22 +6946,22 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
-                if ((this._dodatni_troskoviTA != null)) {
+                if ((this._dodatniTroskoviTA != null)) {
                     count = (count + 1);
                 }
                 if ((this._izvjestajTA != null)) {
                     count = (count + 1);
                 }
-                if ((this._prijevozni_troskoviTA != null)) {
+                if ((this._prijevozniTroskoviTA != null)) {
                     count = (count + 1);
                 }
-                if ((this._putni_nalogTA != null)) {
+                if ((this._putniNalogTA != null)) {
                     count = (count + 1);
                 }
-                if ((this._putni_racunTA != null)) {
+                if ((this._putniRacunTA != null)) {
                     count = (count + 1);
                 }
-                if ((this._status_nalogaTA != null)) {
+                if ((this._statusNalogaTA != null)) {
                     count = (count + 1);
                 }
                 if ((this._voziloTA != null)) {
@@ -6978,12 +6978,12 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(piDB9DS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._status_nalogaTA != null)) {
+            if ((this._statusNalogaTA != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.status_naloga.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._status_nalogaTA.Update(updatedRows));
+                    result = (result + this._statusNalogaTA.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -6996,12 +6996,12 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._putni_nalogTA != null)) {
+            if ((this._putniNalogTA != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.putni_nalog.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._putni_nalogTA.Update(updatedRows));
+                    result = (result + this._putniNalogTA.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -7014,30 +7014,30 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._dodatni_troskoviTA != null)) {
+            if ((this._dodatniTroskoviTA != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._dodatni_troskoviTA.Update(updatedRows));
+                    result = (result + this._dodatniTroskoviTA.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._prijevozni_troskoviTA != null)) {
+            if ((this._prijevozniTroskoviTA != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._prijevozni_troskoviTA.Update(updatedRows));
+                    result = (result + this._prijevozniTroskoviTA.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._putni_racunTA != null)) {
+            if ((this._putniRacunTA != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.putni_racun.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._putni_racunTA.Update(updatedRows));
+                    result = (result + this._putniRacunTA.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -7051,11 +7051,11 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(piDB9DS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._status_nalogaTA != null)) {
+            if ((this._statusNalogaTA != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.status_naloga.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._status_nalogaTA.Update(addedRows));
+                    result = (result + this._statusNalogaTA.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -7067,11 +7067,11 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._putni_nalogTA != null)) {
+            if ((this._putniNalogTA != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.putni_nalog.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._putni_nalogTA.Update(addedRows));
+                    result = (result + this._putniNalogTA.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -7083,27 +7083,27 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._dodatni_troskoviTA != null)) {
+            if ((this._dodatniTroskoviTA != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._dodatni_troskoviTA.Update(addedRows));
+                    result = (result + this._dodatniTroskoviTA.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._prijevozni_troskoviTA != null)) {
+            if ((this._prijevozniTroskoviTA != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._prijevozni_troskoviTA.Update(addedRows));
+                    result = (result + this._prijevozniTroskoviTA.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._putni_racunTA != null)) {
+            if ((this._putniRacunTA != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.putni_racun.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._putni_racunTA.Update(addedRows));
+                    result = (result + this._putniRacunTA.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -7117,27 +7117,27 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(piDB9DS dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._putni_racunTA != null)) {
+            if ((this._putniRacunTA != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.putni_racun.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._putni_racunTA.Update(deletedRows));
+                    result = (result + this._putniRacunTA.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._prijevozni_troskoviTA != null)) {
+            if ((this._prijevozniTroskoviTA != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.prijevozni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._prijevozni_troskoviTA.Update(deletedRows));
+                    result = (result + this._prijevozniTroskoviTA.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._dodatni_troskoviTA != null)) {
+            if ((this._dodatniTroskoviTA != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.dodatni_troskovi.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._dodatni_troskoviTA.Update(deletedRows));
+                    result = (result + this._dodatniTroskoviTA.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -7149,11 +7149,11 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._putni_nalogTA != null)) {
+            if ((this._putniNalogTA != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.putni_nalog.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._putni_nalogTA.Update(deletedRows));
+                    result = (result + this._putniNalogTA.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -7165,11 +7165,11 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._status_nalogaTA != null)) {
+            if ((this._statusNalogaTA != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.status_naloga.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._status_nalogaTA.Update(deletedRows));
+                    result = (result + this._statusNalogaTA.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -7212,8 +7212,8 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
             if ((dataSet.HasChanges() == false)) {
                 return 0;
             }
-            if (((this._dodatni_troskoviTA != null) 
-                        && (this.MatchTableAdapterConnection(this._dodatni_troskoviTA.Connection) == false))) {
+            if (((this._dodatniTroskoviTA != null) 
+                        && (this.MatchTableAdapterConnection(this._dodatniTroskoviTA.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -7222,23 +7222,23 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._prijevozni_troskoviTA != null) 
-                        && (this.MatchTableAdapterConnection(this._prijevozni_troskoviTA.Connection) == false))) {
+            if (((this._prijevozniTroskoviTA != null) 
+                        && (this.MatchTableAdapterConnection(this._prijevozniTroskoviTA.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._putni_nalogTA != null) 
-                        && (this.MatchTableAdapterConnection(this._putni_nalogTA.Connection) == false))) {
+            if (((this._putniNalogTA != null) 
+                        && (this.MatchTableAdapterConnection(this._putniNalogTA.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._putni_racunTA != null) 
-                        && (this.MatchTableAdapterConnection(this._putni_racunTA.Connection) == false))) {
+            if (((this._putniRacunTA != null) 
+                        && (this.MatchTableAdapterConnection(this._putniRacunTA.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
-            if (((this._status_nalogaTA != null) 
-                        && (this.MatchTableAdapterConnection(this._status_nalogaTA.Connection) == false))) {
+            if (((this._statusNalogaTA != null) 
+                        && (this.MatchTableAdapterConnection(this._statusNalogaTA.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -7279,13 +7279,13 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
             try {
                 // ---- Prepare for update -----------
                 //
-                if ((this._dodatni_troskoviTA != null)) {
-                    revertConnections.Add(this._dodatni_troskoviTA, this._dodatni_troskoviTA.Connection);
-                    this._dodatni_troskoviTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._dodatni_troskoviTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._dodatni_troskoviTA.Adapter.AcceptChangesDuringUpdate) {
-                        this._dodatni_troskoviTA.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._dodatni_troskoviTA.Adapter);
+                if ((this._dodatniTroskoviTA != null)) {
+                    revertConnections.Add(this._dodatniTroskoviTA, this._dodatniTroskoviTA.Connection);
+                    this._dodatniTroskoviTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._dodatniTroskoviTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._dodatniTroskoviTA.Adapter.AcceptChangesDuringUpdate) {
+                        this._dodatniTroskoviTA.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._dodatniTroskoviTA.Adapter);
                     }
                 }
                 if ((this._izvjestajTA != null)) {
@@ -7297,40 +7297,40 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                         adaptersWithAcceptChangesDuringUpdate.Add(this._izvjestajTA.Adapter);
                     }
                 }
-                if ((this._prijevozni_troskoviTA != null)) {
-                    revertConnections.Add(this._prijevozni_troskoviTA, this._prijevozni_troskoviTA.Connection);
-                    this._prijevozni_troskoviTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._prijevozni_troskoviTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._prijevozni_troskoviTA.Adapter.AcceptChangesDuringUpdate) {
-                        this._prijevozni_troskoviTA.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._prijevozni_troskoviTA.Adapter);
+                if ((this._prijevozniTroskoviTA != null)) {
+                    revertConnections.Add(this._prijevozniTroskoviTA, this._prijevozniTroskoviTA.Connection);
+                    this._prijevozniTroskoviTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._prijevozniTroskoviTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._prijevozniTroskoviTA.Adapter.AcceptChangesDuringUpdate) {
+                        this._prijevozniTroskoviTA.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._prijevozniTroskoviTA.Adapter);
                     }
                 }
-                if ((this._putni_nalogTA != null)) {
-                    revertConnections.Add(this._putni_nalogTA, this._putni_nalogTA.Connection);
-                    this._putni_nalogTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._putni_nalogTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._putni_nalogTA.Adapter.AcceptChangesDuringUpdate) {
-                        this._putni_nalogTA.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._putni_nalogTA.Adapter);
+                if ((this._putniNalogTA != null)) {
+                    revertConnections.Add(this._putniNalogTA, this._putniNalogTA.Connection);
+                    this._putniNalogTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._putniNalogTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._putniNalogTA.Adapter.AcceptChangesDuringUpdate) {
+                        this._putniNalogTA.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._putniNalogTA.Adapter);
                     }
                 }
-                if ((this._putni_racunTA != null)) {
-                    revertConnections.Add(this._putni_racunTA, this._putni_racunTA.Connection);
-                    this._putni_racunTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._putni_racunTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._putni_racunTA.Adapter.AcceptChangesDuringUpdate) {
-                        this._putni_racunTA.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._putni_racunTA.Adapter);
+                if ((this._putniRacunTA != null)) {
+                    revertConnections.Add(this._putniRacunTA, this._putniRacunTA.Connection);
+                    this._putniRacunTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._putniRacunTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._putniRacunTA.Adapter.AcceptChangesDuringUpdate) {
+                        this._putniRacunTA.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._putniRacunTA.Adapter);
                     }
                 }
-                if ((this._status_nalogaTA != null)) {
-                    revertConnections.Add(this._status_nalogaTA, this._status_nalogaTA.Connection);
-                    this._status_nalogaTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
-                    this._status_nalogaTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
-                    if (this._status_nalogaTA.Adapter.AcceptChangesDuringUpdate) {
-                        this._status_nalogaTA.Adapter.AcceptChangesDuringUpdate = false;
-                        adaptersWithAcceptChangesDuringUpdate.Add(this._status_nalogaTA.Adapter);
+                if ((this._statusNalogaTA != null)) {
+                    revertConnections.Add(this._statusNalogaTA, this._statusNalogaTA.Connection);
+                    this._statusNalogaTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._statusNalogaTA.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._statusNalogaTA.Adapter.AcceptChangesDuringUpdate) {
+                        this._statusNalogaTA.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._statusNalogaTA.Adapter);
                     }
                 }
                 if ((this._voziloTA != null)) {
@@ -7400,29 +7400,29 @@ SELECT id, tip, marka, registracija FROM tbl_vozilo WHERE (id = @id)";
                 if (workConnOpened) {
                     workConnection.Close();
                 }
-                if ((this._dodatni_troskoviTA != null)) {
-                    this._dodatni_troskoviTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dodatni_troskoviTA]));
-                    this._dodatni_troskoviTA.Transaction = null;
+                if ((this._dodatniTroskoviTA != null)) {
+                    this._dodatniTroskoviTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._dodatniTroskoviTA]));
+                    this._dodatniTroskoviTA.Transaction = null;
                 }
                 if ((this._izvjestajTA != null)) {
                     this._izvjestajTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._izvjestajTA]));
                     this._izvjestajTA.Transaction = null;
                 }
-                if ((this._prijevozni_troskoviTA != null)) {
-                    this._prijevozni_troskoviTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._prijevozni_troskoviTA]));
-                    this._prijevozni_troskoviTA.Transaction = null;
+                if ((this._prijevozniTroskoviTA != null)) {
+                    this._prijevozniTroskoviTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._prijevozniTroskoviTA]));
+                    this._prijevozniTroskoviTA.Transaction = null;
                 }
-                if ((this._putni_nalogTA != null)) {
-                    this._putni_nalogTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._putni_nalogTA]));
-                    this._putni_nalogTA.Transaction = null;
+                if ((this._putniNalogTA != null)) {
+                    this._putniNalogTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._putniNalogTA]));
+                    this._putniNalogTA.Transaction = null;
                 }
-                if ((this._putni_racunTA != null)) {
-                    this._putni_racunTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._putni_racunTA]));
-                    this._putni_racunTA.Transaction = null;
+                if ((this._putniRacunTA != null)) {
+                    this._putniRacunTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._putniRacunTA]));
+                    this._putniRacunTA.Transaction = null;
                 }
-                if ((this._status_nalogaTA != null)) {
-                    this._status_nalogaTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._status_nalogaTA]));
-                    this._status_nalogaTA.Transaction = null;
+                if ((this._statusNalogaTA != null)) {
+                    this._statusNalogaTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._statusNalogaTA]));
+                    this._statusNalogaTA.Transaction = null;
                 }
                 if ((this._voziloTA != null)) {
                     this._voziloTA.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._voziloTA]));

@@ -60,7 +60,7 @@
             this.optHelp});
             this.mnuMain.Location = new System.Drawing.Point(0, 0);
             this.mnuMain.Name = "mnuMain";
-            this.mnuMain.Size = new System.Drawing.Size(711, 24);
+            this.mnuMain.Size = new System.Drawing.Size(1202, 24);
             this.mnuMain.TabIndex = 1;
             this.mnuMain.Text = "Main Menu";
             // 
@@ -119,7 +119,7 @@
             // optUserLogout
             // 
             this.optUserLogout.Name = "optUserLogout";
-            this.optUserLogout.Size = new System.Drawing.Size(152, 22);
+            this.optUserLogout.Size = new System.Drawing.Size(118, 22);
             this.optUserLogout.Text = "Logout";
             this.optUserLogout.Click += new System.EventHandler(this.optUserLogout_Click);
             // 
@@ -134,7 +134,7 @@
             // optPutniNalozi
             // 
             this.optPutniNalozi.Name = "optPutniNalozi";
-            this.optPutniNalozi.Size = new System.Drawing.Size(152, 22);
+            this.optPutniNalozi.Size = new System.Drawing.Size(139, 22);
             this.optPutniNalozi.Text = "Putni nalozi";
             // 
             // optHelp
@@ -170,9 +170,9 @@
             this.stsLabel,
             this.stsPlaceholder,
             this.stsUser});
-            this.stsStatus.Location = new System.Drawing.Point(0, 485);
+            this.stsStatus.Location = new System.Drawing.Point(0, 783);
             this.stsStatus.Name = "stsStatus";
-            this.stsStatus.Size = new System.Drawing.Size(711, 22);
+            this.stsStatus.Size = new System.Drawing.Size(1202, 22);
             this.stsStatus.TabIndex = 2;
             this.stsStatus.Text = "Status";
             // 
@@ -185,7 +185,7 @@
             // stsPlaceholder
             // 
             this.stsPlaceholder.Name = "stsPlaceholder";
-            this.stsPlaceholder.Size = new System.Drawing.Size(626, 17);
+            this.stsPlaceholder.Size = new System.Drawing.Size(889, 17);
             this.stsPlaceholder.Spring = true;
             // 
             // stsUser
@@ -198,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 507);
+            this.ClientSize = new System.Drawing.Size(1202, 805);
             this.Controls.Add(this.stsStatus);
             this.Controls.Add(this.mnuMain);
             this.IsMdiContainer = true;
