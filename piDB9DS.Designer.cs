@@ -1780,14 +1780,12 @@ namespace PutniNalozi.NET {
                 this.columnid.ReadOnly = true;
                 this.columnid.Unique = true;
                 this.columndatum_kreiranja.AllowDBNull = false;
-                this.columnstatus_id.AllowDBNull = false;
                 this.columnodrediste.MaxLength = 128;
                 this.columnsvrha.MaxLength = 255;
                 this.columnzahtjevatelj.MaxLength = 40;
                 this.columnodobravatelj.MaxLength = 40;
                 this.columnkatedra.MaxLength = 50;
                 this.columnustanova.MaxLength = 50;
-                this.columnvozilo_id.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3171,7 +3169,12 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int status_id {
                 get {
-                    return ((int)(this[this.tableputni_nalog.status_idColumn]));
+                    try {
+                        return ((int)(this[this.tableputni_nalog.status_idColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'status_id\' in table \'putni_nalog\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableputni_nalog.status_idColumn] = value;
@@ -3310,7 +3313,12 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int vozilo_id {
                 get {
-                    return ((int)(this[this.tableputni_nalog.vozilo_idColumn]));
+                    try {
+                        return ((int)(this[this.tableputni_nalog.vozilo_idColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'vozilo_id\' in table \'putni_nalog\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableputni_nalog.vozilo_idColumn] = value;
@@ -3337,6 +3345,18 @@ namespace PutniNalozi.NET {
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_putni_nalog_koristi_vozilo"]);
                 }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isstatus_idNull() {
+                return this.IsNull(this.tableputni_nalog.status_idColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setstatus_idNull() {
+                this[this.tableputni_nalog.status_idColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3433,6 +3453,18 @@ namespace PutniNalozi.NET {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetustanovaNull() {
                 this[this.tableputni_nalog.ustanovaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isvozilo_idNull() {
+                return this.IsNull(this.tableputni_nalog.vozilo_idColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setvozilo_idNull() {
+                this[this.tableputni_nalog.vozilo_idColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5364,10 +5396,15 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_id, System.DateTime Original_datum_kreiranja, int Original_status_id, string Original_odrediste, string Original_svrha, global::System.Nullable<global::System.DateTime> Original_datum_polaska, global::System.Nullable<global::System.DateTime> Original_trajanje, string Original_zahtjevatelj, string Original_odobravatelj, string Original_katedra, string Original_ustanova, int Original_vozilo_id) {
+        public virtual int Delete(int Original_id, System.DateTime Original_datum_kreiranja, global::System.Nullable<int> Original_status_id, string Original_odrediste, string Original_svrha, global::System.Nullable<global::System.DateTime> Original_datum_polaska, global::System.Nullable<global::System.DateTime> Original_trajanje, string Original_zahtjevatelj, string Original_odobravatelj, string Original_katedra, string Original_ustanova, global::System.Nullable<int> Original_vozilo_id) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_id));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_datum_kreiranja));
-            this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_status_id));
+            if ((Original_status_id.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((int)(Original_status_id.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
             if ((Original_odrediste == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -5432,7 +5469,12 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
                 this.Adapter.DeleteCommand.Parameters[17].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[18].Value = ((string)(Original_ustanova));
             }
-            this.Adapter.DeleteCommand.Parameters[19].Value = ((int)(Original_vozilo_id));
+            if ((Original_vozilo_id.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[19].Value = ((int)(Original_vozilo_id.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5453,9 +5495,14 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime datum_kreiranja, int status_id, string odrediste, string svrha, global::System.Nullable<global::System.DateTime> datum_polaska, global::System.Nullable<global::System.DateTime> trajanje, string zahtjevatelj, string odobravatelj, string katedra, string ustanova, int vozilo_id) {
+        public virtual int Insert(System.DateTime datum_kreiranja, global::System.Nullable<int> status_id, string odrediste, string svrha, global::System.Nullable<global::System.DateTime> datum_polaska, global::System.Nullable<global::System.DateTime> trajanje, string zahtjevatelj, string odobravatelj, string katedra, string ustanova, global::System.Nullable<int> vozilo_id) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(datum_kreiranja));
-            this.Adapter.InsertCommand.Parameters[1].Value = ((int)(status_id));
+            if ((status_id.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(status_id.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             if ((odrediste == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
@@ -5504,7 +5551,12 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
             else {
                 this.Adapter.InsertCommand.Parameters[9].Value = ((string)(ustanova));
             }
-            this.Adapter.InsertCommand.Parameters[10].Value = ((int)(vozilo_id));
+            if ((vozilo_id.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((int)(vozilo_id.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5527,7 +5579,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
                     System.DateTime datum_kreiranja, 
-                    int status_id, 
+                    global::System.Nullable<int> status_id, 
                     string odrediste, 
                     string svrha, 
                     global::System.Nullable<global::System.DateTime> datum_polaska, 
@@ -5536,10 +5588,10 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
                     string odobravatelj, 
                     string katedra, 
                     string ustanova, 
-                    int vozilo_id, 
+                    global::System.Nullable<int> vozilo_id, 
                     int Original_id, 
                     System.DateTime Original_datum_kreiranja, 
-                    int Original_status_id, 
+                    global::System.Nullable<int> Original_status_id, 
                     string Original_odrediste, 
                     string Original_svrha, 
                     global::System.Nullable<global::System.DateTime> Original_datum_polaska, 
@@ -5548,10 +5600,15 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
                     string Original_odobravatelj, 
                     string Original_katedra, 
                     string Original_ustanova, 
-                    int Original_vozilo_id, 
+                    global::System.Nullable<int> Original_vozilo_id, 
                     int id) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(datum_kreiranja));
-            this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(status_id));
+            if ((status_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(status_id.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
             if ((odrediste == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
@@ -5600,10 +5657,20 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
             else {
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(ustanova));
             }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(vozilo_id));
+            if ((vozilo_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(vozilo_id.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
             this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_id));
             this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(Original_datum_kreiranja));
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_status_id));
+            if ((Original_status_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_status_id.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
             if ((Original_odrediste == null)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
@@ -5668,7 +5735,12 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
                 this.Adapter.UpdateCommand.Parameters[28].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[29].Value = ((string)(Original_ustanova));
             }
-            this.Adapter.UpdateCommand.Parameters[30].Value = ((int)(Original_vozilo_id));
+            if ((Original_vozilo_id.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[30].Value = ((int)(Original_vozilo_id.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[30].Value = global::System.DBNull.Value;
+            }
             this.Adapter.UpdateCommand.Parameters[31].Value = ((int)(id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -5692,7 +5764,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
                     System.DateTime datum_kreiranja, 
-                    int status_id, 
+                    global::System.Nullable<int> status_id, 
                     string odrediste, 
                     string svrha, 
                     global::System.Nullable<global::System.DateTime> datum_polaska, 
@@ -5701,10 +5773,10 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
                     string odobravatelj, 
                     string katedra, 
                     string ustanova, 
-                    int vozilo_id, 
+                    global::System.Nullable<int> vozilo_id, 
                     int Original_id, 
                     System.DateTime Original_datum_kreiranja, 
-                    int Original_status_id, 
+                    global::System.Nullable<int> Original_status_id, 
                     string Original_odrediste, 
                     string Original_svrha, 
                     global::System.Nullable<global::System.DateTime> Original_datum_polaska, 
@@ -5713,7 +5785,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
                     string Original_odobravatelj, 
                     string Original_katedra, 
                     string Original_ustanova, 
-                    int Original_vozilo_id) {
+                    global::System.Nullable<int> Original_vozilo_id) {
             return this.Update(datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje, zahtjevatelj, odobravatelj, katedra, ustanova, vozilo_id, Original_id, Original_datum_kreiranja, Original_status_id, Original_odrediste, Original_svrha, Original_datum_polaska, Original_trajanje, Original_zahtjevatelj, Original_odobravatelj, Original_katedra, Original_ustanova, Original_vozilo_id, Original_id);
         }
     }
