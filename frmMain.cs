@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using foi.pi;
 
 namespace PutniNalozi.NET
 {
@@ -13,7 +14,8 @@ namespace PutniNalozi.NET
     {
         public static ToolStripStatusLabel status_bar;
         public static ToolStripStatusLabel logged_user;
-        public static foi.pi.iUser current_user;
+        public Login piLogin = new Login();
+        public static iUser current_user;
 
         public frmMain()
         {
@@ -25,9 +27,7 @@ namespace PutniNalozi.NET
          */
         private void openLogin()
         {
-            // ODKOMENTIRAJ ZA LOGIN
-            /**
-            frmLogin FrmLogin = new frmLogin();
+            frmLogin FrmLogin = new frmLogin(piLogin);
             // set this window as parent to frmLogin
             FrmLogin.MdiParent = this;
             // show windows centered within this window
@@ -36,9 +36,11 @@ namespace PutniNalozi.NET
             frmMain.WriteToStatus("Please login to proceed");
             // finally, show login window
             FrmLogin.Show();
-             **/
+        }
 
-            frmPutniNalozi FrmPutniNalozi = new frmPutniNalozi();
+        private void openNalozi()
+        {
+            frmPutniNalozi FrmPutniNalozi = new frmPutniNalozi(piLogin);
             FrmPutniNalozi.MdiParent = this;
             FrmPutniNalozi.StartPosition = FormStartPosition.CenterParent;
             FrmPutniNalozi.Show();
@@ -122,6 +124,11 @@ namespace PutniNalozi.NET
         {
             // perform user logout
             Logout();
+        }
+
+        private void optPutniNalozi_Click(object sender, EventArgs e)
+        {
+            openNalozi();
         }
     }
 }

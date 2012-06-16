@@ -6,17 +6,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using foi.pi;
 
 namespace PutniNalozi.NET
 {
     public partial class frmLogin : Form
     {
         // set piLoginInstance property to frmLogin class
-        foi.pi.Login piLoginInstance = new foi.pi.Login();
+        Login piLogin;
 
-        public frmLogin()
+        public frmLogin(Login piLoginInstance)
         {
             InitializeComponent();
+            this.piLogin = piLoginInstance;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
@@ -25,7 +27,7 @@ namespace PutniNalozi.NET
             string username = txtUsername.Text;
             string password = txtPassword.Text;
             // run authentication against database
-            foi.pi.iUser tmpUser = piLoginInstance.Authenticate(username, password);
+            foi.pi.iUser tmpUser = piLogin.Authenticate(username, password);
             
             // check authentication result
             if (tmpUser == null)

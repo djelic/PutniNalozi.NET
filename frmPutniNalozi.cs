@@ -12,11 +12,12 @@ namespace PutniNalozi.NET
 {
     public partial class frmPutniNalozi : Form
     {
-        Login piLogin = new Login();
+        Login piLogin;
 
-        public frmPutniNalozi()
+        public frmPutniNalozi(Login piLoginInstance)
         {
             InitializeComponent();
+            this.piLogin = piLoginInstance;
         }
 
         private void frmPutniNalozi_Load(object sender, EventArgs e)

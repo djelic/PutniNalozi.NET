@@ -134,8 +134,9 @@
             // optPutniNalozi
             // 
             this.optPutniNalozi.Name = "optPutniNalozi";
-            this.optPutniNalozi.Size = new System.Drawing.Size(139, 22);
+            this.optPutniNalozi.Size = new System.Drawing.Size(152, 22);
             this.optPutniNalozi.Text = "Putni nalozi";
+            this.optPutniNalozi.Click += new System.EventHandler(this.optPutniNalozi_Click);
             // 
             // optHelp
             // 
@@ -185,7 +186,7 @@
             // stsPlaceholder
             // 
             this.stsPlaceholder.Name = "stsPlaceholder";
-            this.stsPlaceholder.Size = new System.Drawing.Size(889, 17);
+            this.stsPlaceholder.Size = new System.Drawing.Size(1117, 17);
             this.stsPlaceholder.Spring = true;
             // 
             // stsUser
