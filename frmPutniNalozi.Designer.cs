@@ -637,8 +637,6 @@
         private System.Windows.Forms.TextBox txtDatumPolaska;
         private System.Windows.Forms.TextBox txtTrajanje;
         private System.Windows.Forms.TextBox txtVozilo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn voziloidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusidDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button btnOdobri;
         private System.Windows.Forms.DataGridViewTextBoxColumn ustanovaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
