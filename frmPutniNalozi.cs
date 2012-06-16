@@ -35,6 +35,18 @@ namespace PutniNalozi.NET
 
             iUser zahtjevatelj = this.piLogin.GetUser(putniNalogRow.zahtjevatelj, true).First();
             txtZahtjevatelj.Text = zahtjevatelj.Name + " " + zahtjevatelj.Surname;
+
+            if (txtOdobravatelj.Text.Trim() != "")
+            {
+                try
+                {
+                    iUser odobravatelj = this.piLogin.GetUser(putniNalogRow.odobravatelj, true).First();
+                    txtOdobravatelj.Text = odobravatelj.Name + " " + odobravatelj.Surname;
+                }
+                catch (Exception)
+                {
+                }
+            }
         }
 
         private void frmPutniNalozi_FormClosing(object sender, FormClosingEventArgs e)
