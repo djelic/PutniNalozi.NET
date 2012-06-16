@@ -32,6 +32,10 @@ namespace PutniNalozi.NET
 
         private void refreshNalog()
         {
+            if (dgvPutniNalozi.CurrentCellAddress.Y == -1)
+            {
+                return;
+            }
             DataRowView current = (DataRowView)dgvPutniNalozi.CurrentRow.DataBoundItem;
             piDB9DS.putni_nalogRow putniNalogRow = (piDB9DS.putni_nalogRow)current.Row;
 
