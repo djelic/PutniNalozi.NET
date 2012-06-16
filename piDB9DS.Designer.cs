@@ -5298,13 +5298,22 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje," +
                 " zahtjevatelj, odobravatelj, katedra, ustanova, vozilo_id FROM dbo.tbl_putni_nal" +
                 "og";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = @"SELECT     tbl_putni_nalog.id, tbl_putni_nalog.datum_kreiranja, tbl_putni_nalog.status_id, tbl_status_naloga.naziv AS status, tbl_putni_nalog.odrediste, tbl_putni_nalog.svrha, 
+                      tbl_putni_nalog.datum_polaska, tbl_putni_nalog.trajanje, tbl_putni_nalog.zahtjevatelj, tbl_putni_nalog.odobravatelj, tbl_putni_nalog.katedra, 
+                      tbl_putni_nalog.ustanova, tbl_putni_nalog.vozilo_id, tbl_vozilo.tip AS vozilo_tip, tbl_vozilo.marka AS vozilo_marka, tbl_vozilo.registracija AS vozilo_registracija
+FROM         tbl_putni_nalog INNER JOIN
+                      tbl_status_naloga ON tbl_putni_nalog.status_id = tbl_status_naloga.id INNER JOIN
+                      tbl_vozilo ON tbl_putni_nalog.vozilo_id = tbl_vozilo.id";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5326,6 +5335,30 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual piDB9DS.putni_nalogDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            piDB9DS.putni_nalogDataTable dataTable = new piDB9DS.putni_nalogDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillWithRelations(piDB9DS.putni_nalogDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual piDB9DS.putni_nalogDataTable GetDataWithRelations() {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             piDB9DS.putni_nalogDataTable dataTable = new piDB9DS.putni_nalogDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

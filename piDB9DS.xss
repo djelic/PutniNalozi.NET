@@ -9,7 +9,7 @@
     <Shape ID="DesignTable:dodatni_troskovi" ZOrder="3" X="243" Y="463" Height="139" Width="261" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="92" />
     <Shape ID="DesignTable:izvjestaj" ZOrder="2" X="898" Y="202" Height="139" Width="212" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="92" />
     <Shape ID="DesignTable:prijevozni_troskovi" ZOrder="1" X="904" Y="451" Height="173" Width="274" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="126" />
-    <Shape ID="DesignTable:putni_nalog" ZOrder="13" X="579" Y="124" Height="275" Width="232" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="228" />
+    <Shape ID="DesignTable:putni_nalog" ZOrder="13" X="579" Y="124" Height="292" Width="244" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="228" />
     <Shape ID="DesignTable:putni_racun" ZOrder="12" X="582" Y="468" Height="122" Width="233" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="75" />
     <Shape ID="DesignTable:status_naloga" ZOrder="4" X="232" Y="103" Height="105" Width="245" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="58" />
     <Shape ID="DesignTable:vozilo" ZOrder="11" X="256" Y="259" Height="139" Width="197" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="92" />
@@ -30,7 +30,7 @@
     <Connector ID="DesignRelation:FK_izvjestaj_pripada_putni_nalog" ZOrder="9" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>811</X>
+          <X>823</X>
           <Y>264</Y>
         </Point>
         <Point>
@@ -79,7 +79,7 @@
       <RoutePoints>
         <Point>
           <X>696</X>
-          <Y>399</Y>
+          <Y>416</Y>
         </Point>
         <Point>
           <X>696</X>
