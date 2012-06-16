@@ -5298,7 +5298,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje," +
@@ -5314,6 +5314,15 @@ FROM         tbl_putni_nalog INNER JOIN
                       tbl_status_naloga ON tbl_putni_nalog.status_id = tbl_status_naloga.id INNER JOIN
                       tbl_vozilo ON tbl_putni_nalog.vozilo_id = tbl_vozilo.id";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = @"UPDATE    tbl_putni_nalog
+SET              status_id = @statusId
+WHERE     (id = @putniNalogId);  
+SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje, zahtjevatelj, odobravatelj, katedra, ustanova, vozilo_id FROM tbl_putni_nalog WHERE (id = @putniNalogId)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@statusId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "status_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@putniNalogId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5748,6 +5757,31 @@ FROM         tbl_putni_nalog INNER JOIN
                     string Original_ustanova, 
                     int Original_vozilo_id) {
             return this.Update(datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje, zahtjevatelj, odobravatelj, katedra, ustanova, vozilo_id, Original_id, Original_datum_kreiranja, Original_status_id, Original_odrediste, Original_svrha, Original_datum_polaska, Original_trajanje, Original_zahtjevatelj, Original_odobravatelj, Original_katedra, Original_ustanova, Original_vozilo_id, Original_id);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateStatus(int statusId, int putniNalogId) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            command.Parameters[0].Value = ((int)(statusId));
+            command.Parameters[1].Value = ((int)(putniNalogId));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
         }
     }
     

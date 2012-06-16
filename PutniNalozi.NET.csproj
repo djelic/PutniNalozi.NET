@@ -68,6 +68,10 @@
     <Compile Include="frmPutniNalozi.Designer.cs">
       <DependentUpon>frmPutniNalozi.cs</DependentUpon>
     </Compile>
+    <Compile Include="piDB9DS.cs">
+      <DependentUpon>piDB9DS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="piDB9DS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

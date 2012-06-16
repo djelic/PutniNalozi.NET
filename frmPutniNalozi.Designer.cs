@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.spcContainer = new System.Windows.Forms.SplitContainer();
             this.grpNalog = new System.Windows.Forms.GroupBox();
+            this.btnOdobri = new System.Windows.Forms.Button();
             this.txtTrajanje = new System.Windows.Forms.TextBox();
             this.putniNalogBS = new System.Windows.Forms.BindingSource(this.components);
             this.piDB9DS = new PutniNalozi.NET.piDB9DS();
@@ -59,6 +60,12 @@
             this.lblUstanova = new System.Windows.Forms.Label();
             this.grpPrikaz = new System.Windows.Forms.GroupBox();
             this.dgvPutniNalozi = new System.Windows.Forms.DataGridView();
+            this.grpFilter = new System.Windows.Forms.GroupBox();
+            this.voziloBS = new System.Windows.Forms.BindingSource(this.components);
+            this.statusNalogaBS = new System.Windows.Forms.BindingSource(this.components);
+            this.putniNalogTA = new PutniNalozi.NET.piDB9DSTableAdapters.putniNalogTA();
+            this.statusNalogaTA = new PutniNalozi.NET.piDB9DSTableAdapters.statusNalogaTA();
+            this.voziloTA = new PutniNalozi.NET.piDB9DSTableAdapters.voziloTA();
             this.ustanovaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumkreiranjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,14 +74,10 @@
             this.odredisteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.svrhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trajanjeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vozilotipDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.katedraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusnazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.odobravateljDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.grpFilter = new System.Windows.Forms.GroupBox();
-            this.voziloBS = new System.Windows.Forms.BindingSource(this.components);
-            this.statusNalogaBS = new System.Windows.Forms.BindingSource(this.components);
-            this.putniNalogTA = new PutniNalozi.NET.piDB9DSTableAdapters.putniNalogTA();
-            this.statusNalogaTA = new PutniNalozi.NET.piDB9DSTableAdapters.statusNalogaTA();
-            this.voziloTA = new PutniNalozi.NET.piDB9DSTableAdapters.voziloTA();
             ((System.ComponentModel.ISupportInitialize)(this.spcContainer)).BeginInit();
             this.spcContainer.Panel1.SuspendLayout();
             this.spcContainer.Panel2.SuspendLayout();
@@ -113,6 +116,7 @@
             this.grpNalog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpNalog.Controls.Add(this.btnOdobri);
             this.grpNalog.Controls.Add(this.txtTrajanje);
             this.grpNalog.Controls.Add(this.txtDatumPolaska);
             this.grpNalog.Controls.Add(this.txtDatumKreiranja);
@@ -143,6 +147,17 @@
             this.grpNalog.TabIndex = 0;
             this.grpNalog.TabStop = false;
             this.grpNalog.Text = "Putni nalog";
+            // 
+            // btnOdobri
+            // 
+            this.btnOdobri.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOdobri.Location = new System.Drawing.Point(201, 501);
+            this.btnOdobri.Name = "btnOdobri";
+            this.btnOdobri.Size = new System.Drawing.Size(115, 49);
+            this.btnOdobri.TabIndex = 28;
+            this.btnOdobri.Text = "Odobri";
+            this.btnOdobri.UseVisualStyleBackColor = true;
+            this.btnOdobri.Click += new System.EventHandler(this.btnOdobri_Click);
             // 
             // txtTrajanje
             // 
@@ -416,7 +431,9 @@
             this.odredisteDataGridViewTextBoxColumn,
             this.svrhaDataGridViewTextBoxColumn,
             this.trajanjeDataGridViewTextBoxColumn,
+            this.vozilotipDataGridViewTextBoxColumn,
             this.katedraDataGridViewTextBoxColumn,
+            this.statusnazivDataGridViewTextBoxColumn,
             this.odobravateljDataGridViewTextBoxColumn});
             this.dgvPutniNalozi.DataSource = this.putniNalogBS;
             this.dgvPutniNalozi.Location = new System.Drawing.Point(6, 17);
@@ -426,6 +443,39 @@
             this.dgvPutniNalozi.Size = new System.Drawing.Size(649, 427);
             this.dgvPutniNalozi.TabIndex = 0;
             this.dgvPutniNalozi.SelectionChanged += new System.EventHandler(this.dgvPutniNalozi_SelectionChanged);
+            // 
+            // grpFilter
+            // 
+            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpFilter.Location = new System.Drawing.Point(9, 12);
+            this.grpFilter.Name = "grpFilter";
+            this.grpFilter.Size = new System.Drawing.Size(661, 100);
+            this.grpFilter.TabIndex = 0;
+            this.grpFilter.TabStop = false;
+            this.grpFilter.Text = "Filter";
+            // 
+            // voziloBS
+            // 
+            this.voziloBS.DataMember = "vozilo";
+            this.voziloBS.DataSource = this.piDB9DS;
+            // 
+            // statusNalogaBS
+            // 
+            this.statusNalogaBS.DataMember = "status_naloga";
+            this.statusNalogaBS.DataSource = this.piDB9DS;
+            // 
+            // putniNalogTA
+            // 
+            this.putniNalogTA.ClearBeforeFill = true;
+            // 
+            // statusNalogaTA
+            // 
+            this.statusNalogaTA.ClearBeforeFill = true;
+            // 
+            // voziloTA
+            // 
+            this.voziloTA.ClearBeforeFill = true;
             // 
             // ustanovaDataGridViewTextBoxColumn
             // 
@@ -491,6 +541,14 @@
             this.trajanjeDataGridViewTextBoxColumn.ReadOnly = true;
             this.trajanjeDataGridViewTextBoxColumn.Width = 68;
             // 
+            // vozilotipDataGridViewTextBoxColumn
+            // 
+            this.vozilotipDataGridViewTextBoxColumn.DataPropertyName = "vozilo_tip";
+            this.vozilotipDataGridViewTextBoxColumn.HeaderText = "Vozilo";
+            this.vozilotipDataGridViewTextBoxColumn.Name = "vozilotipDataGridViewTextBoxColumn";
+            this.vozilotipDataGridViewTextBoxColumn.ReadOnly = true;
+            this.vozilotipDataGridViewTextBoxColumn.Width = 58;
+            // 
             // katedraDataGridViewTextBoxColumn
             // 
             this.katedraDataGridViewTextBoxColumn.DataPropertyName = "katedra";
@@ -499,6 +557,14 @@
             this.katedraDataGridViewTextBoxColumn.ReadOnly = true;
             this.katedraDataGridViewTextBoxColumn.Width = 67;
             // 
+            // statusnazivDataGridViewTextBoxColumn
+            // 
+            this.statusnazivDataGridViewTextBoxColumn.DataPropertyName = "status_naziv";
+            this.statusnazivDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusnazivDataGridViewTextBoxColumn.Name = "statusnazivDataGridViewTextBoxColumn";
+            this.statusnazivDataGridViewTextBoxColumn.ReadOnly = true;
+            this.statusnazivDataGridViewTextBoxColumn.Width = 60;
+            // 
             // odobravateljDataGridViewTextBoxColumn
             // 
             this.odobravateljDataGridViewTextBoxColumn.DataPropertyName = "odobravatelj";
@@ -506,39 +572,6 @@
             this.odobravateljDataGridViewTextBoxColumn.Name = "odobravateljDataGridViewTextBoxColumn";
             this.odobravateljDataGridViewTextBoxColumn.ReadOnly = true;
             this.odobravateljDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // grpFilter
-            // 
-            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpFilter.Location = new System.Drawing.Point(9, 12);
-            this.grpFilter.Name = "grpFilter";
-            this.grpFilter.Size = new System.Drawing.Size(661, 100);
-            this.grpFilter.TabIndex = 0;
-            this.grpFilter.TabStop = false;
-            this.grpFilter.Text = "Filter";
-            // 
-            // voziloBS
-            // 
-            this.voziloBS.DataMember = "vozilo";
-            this.voziloBS.DataSource = this.piDB9DS;
-            // 
-            // statusNalogaBS
-            // 
-            this.statusNalogaBS.DataMember = "status_naloga";
-            this.statusNalogaBS.DataSource = this.piDB9DS;
-            // 
-            // putniNalogTA
-            // 
-            this.putniNalogTA.ClearBeforeFill = true;
-            // 
-            // statusNalogaTA
-            // 
-            this.statusNalogaTA.ClearBeforeFill = true;
-            // 
-            // voziloTA
-            // 
-            this.voziloTA.ClearBeforeFill = true;
             // 
             // frmPutniNalozi
             // 
@@ -604,6 +637,9 @@
         private System.Windows.Forms.TextBox txtDatumPolaska;
         private System.Windows.Forms.TextBox txtTrajanje;
         private System.Windows.Forms.TextBox txtVozilo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn voziloidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button btnOdobri;
         private System.Windows.Forms.DataGridViewTextBoxColumn ustanovaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datumkreiranjaDataGridViewTextBoxColumn;
@@ -612,9 +648,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn odredisteDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn svrhaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn trajanjeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn voziloidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn vozilotipDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn katedraDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn statusidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusnazivDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn odobravateljDataGridViewTextBoxColumn;
     }
 }

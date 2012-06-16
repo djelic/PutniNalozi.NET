@@ -45,6 +45,15 @@ namespace PutniNalozi.NET
             {
                 txtOdobravatelj.Text = getFullName(putniNalogRow.odobravatelj);
             }
+
+            if (putniNalogRow.status_id == 2)
+            {
+                btnOdobri.Enabled = false;
+            }
+            else
+            {
+                btnOdobri.Enabled = true;
+            }
         }
 
         public string getFullName(string username)
@@ -58,6 +67,13 @@ namespace PutniNalozi.NET
             return username;
         }
 
+        private bool odobriNalog()
+        {
+            DataRowView current = (DataRowView)dgvPutniNalozi.CurrentRow.DataBoundItem;
+            piDB9DS.putni_nalogRow putniNalogRow = (piDB9DS.putni_nalogRow)current.Row;
+            return this.putniNalogTA.UpdateStatus(2, putniNalogRow.id) > 0;
+        }
+
         private void frmPutniNalozi_FormClosing(object sender, FormClosingEventArgs e)
         {
             dgvPutniNalozi.DataSource = null;
@@ -66,6 +82,16 @@ namespace PutniNalozi.NET
         private void dgvPutniNalozi_SelectionChanged(object sender, EventArgs e)
         {
             refreshNalog();
+        }
+
+        private void btnOdobri_Click(object sender, EventArgs e)
+        {
+            if (odobriNalog())
+            {
+                this.putniNalogTA.FillWithRelations(this.piDB9DS.putni_nalog);
+                dgvPutniNalozi.Refresh();
+                frmMain.WriteToStatus("Nalog odobren");
+            }
         }
     }
 }
