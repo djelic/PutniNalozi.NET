@@ -5317,11 +5317,12 @@ FROM         tbl_putni_nalog INNER JOIN
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = @"UPDATE    tbl_putni_nalog
-SET              status_id = @statusId
-WHERE     (id = @putniNalogId);  
+SET              status_id = @statusId, odobravatelj = @korIme
+WHERE     (id = @putniNalogId);   
 SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje, zahtjevatelj, odobravatelj, katedra, ustanova, vozilo_id FROM tbl_putni_nalog WHERE (id = @putniNalogId)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@statusId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "status_id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@korIme", global::System.Data.SqlDbType.NVarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, "odobravatelj", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@putniNalogId", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
@@ -5763,10 +5764,16 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
-        public virtual int UpdateStatus(int statusId, int putniNalogId) {
+        public virtual int UpdateStatus(int statusId, string korIme, int putniNalogId) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
             command.Parameters[0].Value = ((int)(statusId));
-            command.Parameters[1].Value = ((int)(putniNalogId));
+            if ((korIme == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(korIme));
+            }
+            command.Parameters[2].Value = ((int)(putniNalogId));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {

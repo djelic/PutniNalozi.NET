@@ -68,11 +68,11 @@ namespace PutniNalozi.NET
             return username;
         }
 
-        private bool odobriNalog()
+        private bool odobriNalog(string korIme)
         {
             DataRowView current = (DataRowView)dgvPutniNalozi.CurrentRow.DataBoundItem;
             piDB9DS.putni_nalogRow putniNalogRow = (piDB9DS.putni_nalogRow)current.Row;
-            return this.putniNalogTA.UpdateStatus(2, putniNalogRow.id) > 0;
+            return this.putniNalogTA.UpdateStatus(2, korIme, putniNalogRow.id) > 0;
         }
 
         private void frmPutniNalozi_FormClosing(object sender, FormClosingEventArgs e)
@@ -87,7 +87,7 @@ namespace PutniNalozi.NET
 
         private void btnOdobri_Click(object sender, EventArgs e)
         {
-            if (odobriNalog())
+            if (odobriNalog(frmMain.current_user.UserName))
             {
                 this.putniNalogTA.FillWithRelations(this.piDB9DS.putni_nalog);
                 dgvPutniNalozi.Refresh();
