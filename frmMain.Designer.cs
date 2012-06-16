@@ -39,7 +39,7 @@
             this.optUser = new System.Windows.Forms.ToolStripMenuItem();
             this.optUserLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.optActions = new System.Windows.Forms.ToolStripMenuItem();
-            this.optPutniNalozi = new System.Windows.Forms.ToolStripMenuItem();
+            this.optActionsPutniNalozi = new System.Windows.Forms.ToolStripMenuItem();
             this.optHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.optHelpGeneral = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -128,17 +128,17 @@
             // optActions
             // 
             this.optActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optPutniNalozi});
+            this.optActionsPutniNalozi});
             this.optActions.Name = "optActions";
             this.optActions.Size = new System.Drawing.Size(54, 20);
             this.optActions.Text = "Actions";
             // 
-            // optPutniNalozi
+            // optActionsPutniNalozi
             // 
-            this.optPutniNalozi.Name = "optPutniNalozi";
-            this.optPutniNalozi.Size = new System.Drawing.Size(139, 22);
-            this.optPutniNalozi.Text = "Putni nalozi";
-            this.optPutniNalozi.Click += new System.EventHandler(this.optPutniNalozi_Click);
+            this.optActionsPutniNalozi.Name = "optActionsPutniNalozi";
+            this.optActionsPutniNalozi.Size = new System.Drawing.Size(152, 22);
+            this.optActionsPutniNalozi.Text = "Putni nalozi";
+            this.optActionsPutniNalozi.Click += new System.EventHandler(this.optActionsPutniNalozi_Click);
             // 
             // optHelp
             // 
@@ -243,7 +243,7 @@
         private System.Windows.Forms.ToolStripStatusLabel stsPlaceholder;
         private System.Windows.Forms.ToolStripStatusLabel stsUser;
         private System.Windows.Forms.ToolStripMenuItem optActions;
-        private System.Windows.Forms.ToolStripMenuItem optPutniNalozi;
+        private System.Windows.Forms.ToolStripMenuItem optActionsPutniNalozi;
         private System.Windows.Forms.Timer tmrCleanStatus;
     }
 }

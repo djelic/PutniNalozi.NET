@@ -31,7 +31,7 @@ namespace PutniNalozi.NET
             // show windows centered within this window
             FrmLogin.StartPosition = FormStartPosition.CenterScreen;
             // set status message so that user knows what to do
-            writeToStatus("Please login to proceed", 3000);
+            writeToStatus("Za nastavak morate biti ulogirani", 3000);
             // finally, show login window
             FrmLogin.Show();
         }
@@ -48,7 +48,7 @@ namespace PutniNalozi.NET
         }
 
         /*
-         * method enables displaying status messages on frmMain's statusbar
+         * Method enables displaying status messages on frmMain's statusbar
          */
         public void writeToStatus(string text, int interval)
         {
@@ -58,17 +58,49 @@ namespace PutniNalozi.NET
         }
 
         /*
-         * assign logged user as application user
+         * Enables actions in main menu
+         */
+        private void refreshMenuActions()
+        {
+            if (this.current_user != null)
+            {
+                // user logged in
+                optMainLogin.Enabled = false;
+                optMainLogout.Enabled = true;
+                optMainRegister.Enabled = false;
+
+                optUserLogout.Enabled = true;
+
+                optActionsPutniNalozi.Enabled = true;
+            }
+            else
+            {
+                // guest session
+                optMainLogin.Enabled = true;
+                optMainLogout.Enabled = false;
+                optMainRegister.Enabled = true;
+
+                optUserLogout.Enabled = false;
+
+                optActionsPutniNalozi.Enabled = false;
+            }
+        }
+
+        /*
+         * Assign logged user as application user
          */
         public void setLoggedUser(iUser user)
         {
+            // set logged user
             this.current_user = user;
+            // refresh menu actions
+            refreshMenuActions();
             // update status bar to show current logged user
             stsUser.Text = stsUser.Text + " " + user.Name + " " + user.Surname + " (" + user.UserName + ")";
         }
 
         /*
-         * perform user logout
+         * Perform user logout
          */
         public void logout()
         {
@@ -76,12 +108,16 @@ namespace PutniNalozi.NET
             stsUser.Text = "User: Guest";
             // unset current logged user
             current_user = null;
+            // refresh menu actions
+            refreshMenuActions();
             // show login form
             openLogin();
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            // refresh main menu's actions
+            refreshMenuActions();
             // display login form to user
             openLogin();
         }
@@ -124,13 +160,15 @@ namespace PutniNalozi.NET
             logout();
         }
 
-        private void optPutniNalozi_Click(object sender, EventArgs e)
+        private void optActionsPutniNalozi_Click(object sender, EventArgs e)
         {
+            // open putni nalozi form
             openNalozi();
         }
 
         private void tmrCleanStatus_Tick(object sender, EventArgs e)
         {
+            // when timer runs out, clear text from statusbar and disable timer
             stsLabel.Text = "";
             tmrCleanStatus.Stop();
         }
