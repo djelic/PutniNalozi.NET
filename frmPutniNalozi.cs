@@ -21,9 +21,11 @@ namespace PutniNalozi.NET
 
         private void frmPutniNalozi_Load(object sender, EventArgs e)
         {
-            this.voziloTA.Fill(this.piDB9DS.vozilo);
-            this.statusNalogaTA.Fill(this.piDB9DS.status_naloga);
-            this.putniNalogTA.Fill(this.piDB9DS.putni_nalog);
+            //this.voziloTA.Fill(this.piDB9DS.vozilo);
+            //this.statusNalogaTA.Fill(this.piDB9DS.status_naloga);
+            //this.putniNalogTA.Fill(this.piDB9DS.putni_nalog);
+
+            this.putniNalogTA.FillWithRelations(this.piDB9DS.putni_nalog);
 
             refreshNalog();
         }
@@ -36,7 +38,7 @@ namespace PutniNalozi.NET
             iUser zahtjevatelj = this.piLogin.GetUser(putniNalogRow.zahtjevatelj, true).First();
             txtZahtjevatelj.Text = zahtjevatelj.Name + " " + zahtjevatelj.Surname;
 
-            if (txtOdobravatelj.Text.Trim() != "")
+            if (putniNalogRow.odobravatelj.Trim() != "")
             {
                 try
                 {
@@ -45,6 +47,7 @@ namespace PutniNalozi.NET
                 }
                 catch (Exception)
                 {
+                    txtOdobravatelj.Text = putniNalogRow.odobravatelj;
                 }
             }
         }

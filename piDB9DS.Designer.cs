@@ -5307,7 +5307,7 @@ SELECT id, datum_kreiranja, status_id, odrediste, svrha, datum_polaska, trajanje
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT     tbl_putni_nalog.id, tbl_putni_nalog.datum_kreiranja, tbl_putni_nalog.status_id, tbl_status_naloga.naziv AS status, tbl_putni_nalog.odrediste, tbl_putni_nalog.svrha, 
+            this._commandCollection[1].CommandText = @"SELECT     tbl_putni_nalog.id, tbl_putni_nalog.datum_kreiranja, tbl_putni_nalog.status_id, tbl_status_naloga.naziv AS status_naziv, tbl_putni_nalog.odrediste, tbl_putni_nalog.svrha, 
                       tbl_putni_nalog.datum_polaska, tbl_putni_nalog.trajanje, tbl_putni_nalog.zahtjevatelj, tbl_putni_nalog.odobravatelj, tbl_putni_nalog.katedra, 
                       tbl_putni_nalog.ustanova, tbl_putni_nalog.vozilo_id, tbl_vozilo.tip AS vozilo_tip, tbl_vozilo.marka AS vozilo_marka, tbl_vozilo.registracija AS vozilo_registracija
 FROM         tbl_putni_nalog INNER JOIN
