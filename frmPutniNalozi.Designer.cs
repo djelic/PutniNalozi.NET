@@ -36,18 +36,14 @@
             this.piDB9DS = new PutniNalozi.NET.piDB9DS();
             this.lblOdobrio = new System.Windows.Forms.Label();
             this.btnVoziloInfo = new System.Windows.Forms.Button();
-            this.txtVozilo = new System.Windows.Forms.TextBox();
             this.lblVozilo = new System.Windows.Forms.Label();
             this.lblTrajanje = new System.Windows.Forms.Label();
-            this.dtpTrajanje = new System.Windows.Forms.DateTimePicker();
             this.txtSvrha = new System.Windows.Forms.TextBox();
             this.lblSvrha = new System.Windows.Forms.Label();
             this.txtOdrediste = new System.Windows.Forms.TextBox();
             this.lblOdrediste = new System.Windows.Forms.Label();
-            this.dtpDatumPolaska = new System.Windows.Forms.DateTimePicker();
             this.lblDatumPolaska = new System.Windows.Forms.Label();
             this.btnKorisnikInfo = new System.Windows.Forms.Button();
-            this.dtpDatumKreiranja = new System.Windows.Forms.DateTimePicker();
             this.txtZahtjevatelj = new System.Windows.Forms.TextBox();
             this.lblZahtjevatelj = new System.Windows.Forms.Label();
             this.lblDatumKreiranja = new System.Windows.Forms.Label();
@@ -59,6 +55,16 @@
             this.lblUstanova = new System.Windows.Forms.Label();
             this.grpPrikaz = new System.Windows.Forms.GroupBox();
             this.dgvPutniNalozi = new System.Windows.Forms.DataGridView();
+            this.voziloBS = new System.Windows.Forms.BindingSource(this.components);
+            this.statusNalogaBS = new System.Windows.Forms.BindingSource(this.components);
+            this.grpFilter = new System.Windows.Forms.GroupBox();
+            this.putniNalogTA = new PutniNalozi.NET.piDB9DSTableAdapters.putniNalogTA();
+            this.statusNalogaTA = new PutniNalozi.NET.piDB9DSTableAdapters.statusNalogaTA();
+            this.voziloTA = new PutniNalozi.NET.piDB9DSTableAdapters.voziloTA();
+            this.txtDatumKreiranja = new System.Windows.Forms.TextBox();
+            this.txtDatumPolaska = new System.Windows.Forms.TextBox();
+            this.txtTrajanje = new System.Windows.Forms.TextBox();
+            this.txtVozilo = new System.Windows.Forms.TextBox();
             this.ustanovaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumkreiranjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -68,15 +74,9 @@
             this.svrhaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.trajanjeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.voziloidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.voziloBS = new System.Windows.Forms.BindingSource(this.components);
             this.katedraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.odobravateljDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.statusNalogaBS = new System.Windows.Forms.BindingSource(this.components);
-            this.grpFilter = new System.Windows.Forms.GroupBox();
-            this.putniNalogTA = new PutniNalozi.NET.piDB9DSTableAdapters.putniNalogTA();
-            this.statusNalogaTA = new PutniNalozi.NET.piDB9DSTableAdapters.statusNalogaTA();
-            this.voziloTA = new PutniNalozi.NET.piDB9DSTableAdapters.voziloTA();
             ((System.ComponentModel.ISupportInitialize)(this.spcContainer)).BeginInit();
             this.spcContainer.Panel1.SuspendLayout();
             this.spcContainer.Panel2.SuspendLayout();
@@ -115,21 +115,21 @@
             this.grpNalog.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpNalog.Controls.Add(this.txtTrajanje);
+            this.grpNalog.Controls.Add(this.txtDatumPolaska);
+            this.grpNalog.Controls.Add(this.txtDatumKreiranja);
             this.grpNalog.Controls.Add(this.txtOdobravatelj);
             this.grpNalog.Controls.Add(this.lblOdobrio);
             this.grpNalog.Controls.Add(this.btnVoziloInfo);
             this.grpNalog.Controls.Add(this.txtVozilo);
             this.grpNalog.Controls.Add(this.lblVozilo);
             this.grpNalog.Controls.Add(this.lblTrajanje);
-            this.grpNalog.Controls.Add(this.dtpTrajanje);
             this.grpNalog.Controls.Add(this.txtSvrha);
             this.grpNalog.Controls.Add(this.lblSvrha);
             this.grpNalog.Controls.Add(this.txtOdrediste);
             this.grpNalog.Controls.Add(this.lblOdrediste);
-            this.grpNalog.Controls.Add(this.dtpDatumPolaska);
             this.grpNalog.Controls.Add(this.lblDatumPolaska);
             this.grpNalog.Controls.Add(this.btnKorisnikInfo);
-            this.grpNalog.Controls.Add(this.dtpDatumKreiranja);
             this.grpNalog.Controls.Add(this.txtZahtjevatelj);
             this.grpNalog.Controls.Add(this.lblZahtjevatelj);
             this.grpNalog.Controls.Add(this.lblDatumKreiranja);
@@ -151,7 +151,7 @@
             this.txtOdobravatelj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOdobravatelj.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "odobravatelj", true));
-            this.txtOdobravatelj.Location = new System.Drawing.Point(93, 343);
+            this.txtOdobravatelj.Location = new System.Drawing.Point(95, 343);
             this.txtOdobravatelj.Name = "txtOdobravatelj";
             this.txtOdobravatelj.Size = new System.Drawing.Size(221, 20);
             this.txtOdobravatelj.TabIndex = 24;
@@ -169,7 +169,7 @@
             // lblOdobrio
             // 
             this.lblOdobrio.AutoSize = true;
-            this.lblOdobrio.Location = new System.Drawing.Point(6, 346);
+            this.lblOdobrio.Location = new System.Drawing.Point(7, 346);
             this.lblOdobrio.Name = "lblOdobrio";
             this.lblOdobrio.Size = new System.Drawing.Size(44, 13);
             this.lblOdobrio.TabIndex = 23;
@@ -179,22 +179,12 @@
             // 
             this.btnVoziloInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnVoziloInfo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVoziloInfo.Location = new System.Drawing.Point(291, 291);
+            this.btnVoziloInfo.Location = new System.Drawing.Point(293, 291);
             this.btnVoziloInfo.Name = "btnVoziloInfo";
             this.btnVoziloInfo.Size = new System.Drawing.Size(23, 20);
             this.btnVoziloInfo.TabIndex = 22;
             this.btnVoziloInfo.Text = "?";
             this.btnVoziloInfo.UseVisualStyleBackColor = true;
-            // 
-            // txtVozilo
-            // 
-            this.txtVozilo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtVozilo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "vozilo_id", true));
-            this.txtVozilo.Location = new System.Drawing.Point(93, 291);
-            this.txtVozilo.Name = "txtVozilo";
-            this.txtVozilo.Size = new System.Drawing.Size(192, 20);
-            this.txtVozilo.TabIndex = 21;
             // 
             // lblVozilo
             // 
@@ -208,28 +198,18 @@
             // lblTrajanje
             // 
             this.lblTrajanje.AutoSize = true;
-            this.lblTrajanje.Location = new System.Drawing.Point(6, 269);
+            this.lblTrajanje.Location = new System.Drawing.Point(7, 268);
             this.lblTrajanje.Name = "lblTrajanje";
             this.lblTrajanje.Size = new System.Drawing.Size(45, 13);
             this.lblTrajanje.TabIndex = 19;
             this.lblTrajanje.Text = "Trajanje";
-            // 
-            // dtpTrajanje
-            // 
-            this.dtpTrajanje.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpTrajanje.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.putniNalogBS, "trajanje", true));
-            this.dtpTrajanje.Location = new System.Drawing.Point(93, 265);
-            this.dtpTrajanje.Name = "dtpTrajanje";
-            this.dtpTrajanje.Size = new System.Drawing.Size(221, 20);
-            this.dtpTrajanje.TabIndex = 18;
             // 
             // txtSvrha
             // 
             this.txtSvrha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.txtSvrha.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "svrha", true));
-            this.txtSvrha.Location = new System.Drawing.Point(93, 175);
+            this.txtSvrha.Location = new System.Drawing.Point(95, 175);
             this.txtSvrha.Multiline = true;
             this.txtSvrha.Name = "txtSvrha";
             this.txtSvrha.Size = new System.Drawing.Size(221, 84);
@@ -238,7 +218,7 @@
             // lblSvrha
             // 
             this.lblSvrha.AutoSize = true;
-            this.lblSvrha.Location = new System.Drawing.Point(6, 178);
+            this.lblSvrha.Location = new System.Drawing.Point(7, 178);
             this.lblSvrha.Name = "lblSvrha";
             this.lblSvrha.Size = new System.Drawing.Size(35, 13);
             this.lblSvrha.TabIndex = 16;
@@ -249,7 +229,7 @@
             this.txtOdrediste.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.txtOdrediste.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "odrediste", true));
-            this.txtOdrediste.Location = new System.Drawing.Point(93, 149);
+            this.txtOdrediste.Location = new System.Drawing.Point(95, 149);
             this.txtOdrediste.Name = "txtOdrediste";
             this.txtOdrediste.Size = new System.Drawing.Size(221, 20);
             this.txtOdrediste.TabIndex = 15;
@@ -257,26 +237,16 @@
             // lblOdrediste
             // 
             this.lblOdrediste.AutoSize = true;
-            this.lblOdrediste.Location = new System.Drawing.Point(6, 152);
+            this.lblOdrediste.Location = new System.Drawing.Point(7, 152);
             this.lblOdrediste.Name = "lblOdrediste";
             this.lblOdrediste.Size = new System.Drawing.Size(52, 13);
             this.lblOdrediste.TabIndex = 14;
             this.lblOdrediste.Text = "Odredište";
             // 
-            // dtpDatumPolaska
-            // 
-            this.dtpDatumPolaska.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpDatumPolaska.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.putniNalogBS, "datum_polaska", true));
-            this.dtpDatumPolaska.Location = new System.Drawing.Point(93, 123);
-            this.dtpDatumPolaska.Name = "dtpDatumPolaska";
-            this.dtpDatumPolaska.Size = new System.Drawing.Size(221, 20);
-            this.dtpDatumPolaska.TabIndex = 13;
-            // 
             // lblDatumPolaska
             // 
             this.lblDatumPolaska.AutoSize = true;
-            this.lblDatumPolaska.Location = new System.Drawing.Point(6, 127);
+            this.lblDatumPolaska.Location = new System.Drawing.Point(7, 126);
             this.lblDatumPolaska.Name = "lblDatumPolaska";
             this.lblDatumPolaska.Size = new System.Drawing.Size(78, 13);
             this.lblDatumPolaska.TabIndex = 12;
@@ -286,28 +256,18 @@
             // 
             this.btnKorisnikInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKorisnikInfo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnKorisnikInfo.Location = new System.Drawing.Point(291, 98);
+            this.btnKorisnikInfo.Location = new System.Drawing.Point(293, 97);
             this.btnKorisnikInfo.Name = "btnKorisnikInfo";
             this.btnKorisnikInfo.Size = new System.Drawing.Size(23, 20);
             this.btnKorisnikInfo.TabIndex = 11;
             this.btnKorisnikInfo.Text = "?";
             this.btnKorisnikInfo.UseVisualStyleBackColor = true;
             // 
-            // dtpDatumKreiranja
-            // 
-            this.dtpDatumKreiranja.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpDatumKreiranja.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.putniNalogBS, "datum_kreiranja", true));
-            this.dtpDatumKreiranja.Location = new System.Drawing.Point(93, 71);
-            this.dtpDatumKreiranja.Name = "dtpDatumKreiranja";
-            this.dtpDatumKreiranja.Size = new System.Drawing.Size(221, 20);
-            this.dtpDatumKreiranja.TabIndex = 10;
-            // 
             // txtZahtjevatelj
             // 
             this.txtZahtjevatelj.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtZahtjevatelj.Location = new System.Drawing.Point(93, 98);
+            this.txtZahtjevatelj.Location = new System.Drawing.Point(95, 97);
             this.txtZahtjevatelj.Name = "txtZahtjevatelj";
             this.txtZahtjevatelj.Size = new System.Drawing.Size(192, 20);
             this.txtZahtjevatelj.TabIndex = 9;
@@ -315,7 +275,7 @@
             // lblZahtjevatelj
             // 
             this.lblZahtjevatelj.AutoSize = true;
-            this.lblZahtjevatelj.Location = new System.Drawing.Point(6, 101);
+            this.lblZahtjevatelj.Location = new System.Drawing.Point(7, 100);
             this.lblZahtjevatelj.Name = "lblZahtjevatelj";
             this.lblZahtjevatelj.Size = new System.Drawing.Size(62, 13);
             this.lblZahtjevatelj.TabIndex = 8;
@@ -324,7 +284,7 @@
             // lblDatumKreiranja
             // 
             this.lblDatumKreiranja.AutoSize = true;
-            this.lblDatumKreiranja.Location = new System.Drawing.Point(6, 75);
+            this.lblDatumKreiranja.Location = new System.Drawing.Point(7, 74);
             this.lblDatumKreiranja.Name = "lblDatumKreiranja";
             this.lblDatumKreiranja.Size = new System.Drawing.Size(81, 13);
             this.lblDatumKreiranja.TabIndex = 6;
@@ -335,7 +295,7 @@
             this.txtId.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.txtId.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "id", true));
-            this.txtId.Location = new System.Drawing.Point(93, 45);
+            this.txtId.Location = new System.Drawing.Point(95, 45);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(221, 20);
             this.txtId.TabIndex = 5;
@@ -343,7 +303,7 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(6, 48);
+            this.lblId.Location = new System.Drawing.Point(7, 48);
             this.lblId.Name = "lblId";
             this.lblId.Size = new System.Drawing.Size(25, 13);
             this.lblId.TabIndex = 4;
@@ -354,7 +314,7 @@
             this.txtKatedra.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.txtKatedra.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "katedra", true));
-            this.txtKatedra.Location = new System.Drawing.Point(93, 317);
+            this.txtKatedra.Location = new System.Drawing.Point(95, 317);
             this.txtKatedra.Name = "txtKatedra";
             this.txtKatedra.Size = new System.Drawing.Size(221, 20);
             this.txtKatedra.TabIndex = 3;
@@ -362,7 +322,7 @@
             // lblKatedra
             // 
             this.lblKatedra.AutoSize = true;
-            this.lblKatedra.Location = new System.Drawing.Point(6, 320);
+            this.lblKatedra.Location = new System.Drawing.Point(7, 320);
             this.lblKatedra.Name = "lblKatedra";
             this.lblKatedra.Size = new System.Drawing.Size(44, 13);
             this.lblKatedra.TabIndex = 2;
@@ -373,7 +333,7 @@
             this.txtUstanova.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.txtUstanova.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "ustanova", true));
-            this.txtUstanova.Location = new System.Drawing.Point(93, 19);
+            this.txtUstanova.Location = new System.Drawing.Point(95, 19);
             this.txtUstanova.Name = "txtUstanova";
             this.txtUstanova.Size = new System.Drawing.Size(221, 20);
             this.txtUstanova.TabIndex = 1;
@@ -381,7 +341,7 @@
             // lblUstanova
             // 
             this.lblUstanova.AutoSize = true;
-            this.lblUstanova.Location = new System.Drawing.Point(6, 22);
+            this.lblUstanova.Location = new System.Drawing.Point(7, 22);
             this.lblUstanova.Name = "lblUstanova";
             this.lblUstanova.Size = new System.Drawing.Size(53, 13);
             this.lblUstanova.TabIndex = 0;
@@ -424,13 +384,86 @@
             this.odobravateljDataGridViewTextBoxColumn,
             this.statusidDataGridViewTextBoxColumn});
             this.dgvPutniNalozi.DataSource = this.putniNalogBS;
-            this.dgvPutniNalozi.Location = new System.Drawing.Point(6, 19);
+            this.dgvPutniNalozi.Location = new System.Drawing.Point(6, 17);
             this.dgvPutniNalozi.Name = "dgvPutniNalozi";
             this.dgvPutniNalozi.ReadOnly = true;
             this.dgvPutniNalozi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvPutniNalozi.Size = new System.Drawing.Size(649, 425);
+            this.dgvPutniNalozi.Size = new System.Drawing.Size(649, 427);
             this.dgvPutniNalozi.TabIndex = 0;
             this.dgvPutniNalozi.SelectionChanged += new System.EventHandler(this.dgvPutniNalozi_SelectionChanged);
+            // 
+            // voziloBS
+            // 
+            this.voziloBS.DataMember = "vozilo";
+            this.voziloBS.DataSource = this.piDB9DS;
+            // 
+            // statusNalogaBS
+            // 
+            this.statusNalogaBS.DataMember = "status_naloga";
+            this.statusNalogaBS.DataSource = this.piDB9DS;
+            // 
+            // grpFilter
+            // 
+            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpFilter.Location = new System.Drawing.Point(9, 12);
+            this.grpFilter.Name = "grpFilter";
+            this.grpFilter.Size = new System.Drawing.Size(661, 100);
+            this.grpFilter.TabIndex = 0;
+            this.grpFilter.TabStop = false;
+            this.grpFilter.Text = "Filter";
+            // 
+            // putniNalogTA
+            // 
+            this.putniNalogTA.ClearBeforeFill = true;
+            // 
+            // statusNalogaTA
+            // 
+            this.statusNalogaTA.ClearBeforeFill = true;
+            // 
+            // voziloTA
+            // 
+            this.voziloTA.ClearBeforeFill = true;
+            // 
+            // txtDatumKreiranja
+            // 
+            this.txtDatumKreiranja.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDatumKreiranja.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "datum_kreiranja", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "D"));
+            this.txtDatumKreiranja.Location = new System.Drawing.Point(95, 71);
+            this.txtDatumKreiranja.Name = "txtDatumKreiranja";
+            this.txtDatumKreiranja.Size = new System.Drawing.Size(221, 20);
+            this.txtDatumKreiranja.TabIndex = 25;
+            // 
+            // txtDatumPolaska
+            // 
+            this.txtDatumPolaska.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDatumPolaska.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "datum_polaska", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "D"));
+            this.txtDatumPolaska.Location = new System.Drawing.Point(95, 123);
+            this.txtDatumPolaska.Name = "txtDatumPolaska";
+            this.txtDatumPolaska.Size = new System.Drawing.Size(221, 20);
+            this.txtDatumPolaska.TabIndex = 26;
+            // 
+            // txtTrajanje
+            // 
+            this.txtTrajanje.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTrajanje.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "trajanje", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "D"));
+            this.txtTrajanje.Location = new System.Drawing.Point(95, 265);
+            this.txtTrajanje.Name = "txtTrajanje";
+            this.txtTrajanje.Size = new System.Drawing.Size(221, 20);
+            this.txtTrajanje.TabIndex = 27;
+            // 
+            // txtVozilo
+            // 
+            this.txtVozilo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtVozilo.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.putniNalogBS, "vozilo_id", true));
+            this.txtVozilo.Location = new System.Drawing.Point(95, 291);
+            this.txtVozilo.Name = "txtVozilo";
+            this.txtVozilo.Size = new System.Drawing.Size(192, 20);
+            this.txtVozilo.TabIndex = 21;
             // 
             // ustanovaDataGridViewTextBoxColumn
             // 
@@ -467,6 +500,7 @@
             // 
             // zahtjevateljDataGridViewTextBoxColumn
             // 
+            this.zahtjevateljDataGridViewTextBoxColumn.DataPropertyName = "zahtjevatelj";
             this.zahtjevateljDataGridViewTextBoxColumn.HeaderText = "Zahtjevatelj";
             this.zahtjevateljDataGridViewTextBoxColumn.Name = "zahtjevateljDataGridViewTextBoxColumn";
             this.zahtjevateljDataGridViewTextBoxColumn.ReadOnly = true;
@@ -510,11 +544,6 @@
             this.voziloidDataGridViewTextBoxColumn.ValueMember = "id";
             this.voziloidDataGridViewTextBoxColumn.Width = 58;
             // 
-            // voziloBS
-            // 
-            this.voziloBS.DataMember = "vozilo";
-            this.voziloBS.DataSource = this.piDB9DS;
-            // 
             // katedraDataGridViewTextBoxColumn
             // 
             this.katedraDataGridViewTextBoxColumn.DataPropertyName = "katedra";
@@ -544,34 +573,6 @@
             this.statusidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.statusidDataGridViewTextBoxColumn.ValueMember = "id";
             this.statusidDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // statusNalogaBS
-            // 
-            this.statusNalogaBS.DataMember = "status_naloga";
-            this.statusNalogaBS.DataSource = this.piDB9DS;
-            // 
-            // grpFilter
-            // 
-            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpFilter.Location = new System.Drawing.Point(9, 12);
-            this.grpFilter.Name = "grpFilter";
-            this.grpFilter.Size = new System.Drawing.Size(661, 100);
-            this.grpFilter.TabIndex = 0;
-            this.grpFilter.TabStop = false;
-            this.grpFilter.Text = "Filter";
-            // 
-            // putniNalogTA
-            // 
-            this.putniNalogTA.ClearBeforeFill = true;
-            // 
-            // statusNalogaTA
-            // 
-            this.statusNalogaTA.ClearBeforeFill = true;
-            // 
-            // voziloTA
-            // 
-            this.voziloTA.ClearBeforeFill = true;
             // 
             // frmPutniNalozi
             // 
@@ -620,23 +621,23 @@
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblDatumKreiranja;
-        private System.Windows.Forms.DateTimePicker dtpDatumKreiranja;
         private System.Windows.Forms.TextBox txtZahtjevatelj;
         private System.Windows.Forms.Label lblZahtjevatelj;
         private System.Windows.Forms.Button btnKorisnikInfo;
         private System.Windows.Forms.Label lblDatumPolaska;
-        private System.Windows.Forms.DateTimePicker dtpDatumPolaska;
         private System.Windows.Forms.TextBox txtOdrediste;
         private System.Windows.Forms.Label lblOdrediste;
         private System.Windows.Forms.TextBox txtSvrha;
         private System.Windows.Forms.Label lblSvrha;
         private System.Windows.Forms.Label lblTrajanje;
-        private System.Windows.Forms.DateTimePicker dtpTrajanje;
         private System.Windows.Forms.Label lblVozilo;
-        private System.Windows.Forms.TextBox txtVozilo;
         private System.Windows.Forms.Button btnVoziloInfo;
         private System.Windows.Forms.TextBox txtOdobravatelj;
         private System.Windows.Forms.Label lblOdobrio;
+        private System.Windows.Forms.TextBox txtDatumKreiranja;
+        private System.Windows.Forms.TextBox txtDatumPolaska;
+        private System.Windows.Forms.TextBox txtTrajanje;
+        private System.Windows.Forms.TextBox txtVozilo;
         private System.Windows.Forms.DataGridViewTextBoxColumn ustanovaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn datumkreiranjaDataGridViewTextBoxColumn;
