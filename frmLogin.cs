@@ -27,22 +27,23 @@ namespace PutniNalozi.NET
             string username = txtUsername.Text;
             string password = txtPassword.Text;
             // run authentication against database
-            foi.pi.iUser tmpUser = piLogin.Authenticate(username, password);
+            iUser tmpUser = piLogin.Authenticate(username, password);
             
             // check authentication result
             if (tmpUser == null)
             {
                 // notify user that login failed
-                frmMain.WriteToStatus("Login failed!");
+                ((frmMain)this.ParentForm).writeToStatus("Login failed!", 3000);
                 // focus text input on username
                 txtUsername.Focus();
+                txtUsername.SelectAll();
             }
             else
             {
                 // notify user that login failed
-                frmMain.WriteToStatus("Login succeded!");
+                ((frmMain)this.ParentForm).writeToStatus("Login suceed!", 3000);
                 // set this user as current_user
-                frmMain.SetLoggedUser(tmpUser);
+                ((frmMain)this.ParentForm).setLoggedUser(tmpUser);
                 // unload form
                 this.Close();
             }

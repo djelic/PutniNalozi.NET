@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.mnuMain = new System.Windows.Forms.MenuStrip();
             this.optMain = new System.Windows.Forms.ToolStripMenuItem();
             this.optMainLogin = new System.Windows.Forms.ToolStripMenuItem();
@@ -47,6 +48,7 @@
             this.stsLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.stsPlaceholder = new System.Windows.Forms.ToolStripStatusLabel();
             this.stsUser = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tmrCleanStatus = new System.Windows.Forms.Timer(this.components);
             this.mnuMain.SuspendLayout();
             this.stsStatus.SuspendLayout();
             this.SuspendLayout();
@@ -134,7 +136,7 @@
             // optPutniNalozi
             // 
             this.optPutniNalozi.Name = "optPutniNalozi";
-            this.optPutniNalozi.Size = new System.Drawing.Size(152, 22);
+            this.optPutniNalozi.Size = new System.Drawing.Size(139, 22);
             this.optPutniNalozi.Text = "Putni nalozi";
             this.optPutniNalozi.Click += new System.EventHandler(this.optPutniNalozi_Click);
             // 
@@ -195,6 +197,10 @@
             this.stsUser.Size = new System.Drawing.Size(33, 17);
             this.stsUser.Text = "User:";
             // 
+            // tmrCleanStatus
+            // 
+            this.tmrCleanStatus.Tick += new System.EventHandler(this.tmrCleanStatus_Tick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,6 +244,7 @@
         private System.Windows.Forms.ToolStripStatusLabel stsUser;
         private System.Windows.Forms.ToolStripMenuItem optActions;
         private System.Windows.Forms.ToolStripMenuItem optPutniNalozi;
+        private System.Windows.Forms.Timer tmrCleanStatus;
     }
 }
 
