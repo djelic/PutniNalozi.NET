@@ -36,24 +36,26 @@ namespace PutniNalozi.NET
             {
                 return;
             }
+
             DataRowView current = (DataRowView)dgvPutniNalozi.CurrentRow.DataBoundItem;
             piDB9DS.putni_nalogRow putniNalogRow = (piDB9DS.putni_nalogRow)current.Row;
 
-            iUser zahtjevatelj = this.piLogin.GetUser(putniNalogRow.zahtjevatelj, true).First();
-            txtZahtjevatelj.Text = zahtjevatelj.Name + " " + zahtjevatelj.Surname;
-
+            txtZahtjevatelj.Text = getFullName(putniNalogRow.zahtjevatelj);
             if (putniNalogRow.odobravatelj.Trim() != "")
             {
-                try
-                {
-                    iUser odobravatelj = this.piLogin.GetUser(putniNalogRow.odobravatelj, true).First();
-                    txtOdobravatelj.Text = odobravatelj.Name + " " + odobravatelj.Surname;
-                }
-                catch (Exception)
-                {
-                    txtOdobravatelj.Text = putniNalogRow.odobravatelj;
-                }
+                txtOdobravatelj.Text = getFullName(putniNalogRow.odobravatelj);
             }
+        }
+
+        public string getFullName(string username)
+        {
+            if (this.piLogin.GetUser(username, true).Count > 0)
+            {
+                iUser korisnik = this.piLogin.GetUser(username, true).First();
+                return korisnik.Name + " " + korisnik.Surname;
+            }
+
+            return username;
         }
 
         private void frmPutniNalozi_FormClosing(object sender, FormClosingEventArgs e)
