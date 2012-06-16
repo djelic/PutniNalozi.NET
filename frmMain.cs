@@ -36,7 +36,7 @@ namespace PutniNalozi.NET
             }
 
             // otherwise, create and show new login form
-            frmLogin FrmLogin = new frmLogin(piLogin);
+            frmLogin FrmLogin = new frmLogin(this.piLogin);
             // set this window as parent to frmLogin
             FrmLogin.MdiParent = this;
             // show windows centered within this window
@@ -61,10 +61,27 @@ namespace PutniNalozi.NET
                 }
             }
 
-            frmPutniNalozi FrmPutniNalozi = new frmPutniNalozi(piLogin);
+            frmPutniNalozi FrmPutniNalozi = new frmPutniNalozi(this.piLogin);
             FrmPutniNalozi.MdiParent = this;
             FrmPutniNalozi.StartPosition = FormStartPosition.CenterParent;
             FrmPutniNalozi.Show();
+        }
+
+        private void openProfile()
+        {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form.Name == "frmProfile")
+                {
+                    form.Focus();
+                    return;
+                }
+            }
+
+            frmProfile FrmProfile = new frmProfile(this.current_user);
+            FrmProfile.MdiParent = this;
+            FrmProfile.StartPosition = FormStartPosition.CenterParent;
+            FrmProfile.Show();
         }
 
         /*
@@ -89,6 +106,7 @@ namespace PutniNalozi.NET
                 optMainLogout.Enabled = true;
                 optMainRegister.Enabled = false;
 
+                optUserProfile.Enabled = true;
                 optUserLogout.Enabled = true;
 
                 optActionsPutniNalozi.Enabled = true;
@@ -100,6 +118,7 @@ namespace PutniNalozi.NET
                 optMainLogout.Enabled = false;
                 optMainRegister.Enabled = true;
 
+                optUserProfile.Enabled = false;
                 optUserLogout.Enabled = false;
 
                 optActionsPutniNalozi.Enabled = false;
@@ -191,6 +210,11 @@ namespace PutniNalozi.NET
             // when timer runs out, clear text from statusbar and disable timer
             stsLabel.Text = "";
             tmrCleanStatus.Stop();
+        }
+
+        private void optUserProfile_Click(object sender, EventArgs e)
+        {
+            openProfile();
         }
     }
 }

@@ -49,6 +49,8 @@
             this.stsPlaceholder = new System.Windows.Forms.ToolStripStatusLabel();
             this.stsUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.tmrCleanStatus = new System.Windows.Forms.Timer(this.components);
+            this.optUserProfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.mnuMain.SuspendLayout();
             this.stsStatus.SuspendLayout();
             this.SuspendLayout();
@@ -113,6 +115,8 @@
             // optUser
             // 
             this.optUser.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.optUserProfile,
+            this.toolStripSeparator1,
             this.optUserLogout});
             this.optUser.Name = "optUser";
             this.optUser.Size = new System.Drawing.Size(41, 20);
@@ -121,7 +125,7 @@
             // optUserLogout
             // 
             this.optUserLogout.Name = "optUserLogout";
-            this.optUserLogout.Size = new System.Drawing.Size(118, 22);
+            this.optUserLogout.Size = new System.Drawing.Size(152, 22);
             this.optUserLogout.Text = "Logout";
             this.optUserLogout.Click += new System.EventHandler(this.optUserLogout_Click);
             // 
@@ -136,7 +140,7 @@
             // optActionsPutniNalozi
             // 
             this.optActionsPutniNalozi.Name = "optActionsPutniNalozi";
-            this.optActionsPutniNalozi.Size = new System.Drawing.Size(152, 22);
+            this.optActionsPutniNalozi.Size = new System.Drawing.Size(139, 22);
             this.optActionsPutniNalozi.Text = "Putni nalozi";
             this.optActionsPutniNalozi.Click += new System.EventHandler(this.optActionsPutniNalozi_Click);
             // 
@@ -201,6 +205,18 @@
             // 
             this.tmrCleanStatus.Tick += new System.EventHandler(this.tmrCleanStatus_Tick);
             // 
+            // optUserProfile
+            // 
+            this.optUserProfile.Name = "optUserProfile";
+            this.optUserProfile.Size = new System.Drawing.Size(152, 22);
+            this.optUserProfile.Text = "Profile";
+            this.optUserProfile.Click += new System.EventHandler(this.optUserProfile_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -245,6 +261,8 @@
         private System.Windows.Forms.ToolStripMenuItem optActions;
         private System.Windows.Forms.ToolStripMenuItem optActionsPutniNalozi;
         private System.Windows.Forms.Timer tmrCleanStatus;
+        private System.Windows.Forms.ToolStripMenuItem optUserProfile;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 
