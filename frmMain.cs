@@ -25,6 +25,17 @@ namespace PutniNalozi.NET
          */
         private void openLogin()
         {
+            // if login form already opened, focus on form
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form.Name == "frmLogin")
+                {
+                    form.Focus();
+                    return;
+                }
+            }
+
+            // otherwise, create and show new login form
             frmLogin FrmLogin = new frmLogin(piLogin);
             // set this window as parent to frmLogin
             FrmLogin.MdiParent = this;
@@ -41,6 +52,15 @@ namespace PutniNalozi.NET
          */
         private void openNalozi()
         {
+            foreach (Form form in this.MdiChildren)
+            {
+                if (form.Name == "frmPutniNalozi")
+                {
+                    form.Focus();
+                    return;
+                }
+            }
+
             frmPutniNalozi FrmPutniNalozi = new frmPutniNalozi(piLogin);
             FrmPutniNalozi.MdiParent = this;
             FrmPutniNalozi.StartPosition = FormStartPosition.CenterParent;
