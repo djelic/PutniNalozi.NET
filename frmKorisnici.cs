@@ -13,6 +13,7 @@ namespace PutniNalozi.NET
     public partial class frmKorisnici : Form
     {
         Login piLogin;
+        List<iUser> piKorisnici;
 
         public frmKorisnici()
         {
@@ -29,7 +30,7 @@ namespace PutniNalozi.NET
         private void frmKorisnici_Load(object sender, EventArgs e)
         {
             // fetch all users from piLogin component
-            List<iUser> piKorisnici = piLogin.GetUser();
+            piKorisnici = piLogin.GetUser();
 
             // set list of users as source to DGV
             dgvKorisnici.DataSource = piKorisnici;
@@ -41,6 +42,15 @@ namespace PutniNalozi.NET
             {
                 dgvKorisnici.Columns[i].HeaderText = headerText[i];
             }
+        }
+
+        private void dgvKorisnici_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // show profile information
+            frmProfile FrmProfile = new frmProfile(piKorisnici[dgvKorisnici.CurrentRow.Index]);
+            FrmProfile.MdiParent = this.MdiParent;
+            FrmProfile.StartPosition = FormStartPosition.CenterParent;
+            FrmProfile.Show(); 
         }
     }
 }

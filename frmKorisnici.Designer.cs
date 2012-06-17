@@ -64,6 +64,7 @@
             this.dgvKorisnici.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKorisnici.Size = new System.Drawing.Size(684, 457);
             this.dgvKorisnici.TabIndex = 0;
+            this.dgvKorisnici.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKorisnici_CellDoubleClick);
             // 
             // frmKorisnici
             // 
