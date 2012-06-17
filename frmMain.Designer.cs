@@ -42,6 +42,7 @@
             this.optUserLogout = new System.Windows.Forms.ToolStripMenuItem();
             this.optActions = new System.Windows.Forms.ToolStripMenuItem();
             this.optActionsPutniNalozi = new System.Windows.Forms.ToolStripMenuItem();
+            this.optActionsKorisnici = new System.Windows.Forms.ToolStripMenuItem();
             this.optHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.optHelpGeneral = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -51,7 +52,7 @@
             this.stsPlaceholder = new System.Windows.Forms.ToolStripStatusLabel();
             this.stsUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.tmrCleanStatus = new System.Windows.Forms.Timer(this.components);
-            this.optActionsKorisnici = new System.Windows.Forms.ToolStripMenuItem();
+            this.optActionsDodjelaPrava = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.stsStatus.SuspendLayout();
             this.SuspendLayout();
@@ -146,7 +147,8 @@
             // 
             this.optActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optActionsPutniNalozi,
-            this.optActionsKorisnici});
+            this.optActionsKorisnici,
+            this.optActionsDodjelaPrava});
             this.optActions.Name = "optActions";
             this.optActions.Size = new System.Drawing.Size(54, 20);
             this.optActions.Text = "Actions";
@@ -157,6 +159,13 @@
             this.optActionsPutniNalozi.Size = new System.Drawing.Size(152, 22);
             this.optActionsPutniNalozi.Text = "Putni nalozi";
             this.optActionsPutniNalozi.Click += new System.EventHandler(this.optActionsPutniNalozi_Click);
+            // 
+            // optActionsKorisnici
+            // 
+            this.optActionsKorisnici.Name = "optActionsKorisnici";
+            this.optActionsKorisnici.Size = new System.Drawing.Size(152, 22);
+            this.optActionsKorisnici.Text = "Korisnici";
+            this.optActionsKorisnici.Click += new System.EventHandler(this.optActionsKorisnici_Click);
             // 
             // optHelp
             // 
@@ -219,12 +228,12 @@
             // 
             this.tmrCleanStatus.Tick += new System.EventHandler(this.tmrCleanStatus_Tick);
             // 
-            // optActionsKorisnici
+            // optActionsDodjelaPrava
             // 
-            this.optActionsKorisnici.Name = "optActionsKorisnici";
-            this.optActionsKorisnici.Size = new System.Drawing.Size(152, 22);
-            this.optActionsKorisnici.Text = "Korisnici";
-            this.optActionsKorisnici.Click += new System.EventHandler(this.optActionsKorisnici_Click);
+            this.optActionsDodjelaPrava.Name = "optActionsDodjelaPrava";
+            this.optActionsDodjelaPrava.Size = new System.Drawing.Size(152, 22);
+            this.optActionsDodjelaPrava.Text = "Dodjela prava";
+            this.optActionsDodjelaPrava.Click += new System.EventHandler(this.optActionsDodjelaPrava_Click);
             // 
             // frmMain
             // 
@@ -273,6 +282,7 @@
         private System.Windows.Forms.ToolStripMenuItem optUserProfile;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem optActionsKorisnici;
+        private System.Windows.Forms.ToolStripMenuItem optActionsDodjelaPrava;
     }
 }
 

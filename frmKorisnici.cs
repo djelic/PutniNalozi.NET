@@ -27,10 +27,15 @@ namespace PutniNalozi.NET
             this.piLogin = piLoginInstance;
         }
 
+        private iUser getCurrentlySelectedUser()
+        {
+            return piKorisnici[dgvKorisnici.CurrentRow.Index];
+        }
+
         private void openProfile()
         {
             // show profile information
-            frmProfile FrmProfile = new frmProfile(piKorisnici[dgvKorisnici.CurrentRow.Index]);
+            frmProfile FrmProfile = new frmProfile(getCurrentlySelectedUser());
             FrmProfile.MdiParent = this.MdiParent;
             FrmProfile.StartPosition = FormStartPosition.CenterParent;
             FrmProfile.Show();
@@ -61,6 +66,15 @@ namespace PutniNalozi.NET
         private void tsiProfile_Click(object sender, EventArgs e)
         {
             openProfile();
+        }
+
+        private void tsiDodjijeliPrava_Click(object sender, EventArgs e)
+        {
+            // open form for assigning roles to user
+            frmDodjelaPrava FrmDodjelaPrava = new frmDodjelaPrava(this.piLogin, getCurrentlySelectedUser());
+            FrmDodjelaPrava.MdiParent = this.MdiParent;
+            FrmDodjelaPrava.StartPosition = FormStartPosition.CenterParent;
+            FrmDodjelaPrava.Show();
         }
     }
 }

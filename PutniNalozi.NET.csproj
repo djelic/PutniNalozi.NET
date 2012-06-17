@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDodjelaPrava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodjelaPrava.Designer.cs">
+      <DependentUpon>frmDodjelaPrava.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKorisnici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDodjelaPrava.resx">
+      <DependentUpon>frmDodjelaPrava.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKorisnici.resx">
       <DependentUpon>frmKorisnici.cs</DependentUpon>
     </EmbeddedResource>

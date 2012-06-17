@@ -23,7 +23,7 @@ namespace PutniNalozi.NET
         /*
          * Tries to focus form if exists as Child of main form
          */
-        private bool focusForm(string formName)
+        public bool focusForm(string formName)
         {
             // if login form already opened, focus on form
             foreach (Form form in this.MdiChildren)
@@ -39,7 +39,7 @@ namespace PutniNalozi.NET
         }
 
         /*
-         * Show login form to user
+         * Show login form
          */
         private void openLogin()
         {
@@ -60,7 +60,7 @@ namespace PutniNalozi.NET
         }
 
         /*
-         * Show putni nalozi form to user
+         * Show putni nalozi form
          */
         private void openNalozi()
         {
@@ -74,7 +74,7 @@ namespace PutniNalozi.NET
         }
 
         /*
-         * Shows user profile form
+         * Shows user listing form
          */
         private void openKorisnici()
         {
@@ -87,6 +87,9 @@ namespace PutniNalozi.NET
             }
         }
 
+        /*
+         * Shows user's profile form
+         */
         private void openProfile()
         {
             if (!focusForm("frmProfile"))
@@ -95,6 +98,20 @@ namespace PutniNalozi.NET
                 FrmProfile.MdiParent = this;
                 FrmProfile.StartPosition = FormStartPosition.CenterParent;
                 FrmProfile.Show(); 
+            }
+        }
+
+        /*
+         * Shows form for role assignment
+         */
+        private void openDodjelaPrava()
+        {
+            if (!focusForm("frmDodjelaPrava"))
+            {
+                frmDodjelaPrava FrmDodjelaPrava = new frmDodjelaPrava(this.piLogin);
+                FrmDodjelaPrava.MdiParent = this;
+                FrmDodjelaPrava.StartPosition = FormStartPosition.CenterParent;
+                FrmDodjelaPrava.Show();
             }
         }
 
@@ -125,6 +142,7 @@ namespace PutniNalozi.NET
 
                 optActionsPutniNalozi.Enabled = true;
                 optActionsKorisnici.Enabled = true;
+                optActionsDodjelaPrava.Enabled = true;
             }
             else
             {
@@ -138,6 +156,7 @@ namespace PutniNalozi.NET
 
                 optActionsPutniNalozi.Enabled = false;
                 optActionsKorisnici.Enabled = false;
+                optActionsDodjelaPrava.Enabled = false;
             }
         }
 
@@ -236,6 +255,11 @@ namespace PutniNalozi.NET
         private void optActionsKorisnici_Click(object sender, EventArgs e)
         {
             openKorisnici();
+        }
+
+        private void optActionsDodjelaPrava_Click(object sender, EventArgs e)
+        {
+            openDodjelaPrava();
         }
     }
 }

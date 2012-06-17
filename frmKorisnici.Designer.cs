@@ -33,6 +33,7 @@
             this.dgvKorisnici = new System.Windows.Forms.DataGridView();
             this.cmsKorisniciActions = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsiProfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsiDodjijeliPrava = new System.Windows.Forms.ToolStripMenuItem();
             this.grpKorisnici.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).BeginInit();
             this.cmsKorisniciActions.SuspendLayout();
@@ -74,9 +75,10 @@
             // cmsKorisniciActions
             // 
             this.cmsKorisniciActions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsiProfile});
+            this.tsiProfile,
+            this.tsiDodjijeliPrava});
             this.cmsKorisniciActions.Name = "cmsKorisniciActions";
-            this.cmsKorisniciActions.Size = new System.Drawing.Size(153, 48);
+            this.cmsKorisniciActions.Size = new System.Drawing.Size(153, 70);
             // 
             // tsiProfile
             // 
@@ -84,6 +86,13 @@
             this.tsiProfile.Size = new System.Drawing.Size(152, 22);
             this.tsiProfile.Text = "Profil";
             this.tsiProfile.Click += new System.EventHandler(this.tsiProfile_Click);
+            // 
+            // tsiDodjijeliPrava
+            // 
+            this.tsiDodjijeliPrava.Name = "tsiDodjijeliPrava";
+            this.tsiDodjijeliPrava.Size = new System.Drawing.Size(152, 22);
+            this.tsiDodjijeliPrava.Text = "Dodijeli prava";
+            this.tsiDodjijeliPrava.Click += new System.EventHandler(this.tsiDodjijeliPrava_Click);
             // 
             // frmKorisnici
             // 
@@ -107,5 +116,6 @@
         private System.Windows.Forms.DataGridView dgvKorisnici;
         private System.Windows.Forms.ContextMenuStrip cmsKorisniciActions;
         private System.Windows.Forms.ToolStripMenuItem tsiProfile;
+        private System.Windows.Forms.ToolStripMenuItem tsiDodjijeliPrava;
     }
 }
