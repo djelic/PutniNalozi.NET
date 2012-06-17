@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.grpKorisnici = new System.Windows.Forms.GroupBox();
             this.dgvKorisnici = new System.Windows.Forms.DataGridView();
+            this.cmsKorisniciActions = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsiProfile = new System.Windows.Forms.ToolStripMenuItem();
             this.grpKorisnici.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).BeginInit();
+            this.cmsKorisniciActions.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpKorisnici
@@ -56,6 +60,7 @@
             this.dgvKorisnici.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvKorisnici.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvKorisnici.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKorisnici.ContextMenuStrip = this.cmsKorisniciActions;
             this.dgvKorisnici.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvKorisnici.Location = new System.Drawing.Point(3, 16);
             this.dgvKorisnici.Name = "dgvKorisnici";
@@ -65,6 +70,20 @@
             this.dgvKorisnici.Size = new System.Drawing.Size(684, 457);
             this.dgvKorisnici.TabIndex = 0;
             this.dgvKorisnici.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKorisnici_CellDoubleClick);
+            // 
+            // cmsKorisniciActions
+            // 
+            this.cmsKorisniciActions.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsiProfile});
+            this.cmsKorisniciActions.Name = "cmsKorisniciActions";
+            this.cmsKorisniciActions.Size = new System.Drawing.Size(153, 48);
+            // 
+            // tsiProfile
+            // 
+            this.tsiProfile.Name = "tsiProfile";
+            this.tsiProfile.Size = new System.Drawing.Size(152, 22);
+            this.tsiProfile.Text = "Profil";
+            this.tsiProfile.Click += new System.EventHandler(this.tsiProfile_Click);
             // 
             // frmKorisnici
             // 
@@ -77,6 +96,7 @@
             this.Load += new System.EventHandler(this.frmKorisnici_Load);
             this.grpKorisnici.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKorisnici)).EndInit();
+            this.cmsKorisniciActions.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -85,5 +105,7 @@
 
         private System.Windows.Forms.GroupBox grpKorisnici;
         private System.Windows.Forms.DataGridView dgvKorisnici;
+        private System.Windows.Forms.ContextMenuStrip cmsKorisniciActions;
+        private System.Windows.Forms.ToolStripMenuItem tsiProfile;
     }
 }

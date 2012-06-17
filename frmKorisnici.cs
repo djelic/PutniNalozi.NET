@@ -27,6 +27,15 @@ namespace PutniNalozi.NET
             this.piLogin = piLoginInstance;
         }
 
+        private void openProfile()
+        {
+            // show profile information
+            frmProfile FrmProfile = new frmProfile(piKorisnici[dgvKorisnici.CurrentRow.Index]);
+            FrmProfile.MdiParent = this.MdiParent;
+            FrmProfile.StartPosition = FormStartPosition.CenterParent;
+            FrmProfile.Show();
+        }
+
         private void frmKorisnici_Load(object sender, EventArgs e)
         {
             // fetch all users from piLogin component
@@ -46,11 +55,12 @@ namespace PutniNalozi.NET
 
         private void dgvKorisnici_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            // show profile information
-            frmProfile FrmProfile = new frmProfile(piKorisnici[dgvKorisnici.CurrentRow.Index]);
-            FrmProfile.MdiParent = this.MdiParent;
-            FrmProfile.StartPosition = FormStartPosition.CenterParent;
-            FrmProfile.Show(); 
+            openProfile();
+        }
+
+        private void tsiProfile_Click(object sender, EventArgs e)
+        {
+            openProfile();
         }
     }
 }
