@@ -27,6 +27,9 @@ namespace PutniNalozi.NET
             this.piLogin = piLoginInstance;
         }
 
+        /*
+         * Returns user currently selected in DGV
+         */
         private iUser getCurrentlySelectedUser()
         {
             return piKorisnici[dgvKorisnici.CurrentRow.Index];

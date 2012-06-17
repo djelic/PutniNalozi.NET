@@ -116,6 +116,20 @@ namespace PutniNalozi.NET
         }
 
         /*
+         * Shows form for editing user's role
+         */
+        private void openUredjivanjePrava()
+        {
+            if (!focusForm("frmUredjivanjePrava"))
+            {
+                frmUredjivanjePrava FrmUredjivanjePrava = new frmUredjivanjePrava();
+                FrmUredjivanjePrava.MdiParent = this;
+                FrmUredjivanjePrava.StartPosition = FormStartPosition.CenterParent;
+                FrmUredjivanjePrava.Show();
+            }
+        }
+
+        /*
          * Method enables displaying status messages on frmMain's statusbar
          */
         public void writeToStatus(string text, int interval)
@@ -143,6 +157,7 @@ namespace PutniNalozi.NET
                 optActionsPutniNalozi.Enabled = true;
                 optActionsKorisnici.Enabled = true;
                 optActionsDodjelaPrava.Enabled = true;
+                optActionsUredjivanjePrava.Enabled = true;
             }
             else
             {
@@ -157,6 +172,7 @@ namespace PutniNalozi.NET
                 optActionsPutniNalozi.Enabled = false;
                 optActionsKorisnici.Enabled = false;
                 optActionsDodjelaPrava.Enabled = false;
+                optActionsUredjivanjePrava.Enabled = false;
             }
         }
 
@@ -260,6 +276,11 @@ namespace PutniNalozi.NET
         private void optActionsDodjelaPrava_Click(object sender, EventArgs e)
         {
             openDodjelaPrava();
+        }
+
+        private void optActionsUredjivanjePrava_Click(object sender, EventArgs e)
+        {
+            openUredjivanjePrava();
         }
     }
 }

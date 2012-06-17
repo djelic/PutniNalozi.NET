@@ -86,6 +86,12 @@
     <Compile Include="frmPutniNalozi.Designer.cs">
       <DependentUpon>frmPutniNalozi.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUredjivanjePrava.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUredjivanjePrava.Designer.cs">
+      <DependentUpon>frmUredjivanjePrava.cs</DependentUpon>
+    </Compile>
     <Compile Include="piDB9DS.cs">
       <DependentUpon>piDB9DS.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPutniNalozi.resx">
       <DependentUpon>frmPutniNalozi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUredjivanjePrava.resx">
+      <DependentUpon>frmUredjivanjePrava.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

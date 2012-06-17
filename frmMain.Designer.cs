@@ -43,6 +43,7 @@
             this.optActions = new System.Windows.Forms.ToolStripMenuItem();
             this.optActionsPutniNalozi = new System.Windows.Forms.ToolStripMenuItem();
             this.optActionsKorisnici = new System.Windows.Forms.ToolStripMenuItem();
+            this.optActionsDodjelaPrava = new System.Windows.Forms.ToolStripMenuItem();
             this.optHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.optHelpGeneral = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
@@ -52,7 +53,8 @@
             this.stsPlaceholder = new System.Windows.Forms.ToolStripStatusLabel();
             this.stsUser = new System.Windows.Forms.ToolStripStatusLabel();
             this.tmrCleanStatus = new System.Windows.Forms.Timer(this.components);
-            this.optActionsDodjelaPrava = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripSeparator();
+            this.optActionsUredjivanjePrava = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuMain.SuspendLayout();
             this.stsStatus.SuspendLayout();
             this.SuspendLayout();
@@ -85,32 +87,32 @@
             // optMainLogin
             // 
             this.optMainLogin.Name = "optMainLogin";
-            this.optMainLogin.Size = new System.Drawing.Size(125, 22);
+            this.optMainLogin.Size = new System.Drawing.Size(152, 22);
             this.optMainLogin.Text = "Login";
             this.optMainLogin.Click += new System.EventHandler(this.optMainLogin_Click);
             // 
             // optMainLogout
             // 
             this.optMainLogout.Name = "optMainLogout";
-            this.optMainLogout.Size = new System.Drawing.Size(125, 22);
+            this.optMainLogout.Size = new System.Drawing.Size(152, 22);
             this.optMainLogout.Text = "Logout";
             this.optMainLogout.Click += new System.EventHandler(this.optMainLogout_Click);
             // 
             // optMainRegister
             // 
             this.optMainRegister.Name = "optMainRegister";
-            this.optMainRegister.Size = new System.Drawing.Size(125, 22);
+            this.optMainRegister.Size = new System.Drawing.Size(152, 22);
             this.optMainRegister.Text = "Register";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(122, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(149, 6);
             // 
             // optMainExit
             // 
             this.optMainExit.Name = "optMainExit";
-            this.optMainExit.Size = new System.Drawing.Size(125, 22);
+            this.optMainExit.Size = new System.Drawing.Size(152, 22);
             this.optMainExit.Text = "Exit";
             this.optMainExit.Click += new System.EventHandler(this.optMainExit_Click);
             // 
@@ -127,19 +129,19 @@
             // optUserProfile
             // 
             this.optUserProfile.Name = "optUserProfile";
-            this.optUserProfile.Size = new System.Drawing.Size(118, 22);
+            this.optUserProfile.Size = new System.Drawing.Size(152, 22);
             this.optUserProfile.Text = "Profile";
             this.optUserProfile.Click += new System.EventHandler(this.optUserProfile_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(115, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // optUserLogout
             // 
             this.optUserLogout.Name = "optUserLogout";
-            this.optUserLogout.Size = new System.Drawing.Size(118, 22);
+            this.optUserLogout.Size = new System.Drawing.Size(152, 22);
             this.optUserLogout.Text = "Logout";
             this.optUserLogout.Click += new System.EventHandler(this.optUserLogout_Click);
             // 
@@ -147,8 +149,10 @@
             // 
             this.optActions.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optActionsPutniNalozi,
+            this.toolStripMenuItem3,
             this.optActionsKorisnici,
-            this.optActionsDodjelaPrava});
+            this.optActionsDodjelaPrava,
+            this.optActionsUredjivanjePrava});
             this.optActions.Name = "optActions";
             this.optActions.Size = new System.Drawing.Size(54, 20);
             this.optActions.Text = "Actions";
@@ -156,16 +160,23 @@
             // optActionsPutniNalozi
             // 
             this.optActionsPutniNalozi.Name = "optActionsPutniNalozi";
-            this.optActionsPutniNalozi.Size = new System.Drawing.Size(152, 22);
+            this.optActionsPutniNalozi.Size = new System.Drawing.Size(168, 22);
             this.optActionsPutniNalozi.Text = "Putni nalozi";
             this.optActionsPutniNalozi.Click += new System.EventHandler(this.optActionsPutniNalozi_Click);
             // 
             // optActionsKorisnici
             // 
             this.optActionsKorisnici.Name = "optActionsKorisnici";
-            this.optActionsKorisnici.Size = new System.Drawing.Size(152, 22);
+            this.optActionsKorisnici.Size = new System.Drawing.Size(168, 22);
             this.optActionsKorisnici.Text = "Korisnici";
             this.optActionsKorisnici.Click += new System.EventHandler(this.optActionsKorisnici_Click);
+            // 
+            // optActionsDodjelaPrava
+            // 
+            this.optActionsDodjelaPrava.Name = "optActionsDodjelaPrava";
+            this.optActionsDodjelaPrava.Size = new System.Drawing.Size(168, 22);
+            this.optActionsDodjelaPrava.Text = "Dodjela prava";
+            this.optActionsDodjelaPrava.Click += new System.EventHandler(this.optActionsDodjelaPrava_Click);
             // 
             // optHelp
             // 
@@ -228,12 +239,17 @@
             // 
             this.tmrCleanStatus.Tick += new System.EventHandler(this.tmrCleanStatus_Tick);
             // 
-            // optActionsDodjelaPrava
+            // toolStripMenuItem3
             // 
-            this.optActionsDodjelaPrava.Name = "optActionsDodjelaPrava";
-            this.optActionsDodjelaPrava.Size = new System.Drawing.Size(152, 22);
-            this.optActionsDodjelaPrava.Text = "Dodjela prava";
-            this.optActionsDodjelaPrava.Click += new System.EventHandler(this.optActionsDodjelaPrava_Click);
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(165, 6);
+            // 
+            // optActionsUredjivanjePrava
+            // 
+            this.optActionsUredjivanjePrava.Name = "optActionsUredjivanjePrava";
+            this.optActionsUredjivanjePrava.Size = new System.Drawing.Size(168, 22);
+            this.optActionsUredjivanjePrava.Text = "Uređivanje prava";
+            this.optActionsUredjivanjePrava.Click += new System.EventHandler(this.optActionsUredjivanjePrava_Click);
             // 
             // frmMain
             // 
@@ -283,6 +299,8 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem optActionsKorisnici;
         private System.Windows.Forms.ToolStripMenuItem optActionsDodjelaPrava;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem optActionsUredjivanjePrava;
     }
 }
 
