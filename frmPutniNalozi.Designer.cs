@@ -60,12 +60,6 @@
             this.lblUstanova = new System.Windows.Forms.Label();
             this.grpPrikaz = new System.Windows.Forms.GroupBox();
             this.dgvPutniNalozi = new System.Windows.Forms.DataGridView();
-            this.grpFilter = new System.Windows.Forms.GroupBox();
-            this.voziloBS = new System.Windows.Forms.BindingSource(this.components);
-            this.statusNalogaBS = new System.Windows.Forms.BindingSource(this.components);
-            this.putniNalogTA = new PutniNalozi.NET.piDB9DSTableAdapters.putniNalogTA();
-            this.statusNalogaTA = new PutniNalozi.NET.piDB9DSTableAdapters.statusNalogaTA();
-            this.voziloTA = new PutniNalozi.NET.piDB9DSTableAdapters.voziloTA();
             this.ustanovaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.datumkreiranjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,6 +72,12 @@
             this.katedraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusnazivDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.odobravateljDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grpFilter = new System.Windows.Forms.GroupBox();
+            this.voziloBS = new System.Windows.Forms.BindingSource(this.components);
+            this.statusNalogaBS = new System.Windows.Forms.BindingSource(this.components);
+            this.putniNalogTA = new PutniNalozi.NET.piDB9DSTableAdapters.putniNalogTA();
+            this.statusNalogaTA = new PutniNalozi.NET.piDB9DSTableAdapters.statusNalogaTA();
+            this.voziloTA = new PutniNalozi.NET.piDB9DSTableAdapters.voziloTA();
             ((System.ComponentModel.ISupportInitialize)(this.spcContainer)).BeginInit();
             this.spcContainer.Panel1.SuspendLayout();
             this.spcContainer.Panel2.SuspendLayout();
@@ -421,6 +421,9 @@
                         | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvPutniNalozi.AutoGenerateColumns = false;
             this.dgvPutniNalozi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvPutniNalozi.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvPutniNalozi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dgvPutniNalozi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvPutniNalozi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPutniNalozi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ustanovaDataGridViewTextBoxColumn,
@@ -439,43 +442,11 @@
             this.dgvPutniNalozi.Location = new System.Drawing.Point(6, 17);
             this.dgvPutniNalozi.Name = "dgvPutniNalozi";
             this.dgvPutniNalozi.ReadOnly = true;
+            this.dgvPutniNalozi.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgvPutniNalozi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvPutniNalozi.Size = new System.Drawing.Size(649, 427);
             this.dgvPutniNalozi.TabIndex = 0;
             this.dgvPutniNalozi.SelectionChanged += new System.EventHandler(this.dgvPutniNalozi_SelectionChanged);
-            // 
-            // grpFilter
-            // 
-            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpFilter.Location = new System.Drawing.Point(9, 12);
-            this.grpFilter.Name = "grpFilter";
-            this.grpFilter.Size = new System.Drawing.Size(661, 100);
-            this.grpFilter.TabIndex = 0;
-            this.grpFilter.TabStop = false;
-            this.grpFilter.Text = "Filter";
-            // 
-            // voziloBS
-            // 
-            this.voziloBS.DataMember = "vozilo";
-            this.voziloBS.DataSource = this.piDB9DS;
-            // 
-            // statusNalogaBS
-            // 
-            this.statusNalogaBS.DataMember = "status_naloga";
-            this.statusNalogaBS.DataSource = this.piDB9DS;
-            // 
-            // putniNalogTA
-            // 
-            this.putniNalogTA.ClearBeforeFill = true;
-            // 
-            // statusNalogaTA
-            // 
-            this.statusNalogaTA.ClearBeforeFill = true;
-            // 
-            // voziloTA
-            // 
-            this.voziloTA.ClearBeforeFill = true;
             // 
             // ustanovaDataGridViewTextBoxColumn
             // 
@@ -572,6 +543,39 @@
             this.odobravateljDataGridViewTextBoxColumn.Name = "odobravateljDataGridViewTextBoxColumn";
             this.odobravateljDataGridViewTextBoxColumn.ReadOnly = true;
             this.odobravateljDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // grpFilter
+            // 
+            this.grpFilter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpFilter.Location = new System.Drawing.Point(9, 12);
+            this.grpFilter.Name = "grpFilter";
+            this.grpFilter.Size = new System.Drawing.Size(661, 100);
+            this.grpFilter.TabIndex = 0;
+            this.grpFilter.TabStop = false;
+            this.grpFilter.Text = "Filter";
+            // 
+            // voziloBS
+            // 
+            this.voziloBS.DataMember = "vozilo";
+            this.voziloBS.DataSource = this.piDB9DS;
+            // 
+            // statusNalogaBS
+            // 
+            this.statusNalogaBS.DataMember = "status_naloga";
+            this.statusNalogaBS.DataSource = this.piDB9DS;
+            // 
+            // putniNalogTA
+            // 
+            this.putniNalogTA.ClearBeforeFill = true;
+            // 
+            // statusNalogaTA
+            // 
+            this.statusNalogaTA.ClearBeforeFill = true;
+            // 
+            // voziloTA
+            // 
+            this.voziloTA.ClearBeforeFill = true;
             // 
             // frmPutniNalozi
             // 
