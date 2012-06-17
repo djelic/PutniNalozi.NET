@@ -21,30 +21,42 @@ namespace PutniNalozi.NET
         }
 
         /*
-         * Show login form to user
+         * Tries to focus form if exists as Child of main form
          */
-        private void openLogin()
+        private bool focusForm(string formName)
         {
             // if login form already opened, focus on form
             foreach (Form form in this.MdiChildren)
             {
-                if (form.Name == "frmLogin")
+                if (form.Name == formName)
                 {
                     form.Focus();
-                    return;
+                    return true;
                 }
             }
 
-            // otherwise, create and show new login form
-            frmLogin FrmLogin = new frmLogin(this.piLogin);
-            // set this window as parent to frmLogin
-            FrmLogin.MdiParent = this;
-            // show windows centered within this window
-            FrmLogin.StartPosition = FormStartPosition.CenterScreen;
-            // set status message so that user knows what to do
-            writeToStatus("Za nastavak morate biti ulogirani", 3000);
-            // finally, show login window
-            FrmLogin.Show();
+            return false;
+        }
+
+        /*
+         * Show login form to user
+         */
+        private void openLogin()
+        {
+            // if there is no form instance active, create new form and show
+            if (!focusForm("frmLogin"))
+            {
+                // otherwise, create and show new login form
+                frmLogin FrmLogin = new frmLogin(this.piLogin);
+                // set this window as parent to frmLogin
+                FrmLogin.MdiParent = this;
+                // show windows centered within this window
+                FrmLogin.StartPosition = FormStartPosition.CenterScreen;
+                // set status message so that user knows what to do
+                writeToStatus("Za nastavak morate biti ulogirani", 3000);
+                // finally, show login window
+                FrmLogin.Show(); 
+            }
         }
 
         /*
@@ -52,36 +64,38 @@ namespace PutniNalozi.NET
          */
         private void openNalozi()
         {
-            foreach (Form form in this.MdiChildren)
+            if (!focusForm("frmPutniNalozi"))
             {
-                if (form.Name == "frmPutniNalozi")
-                {
-                    form.Focus();
-                    return;
-                }
+                frmPutniNalozi FrmPutniNalozi = new frmPutniNalozi(this.piLogin);
+                FrmPutniNalozi.MdiParent = this;
+                FrmPutniNalozi.StartPosition = FormStartPosition.CenterParent;
+                FrmPutniNalozi.Show(); 
             }
+        }
 
-            frmPutniNalozi FrmPutniNalozi = new frmPutniNalozi(this.piLogin);
-            FrmPutniNalozi.MdiParent = this;
-            FrmPutniNalozi.StartPosition = FormStartPosition.CenterParent;
-            FrmPutniNalozi.Show();
+        /*
+         * Shows user profile form
+         */
+        private void openKorisnici()
+        {
+            if (!focusForm("frmKorisnici"))
+            {
+                frmKorisnici FrmKorisnici = new frmKorisnici(this.piLogin);
+                FrmKorisnici.MdiParent = this;
+                FrmKorisnici.StartPosition = FormStartPosition.CenterParent;
+                FrmKorisnici.Show(); 
+            }
         }
 
         private void openProfile()
         {
-            foreach (Form form in this.MdiChildren)
+            if (!focusForm("frmProfile"))
             {
-                if (form.Name == "frmProfile")
-                {
-                    form.Focus();
-                    return;
-                }
+                frmProfile FrmProfile = new frmProfile(this.current_user);
+                FrmProfile.MdiParent = this;
+                FrmProfile.StartPosition = FormStartPosition.CenterParent;
+                FrmProfile.Show(); 
             }
-
-            frmProfile FrmProfile = new frmProfile(this.current_user);
-            FrmProfile.MdiParent = this;
-            FrmProfile.StartPosition = FormStartPosition.CenterParent;
-            FrmProfile.Show();
         }
 
         /*
@@ -110,6 +124,7 @@ namespace PutniNalozi.NET
                 optUserLogout.Enabled = true;
 
                 optActionsPutniNalozi.Enabled = true;
+                optActionsKorisnici.Enabled = true;
             }
             else
             {
@@ -122,6 +137,7 @@ namespace PutniNalozi.NET
                 optUserLogout.Enabled = false;
 
                 optActionsPutniNalozi.Enabled = false;
+                optActionsKorisnici.Enabled = false;
             }
         }
 
@@ -215,6 +231,11 @@ namespace PutniNalozi.NET
         private void optUserProfile_Click(object sender, EventArgs e)
         {
             openProfile();
+        }
+
+        private void optActionsKorisnici_Click(object sender, EventArgs e)
+        {
+            openKorisnici();
         }
     }
 }
