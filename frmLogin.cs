@@ -48,5 +48,15 @@ namespace PutniNalozi.NET
                 this.Close();
             }
         }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            txtPassword.SelectAll();
+        }
+
+        private void txtUsername_Enter(object sender, EventArgs e)
+        {
+            txtUsername.SelectAll();
+        }
     }
 }
