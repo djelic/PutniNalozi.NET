@@ -29,20 +29,22 @@
         private void InitializeComponent()
         {
             this.grpProfile = new System.Windows.Forms.GroupBox();
-            this.lblKorisnickoIme = new System.Windows.Forms.Label();
-            this.txtKorisnickoIme = new System.Windows.Forms.TextBox();
-            this.txtImePrezime = new System.Windows.Forms.TextBox();
-            this.lblImePrezime = new System.Windows.Forms.Label();
-            this.txtTitula = new System.Windows.Forms.TextBox();
-            this.lblTitula = new System.Windows.Forms.Label();
-            this.txtZanimanje = new System.Windows.Forms.TextBox();
-            this.lblZanimanje = new System.Windows.Forms.Label();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtTelefon = new System.Windows.Forms.TextBox();
-            this.lblTelefon = new System.Windows.Forms.Label();
             this.txtAdresa = new System.Windows.Forms.TextBox();
             this.lblAdresa = new System.Windows.Forms.Label();
+            this.txtTelefon = new System.Windows.Forms.TextBox();
+            this.lblTelefon = new System.Windows.Forms.Label();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtZanimanje = new System.Windows.Forms.TextBox();
+            this.lblZanimanje = new System.Windows.Forms.Label();
+            this.txtTitula = new System.Windows.Forms.TextBox();
+            this.lblTitula = new System.Windows.Forms.Label();
+            this.txtImePrezime = new System.Windows.Forms.TextBox();
+            this.lblImePrezime = new System.Windows.Forms.Label();
+            this.txtKorisnickoIme = new System.Windows.Forms.TextBox();
+            this.lblKorisnickoIme = new System.Windows.Forms.Label();
+            this.lblUloge = new System.Windows.Forms.Label();
+            this.lsbUloge = new System.Windows.Forms.ListBox();
             this.grpProfile.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +53,8 @@
             this.grpProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
                         | System.Windows.Forms.AnchorStyles.Left)
                         | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpProfile.Controls.Add(this.lsbUloge);
+            this.grpProfile.Controls.Add(this.lblUloge);
             this.grpProfile.Controls.Add(this.txtAdresa);
             this.grpProfile.Controls.Add(this.lblAdresa);
             this.grpProfile.Controls.Add(this.txtTelefon);
@@ -67,124 +71,10 @@
             this.grpProfile.Controls.Add(this.lblKorisnickoIme);
             this.grpProfile.Location = new System.Drawing.Point(12, 12);
             this.grpProfile.Name = "grpProfile";
-            this.grpProfile.Size = new System.Drawing.Size(316, 236);
+            this.grpProfile.Size = new System.Drawing.Size(316, 297);
             this.grpProfile.TabIndex = 0;
             this.grpProfile.TabStop = false;
             this.grpProfile.Text = "Profil";
-            // 
-            // lblKorisnickoIme
-            // 
-            this.lblKorisnickoIme.AutoSize = true;
-            this.lblKorisnickoIme.Location = new System.Drawing.Point(6, 22);
-            this.lblKorisnickoIme.Name = "lblKorisnickoIme";
-            this.lblKorisnickoIme.Size = new System.Drawing.Size(75, 13);
-            this.lblKorisnickoIme.TabIndex = 0;
-            this.lblKorisnickoIme.Text = "Korisničko ime";
-            // 
-            // txtKorisnickoIme
-            // 
-            this.txtKorisnickoIme.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtKorisnickoIme.Location = new System.Drawing.Point(130, 19);
-            this.txtKorisnickoIme.Name = "txtKorisnickoIme";
-            this.txtKorisnickoIme.ReadOnly = true;
-            this.txtKorisnickoIme.Size = new System.Drawing.Size(175, 20);
-            this.txtKorisnickoIme.TabIndex = 1;
-            // 
-            // txtImePrezime
-            // 
-            this.txtImePrezime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtImePrezime.Location = new System.Drawing.Point(130, 45);
-            this.txtImePrezime.Name = "txtImePrezime";
-            this.txtImePrezime.ReadOnly = true;
-            this.txtImePrezime.Size = new System.Drawing.Size(175, 20);
-            this.txtImePrezime.TabIndex = 3;
-            // 
-            // lblImePrezime
-            // 
-            this.lblImePrezime.AutoSize = true;
-            this.lblImePrezime.Location = new System.Drawing.Point(6, 48);
-            this.lblImePrezime.Name = "lblImePrezime";
-            this.lblImePrezime.Size = new System.Drawing.Size(68, 13);
-            this.lblImePrezime.TabIndex = 2;
-            this.lblImePrezime.Text = "Ime i prezime";
-            // 
-            // txtTitula
-            // 
-            this.txtTitula.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTitula.Location = new System.Drawing.Point(130, 71);
-            this.txtTitula.Name = "txtTitula";
-            this.txtTitula.ReadOnly = true;
-            this.txtTitula.Size = new System.Drawing.Size(175, 20);
-            this.txtTitula.TabIndex = 5;
-            // 
-            // lblTitula
-            // 
-            this.lblTitula.AutoSize = true;
-            this.lblTitula.Location = new System.Drawing.Point(6, 74);
-            this.lblTitula.Name = "lblTitula";
-            this.lblTitula.Size = new System.Drawing.Size(33, 13);
-            this.lblTitula.TabIndex = 4;
-            this.lblTitula.Text = "Titula";
-            // 
-            // txtZanimanje
-            // 
-            this.txtZanimanje.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtZanimanje.Location = new System.Drawing.Point(130, 97);
-            this.txtZanimanje.Name = "txtZanimanje";
-            this.txtZanimanje.ReadOnly = true;
-            this.txtZanimanje.Size = new System.Drawing.Size(175, 20);
-            this.txtZanimanje.TabIndex = 7;
-            // 
-            // lblZanimanje
-            // 
-            this.lblZanimanje.AutoSize = true;
-            this.lblZanimanje.Location = new System.Drawing.Point(6, 100);
-            this.lblZanimanje.Name = "lblZanimanje";
-            this.lblZanimanje.Size = new System.Drawing.Size(56, 13);
-            this.lblZanimanje.TabIndex = 6;
-            this.lblZanimanje.Text = "Zanimanje";
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEmail.Location = new System.Drawing.Point(130, 123);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.ReadOnly = true;
-            this.txtEmail.Size = new System.Drawing.Size(175, 20);
-            this.txtEmail.TabIndex = 9;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(6, 126);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(35, 13);
-            this.lblEmail.TabIndex = 8;
-            this.lblEmail.Text = "E-mail";
-            // 
-            // txtTelefon
-            // 
-            this.txtTelefon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTelefon.Location = new System.Drawing.Point(130, 149);
-            this.txtTelefon.Name = "txtTelefon";
-            this.txtTelefon.ReadOnly = true;
-            this.txtTelefon.Size = new System.Drawing.Size(175, 20);
-            this.txtTelefon.TabIndex = 11;
-            // 
-            // lblTelefon
-            // 
-            this.lblTelefon.AutoSize = true;
-            this.lblTelefon.Location = new System.Drawing.Point(6, 152);
-            this.lblTelefon.Name = "lblTelefon";
-            this.lblTelefon.Size = new System.Drawing.Size(43, 13);
-            this.lblTelefon.TabIndex = 10;
-            this.lblTelefon.Text = "Telefon";
             // 
             // txtAdresa
             // 
@@ -206,11 +96,145 @@
             this.lblAdresa.TabIndex = 12;
             this.lblAdresa.Text = "Adresa";
             // 
+            // txtTelefon
+            // 
+            this.txtTelefon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTelefon.Location = new System.Drawing.Point(130, 149);
+            this.txtTelefon.Name = "txtTelefon";
+            this.txtTelefon.ReadOnly = true;
+            this.txtTelefon.Size = new System.Drawing.Size(175, 20);
+            this.txtTelefon.TabIndex = 11;
+            // 
+            // lblTelefon
+            // 
+            this.lblTelefon.AutoSize = true;
+            this.lblTelefon.Location = new System.Drawing.Point(6, 152);
+            this.lblTelefon.Name = "lblTelefon";
+            this.lblTelefon.Size = new System.Drawing.Size(43, 13);
+            this.lblTelefon.TabIndex = 10;
+            this.lblTelefon.Text = "Telefon";
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEmail.Location = new System.Drawing.Point(130, 123);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.ReadOnly = true;
+            this.txtEmail.Size = new System.Drawing.Size(175, 20);
+            this.txtEmail.TabIndex = 9;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(6, 126);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(35, 13);
+            this.lblEmail.TabIndex = 8;
+            this.lblEmail.Text = "E-mail";
+            // 
+            // txtZanimanje
+            // 
+            this.txtZanimanje.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtZanimanje.Location = new System.Drawing.Point(130, 97);
+            this.txtZanimanje.Name = "txtZanimanje";
+            this.txtZanimanje.ReadOnly = true;
+            this.txtZanimanje.Size = new System.Drawing.Size(175, 20);
+            this.txtZanimanje.TabIndex = 7;
+            // 
+            // lblZanimanje
+            // 
+            this.lblZanimanje.AutoSize = true;
+            this.lblZanimanje.Location = new System.Drawing.Point(6, 100);
+            this.lblZanimanje.Name = "lblZanimanje";
+            this.lblZanimanje.Size = new System.Drawing.Size(56, 13);
+            this.lblZanimanje.TabIndex = 6;
+            this.lblZanimanje.Text = "Zanimanje";
+            // 
+            // txtTitula
+            // 
+            this.txtTitula.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTitula.Location = new System.Drawing.Point(130, 71);
+            this.txtTitula.Name = "txtTitula";
+            this.txtTitula.ReadOnly = true;
+            this.txtTitula.Size = new System.Drawing.Size(175, 20);
+            this.txtTitula.TabIndex = 5;
+            // 
+            // lblTitula
+            // 
+            this.lblTitula.AutoSize = true;
+            this.lblTitula.Location = new System.Drawing.Point(6, 74);
+            this.lblTitula.Name = "lblTitula";
+            this.lblTitula.Size = new System.Drawing.Size(33, 13);
+            this.lblTitula.TabIndex = 4;
+            this.lblTitula.Text = "Titula";
+            // 
+            // txtImePrezime
+            // 
+            this.txtImePrezime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtImePrezime.Location = new System.Drawing.Point(130, 45);
+            this.txtImePrezime.Name = "txtImePrezime";
+            this.txtImePrezime.ReadOnly = true;
+            this.txtImePrezime.Size = new System.Drawing.Size(175, 20);
+            this.txtImePrezime.TabIndex = 3;
+            // 
+            // lblImePrezime
+            // 
+            this.lblImePrezime.AutoSize = true;
+            this.lblImePrezime.Location = new System.Drawing.Point(6, 48);
+            this.lblImePrezime.Name = "lblImePrezime";
+            this.lblImePrezime.Size = new System.Drawing.Size(68, 13);
+            this.lblImePrezime.TabIndex = 2;
+            this.lblImePrezime.Text = "Ime i prezime";
+            // 
+            // txtKorisnickoIme
+            // 
+            this.txtKorisnickoIme.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtKorisnickoIme.Location = new System.Drawing.Point(130, 19);
+            this.txtKorisnickoIme.Name = "txtKorisnickoIme";
+            this.txtKorisnickoIme.ReadOnly = true;
+            this.txtKorisnickoIme.Size = new System.Drawing.Size(175, 20);
+            this.txtKorisnickoIme.TabIndex = 1;
+            // 
+            // lblKorisnickoIme
+            // 
+            this.lblKorisnickoIme.AutoSize = true;
+            this.lblKorisnickoIme.Location = new System.Drawing.Point(6, 22);
+            this.lblKorisnickoIme.Name = "lblKorisnickoIme";
+            this.lblKorisnickoIme.Size = new System.Drawing.Size(75, 13);
+            this.lblKorisnickoIme.TabIndex = 0;
+            this.lblKorisnickoIme.Text = "Korisničko ime";
+            // 
+            // lblUloge
+            // 
+            this.lblUloge.AutoSize = true;
+            this.lblUloge.Location = new System.Drawing.Point(6, 234);
+            this.lblUloge.Name = "lblUloge";
+            this.lblUloge.Size = new System.Drawing.Size(35, 13);
+            this.lblUloge.TabIndex = 14;
+            this.lblUloge.Text = "Uloge";
+            // 
+            // lsbUloge
+            // 
+            this.lsbUloge.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lsbUloge.BackColor = System.Drawing.SystemColors.Control;
+            this.lsbUloge.FormattingEnabled = true;
+            this.lsbUloge.Location = new System.Drawing.Point(130, 231);
+            this.lsbUloge.Name = "lsbUloge";
+            this.lsbUloge.Size = new System.Drawing.Size(175, 56);
+            this.lsbUloge.TabIndex = 15;
+            // 
             // frmProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(340, 260);
+            this.ClientSize = new System.Drawing.Size(340, 321);
             this.Controls.Add(this.grpProfile);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.KeyPreview = true;
@@ -241,5 +265,7 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtAdresa;
         private System.Windows.Forms.Label lblAdresa;
+        private System.Windows.Forms.Label lblUloge;
+        private System.Windows.Forms.ListBox lsbUloge;
     }
 }

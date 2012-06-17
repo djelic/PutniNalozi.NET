@@ -41,6 +41,12 @@ namespace PutniNalozi.NET
             txtEmail.Text = korisnik.Email;
             txtTelefon.Text = korisnik.Phone;
             txtAdresa.Text = korisnik.Address;
+
+            // populate role list
+            foreach (iRole uloga in korisnik.AssignedRoles)
+            {
+                lsbUloge.Items.Add(uloga.RoleName);
+            }
         }
 
         private void frmProfile_KeyUp(object sender, KeyEventArgs e)
